@@ -1,17 +1,11 @@
 {
   "name": "zoetype",
   "version": "1.0.0",
-  "description": "Zoëtype — Find the animal within you",
-  "main": "api/match.js",
   "scripts": {
-    "dev": "vercel dev",
-    "deploy": "vercel --prod"
+    "build": "echo 'No build needed'"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.20.0",
     "@supabase/supabase-js": "^2.39.0"
-  },
-  "devDependencies": {
-    "vercel": "^33.0.0"
   }
 }
