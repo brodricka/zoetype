@@ -759,6 +759,7 @@ async function startCheckout() {
   btn.disabled = true;
 
   const userData = JSON.parse(sessionStorage.getItem('zoetype_user') || '{}');
+  const answers = JSON.parse(sessionStorage.getItem('zoetype_answers') || '{}');
   const animal = RESULT?.animal || {};
 
   try {
@@ -770,6 +771,12 @@ async function startCheckout() {
         firstName: userData.firstName || '',
         animalName: animal.common_name || '',
         scientificName: animal.scientific_name || '',
+        photoUrl: animal.photo_url || null,
+        portrait: { paragraphs: RESULT?.portrait || [], shadow: RESULT?.shadow || '', fun_fact: RESULT?.fun_fact || '' },
+        shadow: RESULT?.shadow || '',
+        fun_fact: RESULT?.fun_fact || '',
+        dimensions: RESULT?.dimensions || [],
+        answers: answers,
       }),
     });
 
