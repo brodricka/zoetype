@@ -1,41 +1,4 @@
 {
   "version": 2,
-  "outputDirectory": ".",
-  "buildCommand": "echo 'static'",
-  "builds": [
-    {
-      "src": "api/match.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "scoring.js",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/match",
-      "dest": "/api/match.js"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/quiz",
-      "dest": "/quiz.html"
-    },
-    {
-      "src": "/result",
-      "dest": "/result.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "outputDirectory": "."
 }
