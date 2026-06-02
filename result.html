@@ -658,9 +658,7 @@ async function loadResult() {
       });
       if (response.ok) {
         const data = await response.json();
-        RESULT = data;
-        renderResult(data);
-        return;
+        return data;
       } else {
         console.error('API error:', response.status, await response.text());
       }
@@ -670,46 +668,77 @@ async function loadResult() {
   }
 
   // Fallback to sample
-  RESULT = SAMPLE;
-  renderResult({
+  return {
     animal: SAMPLE.animal,
     portrait: SAMPLE.portrait,
     shadow: SAMPLE.shadow,
     fun_fact: SAMPLE.fun_fact,
     dimensions: SAMPLE.dimensions,
-  });
+  };
 }
 
-function startReveal() {
-  const reveal = document.getElementById('reveal');
-  document.getElementById('reveal-name').textContent = '...';
-  document.getElementById('reveal-sci').textContent = 'Calculating your match';
-  document.getElementById('reveal-rarity').style.display = 'none';
+function showResultBody() {
+  const body = document.getElementById('result-body');
+  body.style.display = 'block';
+  setTimeout(() => {
+    body.classList.add('visible');
+    setTimeout(animateBars, 600);
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('animal-header');
+      if (window.scrollY > 400) header.classList.add('visible');
+      else header.classList.remove('visible');
+    });
+  }, 100);
+}
 
+async function startReveal() {
+  const reveal = document.getElementById('reveal');
+
+  // Show reveal with loading state
+  document.getElementById('reveal-name').textContent = '...';
+  document.getElementById('reveal-sci').textContent = 'Searching 1,168 species';
+  document.getElementById('reveal-rarity').style.display = 'none';
   requestAnimationFrame(() => { reveal.classList.add('show'); });
 
-  loadResult().then(() => {
-    if (RESULT) {
-      const animal = RESULT.animal;
-      document.getElementById('reveal-name').textContent = animal.common_name;
-      document.getElementById('reveal-sci').textContent = animal.scientific_name;
-    }
-  });
+  // Cycle through loading messages while API runs
+  const loadingMessages = [
+    'Scoring your dimensions',
+    'Searching 1,168 species',
+    'Calculating your match',
+    'Preparing your portrait',
+  ];
+  let msgIdx = 0;
+  const msgInterval = setInterval(() => {
+    msgIdx = (msgIdx + 1) % loadingMessages.length;
+    document.getElementById('reveal-sci').textContent = loadingMessages[msgIdx];
+  }, 1800);
 
-  setTimeout(() => {
-    reveal.classList.add('hide');
-    const body = document.getElementById('result-body');
-    body.style.display = 'block';
-    setTimeout(() => {
-      body.classList.add('visible');
-      setTimeout(animateBars, 600);
-      window.addEventListener('scroll', () => {
-        const header = document.getElementById('animal-header');
-        if (window.scrollY > 400) header.classList.add('visible');
-        else header.classList.remove('visible');
-      });
-    }, 100);
-  }, 3800);
+  // Wait for real result — minimum 3.5 seconds on reveal screen
+  const [data] = await Promise.all([
+    loadResult(),
+    new Promise(resolve => setTimeout(resolve, 3500))
+  ]);
+
+  clearInterval(msgInterval);
+
+  // Now we have the real animal — update reveal with correct data
+  RESULT = data;
+  renderResult(data);
+
+  const animal = data.animal;
+  document.getElementById('reveal-name').textContent = animal.common_name;
+  document.getElementById('reveal-sci').textContent = animal.scientific_name;
+  if (animal.iucn) {
+    document.getElementById('reveal-rarity').textContent = 'IUCN: ' + animal.iucn;
+    document.getElementById('reveal-rarity').style.display = 'inline-block';
+  }
+
+  // Hold on the correct animal for 2.5 seconds before transitioning
+  await new Promise(resolve => setTimeout(resolve, 2500));
+
+  // Fade out reveal, show result body
+  reveal.classList.add('hide');
+  showResultBody();
 }
 
 document.getElementById('result-body').style.display = 'none';
