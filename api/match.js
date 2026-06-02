@@ -137,7 +137,7 @@ module.exports = async function handler(req, res) {
     if (user && user.email) {
       const firstName = user.firstName || 'there';
       const animalName = bestMatch.common_name || bestMatch.scientific_name;
-      const emailHtml = buildResultEmail(firstName, animalName, bestMatch.scientific_name, portrait, photoUrl);
+      const emailHtml = buildResultEmail(firstName, animalName, bestMatch.scientific_name, portrait, photoUrl, user.email);
       
       resend.emails.send({
         from: 'Zoëtype <onboarding@resend.dev>',
@@ -347,7 +347,7 @@ Respond ONLY in this exact JSON format with no markdown, no backticks, no preamb
   }
 }
 
-function buildResultEmail(firstName, animalName, scientificName, portrait, photoUrl) {
+function buildResultEmail(firstName, animalName, scientificName, portrait, photoUrl, userEmail) {
   const paragraphs = portrait.paragraphs || [];
   const shadow = portrait.shadow || '';
   const funFact = portrait.fun_fact || '';
@@ -422,7 +422,7 @@ function buildResultEmail(firstName, animalName, scientificName, portrait, photo
         <p style="margin:0 0 8px 0;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#a78bfa;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report</p>
         <h2 style="margin:0 0 16px 0;font-family:'Georgia',serif;font-size:28px;font-weight:300;color:#e2e8f5;line-height:1.3;">There are things this email does not tell you.</h2>
         <p style="margin:0 0 24px 0;font-size:15px;line-height:1.8;color:#8896b0;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report covers what you do with it. Fifteen pages written from your answers and your animal alone. How you love. How you work. What restores you and what depletes you.</p>
-        <a href="https://zoetype.vercel.app/api/checkout-email?email=${encodeURIComponent(user.email)}" style="display:inline-block;background:#00e8ff;color:#03070e;text-decoration:none;padding:14px 36px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;">Get my full report — $12</a>
+        <a href="https://zoetype.vercel.app/api/checkout-email?email=${encodeURIComponent(userEmail)}" style="display:inline-block;background:#00e8ff;color:#03070e;text-decoration:none;padding:14px 36px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;">Get my full report — $12</a>
       </td></tr>
 
       <!-- Footer -->
