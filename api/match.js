@@ -175,53 +175,21 @@ module.exports = async function handler(req, res) {
 
 async function getAnimalPhoto(scientificName) {
   try {
-    const searchUrl = `https://api.gbif.org/v1/species/match?name=${encodeURIComponent(scientificName)}`;
-    const matchRes = await fetch(searchUrl);
-    const matchData = await matchRes.json();
+    // Use iNaturalist taxa API — returns community-verified wildlife photos
+    const url = `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(scientificName)}&per_page=1&rank=species`;
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Zoetype/1.0 (zoetype.vercel.app)' }
+    });
+    const data = await res.json();
 
-    if (matchData.usageKey) {
-      // Fetch 50 results so we can find the most-photographed occurrence
-      const mediaUrl = `https://api.gbif.org/v1/occurrence/search?taxonKey=${matchData.usageKey}&mediaType=StillImage&limit=50`;
-      const mediaRes = await fetch(mediaUrl);
-      const mediaData = await mediaRes.json();
+    const taxon = data.results?.[0];
+    if (!taxon) return null;
 
-      const results = mediaData.results || [];
+    // Use the default_photo if available — this is curated by iNaturalist
+    const photo = taxon.default_photo;
+    if (photo?.medium_url) return photo.medium_url;
+    if (photo?.url) return photo.url.replace('square', 'medium');
 
-      // Score each result — prefer high occurrence count (more observations = more likely quality photo)
-      // and filter out non-photo URLs
-      const badKeywords = ['graph','chart','diagram','map','illustration','drawing','figure','schema','plot','svg','pdf','doc'];
-      const goodExtensions = ['.jpg','.jpeg','.png','.webp'];
-
-      let bestUrl = null;
-      let bestScore = -1;
-
-      for (const result of results) {
-        const media = result.media || [];
-        const occurrenceCount = result.individualCount || 1;
-
-        for (const item of media) {
-          const url = (item.identifier || '').toLowerCase();
-          if (!url) continue;
-
-          // Must have a photo extension
-          const hasGoodExt = goodExtensions.some(ext => url.includes(ext));
-          if (!hasGoodExt) continue;
-
-          // Must not contain bad keywords
-          const hasBadKeyword = badKeywords.some(kw => url.includes(kw));
-          if (hasBadKeyword) continue;
-
-          // Score by occurrence count — more sightings = more reliable photo
-          const score = occurrenceCount;
-          if (score > bestScore) {
-            bestScore = score;
-            bestUrl = item.identifier; // Use original case URL
-          }
-        }
-      }
-
-      if (bestUrl) return bestUrl;
-    }
   } catch (e) {
     console.error('Photo fetch error:', e);
   }
