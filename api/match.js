@@ -185,28 +185,33 @@ ANIMAL DATA:
 - Species fact: ${funFact}
 - Top dimensions: ${topDims}
 
-WRITING RULES — these are absolute, not guidelines:
+YOUR JOB:
+Write a result that makes the person feel genuinely seen — and leaves them aware that they have not seen everything yet. The portrait should feel complete as a piece of writing. But it should also open two or three doors it does not walk through. The reader finishes feeling understood and slightly hungry. Not manipulated. Not teased. Just aware that there is more.
+
+ABSOLUTE WRITING RULES:
 - No em dashes anywhere. Use periods or commas instead.
 - No "not X — Y" constructions ever.
-- No "you likely," "you may," "something of this," "a kind of," "in a way," "perhaps."
-- No dimension score names in the portrait text. Never say "your cognitive score" or "your attachment score."
-- No reaching for profundity. If a sentence sounds deep but vague, cut it.
-- No sentences that gesture at meaning without landing something specific.
-- Every psychological observation must be grounded in a specific biological fact about this animal.
-- Write like a sharp journalist who has spent years studying this animal and genuinely sees this person clearly.
+- No "you likely," "you may," "something of this," "a kind of," "in a way," "perhaps," "it seems."
+- No dimension score names. Never write "your cognitive score" or "your attachment score."
+- No vague profundity. Every sentence must land something specific.
+- Every psychological observation must connect to a real biological fact about this animal.
+- Write like a sharp journalist who knows this animal deeply and sees this person clearly.
 - Short sentences hit harder than long ones.
-- Trust the animal. The biology is interesting enough on its own.
+- Do not summarize. Do not explain. State things.
 
 PORTRAIT — three paragraphs:
-Paragraph 1: Open with a specific biological fact about this animal that immediately reframes how the reader sees themselves. Make it land in the first sentence. Do not build to it. Three to four sentences.
-Paragraph 2: Go into how this animal processes its world — how it hunts, bonds, navigates, or survives — and connect that directly to how this person functions. Be specific about the animal. Be specific about the person. Four to five sentences.
-Paragraph 3: The ecological significance of this animal. What happens to its ecosystem without it. Connect this directly to what this person does in the systems around them. Do not explain. Just state it. Three to four sentences.
+
+Paragraph 1: Open with one specific biological fact about this animal that immediately reframes how the reader sees themselves. First sentence carries the weight. Do not build to it. Three to four sentences. End this paragraph at a place that feels complete but points toward something — how they connect, how they work, how they love — without going there.
+
+Paragraph 2: How this animal processes its world. How it hunts, bonds, navigates, or survives. Connect each observation directly to how this person functions. Be specific about the animal. Be specific about the person. Four to five sentences. This paragraph should go one layer deeper than the reader expects. End on an observation about the person that is true and slightly uncomfortable — not harsh, just precise.
+
+Paragraph 3: The ecological role of this animal. What the ecosystem loses without it. Connect this to what the people and systems around this person lose when they are absent or disengaged. Three to four sentences. End this paragraph with a sentence that gestures toward something the portrait has not touched — their relationships, their work pattern, their interior life — without naming it directly. This is the door left open.
 
 SHADOW — one paragraph:
-What is the dark side of this animal's defining trait. What does this animal do that is uncomfortable or destructive. Connect it to the person without softening it. This is not a flaw. It is the cost of their gift. Three to four sentences.
+The dark side of this animal's defining trait. What it does that is uncomfortable or costs something. Connect it directly to this person without softening it. Name the shadow clearly. Then end with a sentence that opens rather than closes — something like what this pattern looks like in the people closest to them, or what it costs them in work, without resolving it. That resolution lives in the full report.
 
 SPECIES FACT — one paragraph:
-One true, striking, specific fact about this animal that lands as a revelation about the person. The fact should recontextualize something about how they live. End it with a sentence that makes the connection explicit. Three sentences maximum.
+One true, specific, striking fact about this animal that lands as a revelation about the person reading it. The fact should recontextualize something about how they live or how they are built. End with a sentence that makes the personal connection explicit and lands with weight. Three sentences maximum. No hedging.
 
 Respond ONLY in this exact JSON format with no markdown, no backticks, no preamble:
 {
