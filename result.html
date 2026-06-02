@@ -519,126 +519,199 @@ footer{
 </div>
 
 <script>
-// BACKGROUND
+// BACKGROUND CANVAS
 const canvas=document.getElementById('bg-canvas'),ctx=canvas.getContext('2d');let W,H,tick=0;
 function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}resize();window.addEventListener('resize',resize);
 const glows=[{x:.08,y:.2,r:380,col:'rgba(0,232,255,'},{x:.92,y:.5,r:320,col:'rgba(167,139,250,'},{x:.5,y:.9,r:280,col:'rgba(0,255,163,'}];
 const bpts=[];for(let i=0;i<60;i++)bpts.push({x:Math.random()*1920,y:Math.random()*1080,r:Math.random()*1.1+.2,vx:(Math.random()-.5)*.08,vy:(Math.random()-.5)*.07,age:Math.floor(Math.random()*300),maxAge:200+Math.random()*250,col:['rgba(0,232,255,','rgba(167,139,250,','rgba(0,255,163,'][Math.floor(Math.random()*3)]});
 function bgLoop(){ctx.clearRect(0,0,W,H);tick++;glows.forEach((g,i)=>{const a=Math.sin(tick*.007+i*2.1)*.02+.035,px=g.x*W,py=g.y*H,gr=ctx.createRadialGradient(px,py,0,px,py,g.r);gr.addColorStop(0,g.col+a+')');gr.addColorStop(1,g.col+'0)');ctx.beginPath();ctx.arc(px,py,g.r,0,Math.PI*2);ctx.fillStyle=gr;ctx.fill();});bpts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.age++;if(p.age>p.maxAge||p.x<0||p.x>W||p.y<0||p.y>H){p.x=Math.random()*W;p.y=Math.random()*H;p.age=0;p.maxAge=200+Math.random()*250;}const a=Math.sin((p.age/p.maxAge)*Math.PI)*.4;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=p.col+a+')';ctx.fill();});requestAnimationFrame(bgLoop);}bgLoop();
 
-// SAMPLE RESULT DATA
-// In production this comes from the backend matching engine
-const RESULT = {
-  common_name: 'Sea Otter',
-  scientific_name: 'Enhydra lutris',
-  rarity: 'IUCN: Endangered · North Pacific',
-  ecological_role: 'Keystone species',
-  image_url: null,
-  gbif_url: 'https://www.gbif.org/species/2433674',
+// SAMPLE FALLBACK DATA
+const SAMPLE = {
+  animal: {
+    scientific_name: 'Enhydra lutris',
+    common_name: 'Sea Otter',
+    class: 'Mammalia',
+    ecological_role: 'Keystone species',
+    photo_url: null,
+    gbif_url: 'https://www.gbif.org/species/search?q=Enhydra+lutris',
+    iucn: 'Endangered',
+  },
   portrait: [
-    'Sea otters hold hands while sleeping so they don\'t drift apart. That is not metaphor. That is survival strategy. Like the otter, your emotional regulation is distributed across your relationships. You process through connection, not despite it. You are most fully yourself when you feel genuinely held by people who know you completely.',
-    'Your creativity runs high and your play instinct is real. It is not frivolous — it is how you solve problems and how you bond. You are extraordinarily physically present in the world. You feel things in your body before your mind can explain them. And your capacity for nurturing, for genuinely investing in the people and things you love, is one of your most defining traits.',
+    'Sea otters hold hands while sleeping so they do not drift apart. That is not metaphor. That is survival strategy. Like the otter, your emotional regulation is distributed across your relationships. You process through connection, not despite it. You are most fully yourself when you feel genuinely held by people who know you completely.',
+    'Your creativity runs high and your play instinct is real. It is how you solve problems and how you bond. You are extraordinarily physically present in the world. You feel things in your body before your mind can explain them. Your capacity for nurturing, for genuinely investing in the people and things you love, is one of your most defining traits.',
     'The sea otter is a keystone species. Remove one from an ecosystem and hundreds of other species feel it within a season. This is not incidental to who you are. The systems around you reorganize when you leave. People feel the absence before they can name why.'
   ],
-  shadow: 'Sea otters are among the few animals documented killing for reasons beyond hunger. When connection is threatened, the warmth can curdle into something territorial and quietly ruthless. The same intensity that makes you deeply loving makes you capable of sharp, targeted harm when you feel abandoned. This is not a flaw. It is the shadow of your gift. Knowing it is there is the first part of not being driven by it.',
-  fun_fact: 'Sea otters wrap themselves in kelp before sleeping to anchor themselves from drifting. When no kelp is available, they hold hands with another otter. Their need for connection is not emotional — it is survival architecture. The behavior that keeps them alive is the same behavior that keeps them close. So is yours.',
+  shadow: 'Sea otters are among the few animals documented killing for reasons beyond hunger. When connection is threatened, the warmth can curdle into something territorial and quietly ruthless. The same intensity that makes you deeply loving makes you capable of sharp, targeted harm when you feel abandoned. Knowing it is there is the first part of not being driven by it.',
+  fun_fact: 'Sea otters wrap themselves in kelp before sleeping to anchor themselves from drifting. When no kelp is available, they hold hands with another otter. Their need for connection is not emotional. It is survival architecture. The behavior that keeps them alive is the same behavior that keeps them close.',
   dimensions: [
-    {name:'Social architecture',value:0.90,color:'#00e8ff'},
-    {name:'Nurturing',value:0.95,color:'#00ffa3'},
-    {name:'Attachment style',value:0.88,color:'#00e8ff'},
-    {name:'Creativity & play',value:0.82,color:'#a78bfa'},
-    {name:'Physicality',value:0.85,color:'#00ffa3'},
-    {name:'Emotional expression',value:0.78,color:'#a78bfa'},
-    {name:'Curiosity',value:0.74,color:'#00e8ff'},
-    {name:'Aspiration & drive',value:0.68,color:'#a78bfa'},
-    {name:'Transformation',value:0.60,color:'#00ffa3'},
+    {name:'Social architecture',value:90,color:'#00e8ff'},
+    {name:'Nurturing',value:95,color:'#00ffa3'},
+    {name:'Attachment style',value:88,color:'#00e8ff'},
+    {name:'Creativity & play',value:82,color:'#a78bfa'},
+    {name:'Physicality',value:85,color:'#00ffa3'},
+    {name:'Emotional regulation',value:78,color:'#a78bfa'},
+    {name:'Curiosity',value:74,color:'#00e8ff'},
+    {name:'Aspiration & drive',value:68,color:'#a78bfa'},
+    {name:'Transformation',value:60,color:'#00ffa3'},
   ]
 };
 
-function pct(v){
-  // Convert -1 to 1 scale to 0-100%
-  return Math.round(((v + 1) / 2) * 100);
+let RESULT = null;
+
+function getEmoji(cls) {
+  const map = {Mammalia:'🦦',Aves:'🦅',Reptilia:'🐊',Amphibia:'🐸',Actinopterygii:'🐟',Insecta:'🦋',Arachnida:'🕷',Malacostraca:'🦀',Cephalopoda:'🐙'};
+  return map[cls] || '🐾';
 }
 
-function buildDims(){
+function buildDims(dimensions) {
   const grid = document.getElementById('dims-grid');
   grid.innerHTML = '';
-  RESULT.dimensions.forEach(d => {
-    const p = Math.round(d.value * 100);
+  dimensions.forEach(d => {
     const div = document.createElement('div');
     div.className = 'dim-item';
-    div.innerHTML = `
-      <div class="dim-name">${d.name}</div>
-      <div class="dim-bar-track">
-        <div class="dim-bar-fill" style="width:0%;background:${d.color}" data-target="${p}%"></div>
-      </div>
-      <div class="dim-value">${p}%</div>
-    `;
+    div.innerHTML = `<div class="dim-name">${d.name}</div><div class="dim-bar-track"><div class="dim-bar-fill" style="width:0%;background:${d.color}" data-target="${d.value}%"></div></div><div class="dim-value">${d.value}%</div>`;
     grid.appendChild(div);
   });
 }
 
-function animateBars(){
+function animateBars() {
   document.querySelectorAll('.dim-bar-fill').forEach(bar => {
-    const target = bar.getAttribute('data-target');
-    setTimeout(() => { bar.style.width = target; }, 100);
+    setTimeout(() => { bar.style.width = bar.getAttribute('data-target'); }, 100);
   });
 }
 
-// REVEAL SEQUENCE
-function startReveal(){
-  const reveal = document.getElementById('reveal');
-  const revealBg = document.getElementById('reveal-bg');
+function renderResult(data) {
+  const animal = data.animal;
+  const emoji = getEmoji(animal.class);
 
-  // Set background image
-  // Photo loads from backend in production
-  document.getElementById('reveal-name').textContent = RESULT.common_name;
-  document.getElementById('reveal-sci').textContent = RESULT.scientific_name;
-  document.getElementById('reveal-rarity').textContent = RESULT.rarity;
+  document.getElementById('reveal-name').textContent = animal.common_name;
+  document.getElementById('reveal-sci').textContent = animal.scientific_name;
+  if (animal.iucn) {
+    document.getElementById('reveal-rarity').textContent = 'IUCN: ' + animal.iucn;
+    document.getElementById('reveal-rarity').style.display = 'inline-block';
+  } else {
+    document.getElementById('reveal-rarity').style.display = 'none';
+  }
 
-  // Show reveal screen
-  requestAnimationFrame(() => {
-    reveal.classList.add('show');
+  document.getElementById('hero-name').textContent = animal.common_name;
+  document.getElementById('hero-sci').textContent = animal.scientific_name;
+  document.getElementById('hero-rarity').textContent = animal.iucn ? 'IUCN: ' + animal.iucn : '';
+  document.getElementById('hero-role').textContent = animal.ecological_role || '';
+
+  if (animal.photo_url) {
+    const placeholder = document.getElementById('hero-placeholder');
+    placeholder.style.backgroundImage = "url('" + animal.photo_url + "')";
+    placeholder.style.backgroundSize = 'cover';
+    placeholder.style.backgroundPosition = 'center';
+    document.getElementById('hero-emoji').style.display = 'none';
+  } else {
+    document.getElementById('hero-emoji').textContent = emoji;
+  }
+
+  const portraits = data.portrait;
+  ['portrait-1','portrait-2','portrait-3'].forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (el && portraits[i]) el.textContent = portraits[i];
+    else if (el) el.style.display = 'none';
   });
 
-  // After 3.5 seconds transition to result page
-  setTimeout(() => {
-    // Fade out reveal
-    reveal.classList.add('hide');
+  document.getElementById('shadow-text').textContent = data.shadow;
+  document.getElementById('fact-text').textContent = data.fun_fact;
 
-    // Show result body
+  const gbifLink = document.getElementById('gbif-link');
+  gbifLink.href = animal.gbif_url;
+  gbifLink.textContent = 'View ' + animal.scientific_name + ' on the Global Biodiversity Information Facility ↗';
+
+  buildDims(data.dimensions);
+
+  const headerName = document.getElementById('header-name');
+  const headerSci = document.getElementById('header-sci');
+  const thumb = document.getElementById('header-thumb');
+  headerName.textContent = animal.common_name;
+  headerSci.textContent = animal.scientific_name;
+  if (animal.photo_url) {
+    thumb.style.backgroundImage = "url('" + animal.photo_url + "')";
+    thumb.style.backgroundSize = 'cover';
+  } else {
+    thumb.textContent = emoji;
+    thumb.style.display = 'flex';
+    thumb.style.alignItems = 'center';
+    thumb.style.justifyContent = 'center';
+    thumb.style.fontSize = '1.2rem';
+  }
+}
+
+async function loadResult() {
+  const storedAnswers = sessionStorage.getItem('zoetype_answers');
+  let answers = null;
+  if (storedAnswers) {
+    try { answers = JSON.parse(storedAnswers); } catch(e) {}
+  }
+
+  if (answers && Object.keys(answers).length > 10) {
+    try {
+      const response = await fetch('/api/match', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ answers }),
+      });
+      if (response.ok) {
+        const data = await response.json();
+        RESULT = data;
+        renderResult(data);
+        return;
+      } else {
+        console.error('API error:', response.status, await response.text());
+      }
+    } catch(e) {
+      console.error('API call failed:', e);
+    }
+  }
+
+  // Fallback to sample
+  RESULT = SAMPLE;
+  renderResult({
+    animal: SAMPLE.animal,
+    portrait: SAMPLE.portrait,
+    shadow: SAMPLE.shadow,
+    fun_fact: SAMPLE.fun_fact,
+    dimensions: SAMPLE.dimensions,
+  });
+}
+
+function startReveal() {
+  const reveal = document.getElementById('reveal');
+  document.getElementById('reveal-name').textContent = '...';
+  document.getElementById('reveal-sci').textContent = 'Calculating your match';
+  document.getElementById('reveal-rarity').style.display = 'none';
+
+  requestAnimationFrame(() => { reveal.classList.add('show'); });
+
+  loadResult().then(() => {
+    if (RESULT) {
+      const animal = RESULT.animal;
+      document.getElementById('reveal-name').textContent = animal.common_name;
+      document.getElementById('reveal-sci').textContent = animal.scientific_name;
+    }
+  });
+
+  setTimeout(() => {
+    reveal.classList.add('hide');
     const body = document.getElementById('result-body');
     body.style.display = 'block';
-
     setTimeout(() => {
       body.classList.add('visible');
-      buildDims();
       setTimeout(animateBars, 600);
-
-      // Sticky header
-      const header = document.getElementById('animal-header');
-      const headerThumb = document.getElementById('header-thumb');
-      const headerName = document.getElementById('header-name');
-      const headerSci = document.getElementById('header-sci');
-      headerThumb.style.backgroundImage = `url('${RESULT.image_url}')`;
-      headerName.textContent = RESULT.common_name;
-      headerSci.textContent = RESULT.scientific_name;
-
-      // Show header on scroll
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 400) {
-          header.classList.add('visible');
-        } else {
-          header.classList.remove('visible');
-        }
+        const header = document.getElementById('animal-header');
+        if (window.scrollY > 400) header.classList.add('visible');
+        else header.classList.remove('visible');
       });
-
     }, 100);
-
   }, 3800);
 }
 
-// Initialize
 document.getElementById('result-body').style.display = 'none';
 startReveal();
 </script>
