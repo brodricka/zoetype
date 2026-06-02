@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoëtype — Find the animal within you</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --ink: #03070e;
+  --ink2: #070e1b;
+  --ink3: #0b1526;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.13);
+  --text: #e2e8f5;
+  --text2: #8896b0;
+  --text3: #4a5570;
+  --cyan: #00e8ff;
+  --violet: #a78bfa;
+  --green: #00ffa3;
+  --pink: #ff70c8;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 3rem;
+  background: rgba(3,7,14,0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.55rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  text-decoration: none;
+}
+.logo em { color: var(--cyan); font-style: italic; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text3);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text2); }
+
+.btn-nav {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--cyan);
+  border: none;
+  padding: 0.6rem 1.6rem;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.btn-nav:hover { background: #fff; }
+
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 9rem 2rem 6rem;
+}
+
+.hero-eyebrow {
+  font-size: 0.63rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 2.2rem;
+  opacity: 0.75;
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.2rem, 7.5vw, 6rem);
+  font-weight: 300;
+  line-height: 1.06;
+  margin-bottom: 2.2rem;
+  max-width: 800px;
+  color: var(--text);
+}
+.hero-title em {
+  font-style: italic;
+  color: var(--violet);
+}
+
+.hero-body {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--text2);
+  max-width: 520px;
+  margin: 0 auto 3.5rem;
+  font-weight: 300;
+}
+
+.btn-primary {
+  background: var(--cyan);
+  color: var(--ink);
+  border: none;
+  padding: 1.1rem 3.2rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.25s;
+  display: inline-block;
+}
+.btn-primary:hover { background: #fff; transform: translateY(-2px); }
+
+.hero-time-note {
+  margin-top: 1.2rem;
+  font-size: 0.75rem;
+  color: var(--text3);
+  letter-spacing: 0.05em;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.2;
+  animation: drift 2.5s ease-in-out infinite;
+}
+.scroll-cue span {
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+.scroll-cue-line {
+  width: 0.5px;
+  height: 44px;
+  background: linear-gradient(to bottom, var(--text2), transparent);
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(7px); }
+}
+
+/* STATS */
+.stats {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+  background: rgba(7,14,27,0.7);
+}
+
+.stat {
+  padding: 2.8rem 2rem;
+  text-align: center;
+  border-right: 0.5px solid var(--border);
+}
+.stat:last-child { border-right: none; }
+
+.stat-n {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.stat-n span { color: var(--cyan); }
+
+.stat-l {
+  font-size: 0.63rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text3);
+}
+
+/* WHAT SECTION */
+.what {
+  position: relative;
+  z-index: 5;
+  padding: 9rem 3rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.sec-tag {
+  font-size: 0.63rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--violet);
+  margin-bottom: 1.3rem;
+}
+
+.sec-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.22;
+  margin-bottom: 1.6rem;
+  color: var(--text);
+  max-width: 600px;
+}
+
+.sec-body {
+  font-size: 0.92rem;
+  line-height: 1.95;
+  color: var(--text2);
+  max-width: 560px;
+  margin-bottom: 1.2rem;
+}
+
+.what-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  margin-top: 4rem;
+}
+
+.what-card {
+  background: var(--ink);
+  padding: 2.2rem;
+  transition: background 0.3s;
+}
+.what-card:hover { background: var(--ink2); }
+
+.card-accent {
+  display: inline-block;
+  width: 24px;
+  height: 1.5px;
+  margin-bottom: 1.4rem;
+}
+
+.what-card-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.what-card-b {
+  font-size: 0.84rem;
+  line-height: 1.85;
+  color: var(--text2);
+  font-weight: 300;
+}
+
+/* HOW IT WORKS */
+.how {
+  position: relative;
+  z-index: 5;
+  padding: 0 3rem 9rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  margin-top: 3.5rem;
+}
+
+.step {
+  background: var(--ink2);
+  padding: 2rem 1.8rem;
+}
+
+.step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--border2);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.step-h {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.step-b {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: var(--text2);
+  font-weight: 300;
+}
+
+/* DIMENSIONS */
+.dims-section {
+  position: relative;
+  z-index: 5;
+  padding: 0 3rem 9rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.dims-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin-top: 3rem;
+}
+
+.dim-pill {
+  background: rgba(255,255,255,0.02);
+  border: 0.5px solid var(--border);
+  padding: 0.9rem 1.1rem;
+  font-size: 0.72rem;
+  color: var(--text2);
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+.dim-pill:hover {
+  background: rgba(167,139,250,0.06);
+  border-color: rgba(167,139,250,0.2);
+  color: var(--text);
+}
+
+/* FINAL CTA */
+.final-cta {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 9rem 2rem 10rem;
+  border-top: 0.5px solid var(--border);
+  background: rgba(7,14,27,0.5);
+}
+
+.final-cta-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+.final-cta-h em { font-style: italic; color: var(--violet); }
+
+.final-cta-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text3);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.03em;
+}
+
+.final-cta-tagline span {
+  color: var(--text2);
+}
+
+.final-note {
+  margin-top: 1.2rem;
+  font-size: 0.75rem;
+  color: var(--text3);
+  letter-spacing: 0.05em;
+}
+
+/* FOOTER */
+footer {
+  position: relative;
+  z-index: 5;
+  border-top: 0.5px solid var(--border);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text3);
+  letter-spacing: 0.05em;
+}
+
+.f-note {
+  font-size: 0.68rem;
+  color: var(--text3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links a { display: none; }
+  .stats { grid-template-columns: 1fr; }
+  .stat { border-right: none; border-bottom: 0.5px solid var(--border); }
+  .what, .how, .dims-section { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .what-grid, .steps, .dims-grid { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <a href="#" class="logo">Zoë<em>type</em></a>
+  <div class="nav-links">
+    <a href="#what">What is it</a>
+    <a href="#how">How it works</a>
+    <a href="#dimensions">The dimensions</a>
+    <button class="btn-nav" onclick="document.getElementById('final-cta').scrollIntoView({behavior:'smooth'})">Take the test</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-eyebrow">Nature's framework for self-discovery</div>
+  <h1 class="hero-title">Find the animal<br><em>within</em> you</h1>
+  <p class="hero-body">
+    Zoëtype matches you to one of 1,168 animal species based on 25 dimensions of personality, behavior, and inner life. Every result is a specific creature whose existence mirrors how you actually move through the world.
+  </p>
+  <button class="btn-primary" onclick="document.getElementById('final-cta').scrollIntoView({behavior:'smooth'})">Discover your Zoëtype</button>
+  <p class="hero-time-note">The test takes 30 to 45 minutes. It is free to take.</p>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-cue-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-n">1,168<span>+</span></div>
+    <div class="stat-l">Species in database</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">25</div>
+    <div class="stat-l">Personality dimensions</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">96</div>
+    <div class="stat-l">Questions</div>
+  </div>
+</div>
+
+<!-- WHAT IS IT -->
+<section class="what" id="what">
+  <div class="sec-tag">What is Zoëtype</div>
+  <h2 class="sec-h">A personality framework rooted in the natural world.</h2>
+  <p class="sec-body">
+    Most personality tests sort you into one of a dozen predetermined types. A leader. An empath. An introvert. These categories exist because they are easy to build and easy to market. They are not particularly true.
+  </p>
+  <p class="sec-body">
+    Zoëtype works from a different premise. Every animal on earth evolved a specific way of surviving, relating, processing, and moving through the world. That specificity is real data. Zoëtype uses it to find the species whose behavioral profile most closely matches yours across 25 measurable dimensions.
+  </p>
+  <p class="sec-body">
+    The result is one specific animal out of more than a thousand.
+  </p>
+  <div class="what-grid">
+    <div class="what-card">
+      <div class="card-accent" style="background: var(--cyan);"></div>
+      <div class="what-card-h">Built from real science</div>
+      <div class="what-card-b">Every species is drawn from the Global Biodiversity Information Facility, a database of peer-reviewed biological records. Each one is scored across 25 behavioral dimensions using documented research on how that species actually lives, hunts, bonds, and survives. The match is calculated from that data.</div>
+    </div>
+    <div class="what-card">
+      <div class="card-accent" style="background: var(--violet);"></div>
+      <div class="what-card-h">Specific by design</div>
+      <div class="what-card-b">Other tests pick 12 to 50 familiar animals and build categories around them. Every person who takes those tests lands in one of the same handful of results. Zoëtype draws from 1,168 species and growing. The specificity is the entire point. A result that applies to millions of people tells you nothing about yourself.</div>
+    </div>
+    <div class="what-card">
+      <div class="card-accent" style="background: var(--green);"></div>
+      <div class="what-card-h">A system, not a quiz</div>
+      <div class="what-card-b">Most personality quizzes give you a label and move on. Zoëtype gives you a lens. Understanding your animal opens into questions about how you love, how you work, what drains you, who you are compatible with, and what your shadow is costing you. The animal is where it starts, not where it ends.</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="sec-tag">How it works</div>
+  <h2 class="sec-h">From 96 questions to one specific animal.</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-h">You take the test</div>
+      <div class="step-b">96 questions covering the full range of who you are. The test takes 30 to 45 minutes and is free to complete.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-h">Your profile is scored</div>
+      <div class="step-b">Your answers generate a score across 25 dimensions, including things like cognitive style, attachment pattern, relationship to risk, social architecture, and shadow traits.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-h">The match is found</div>
+      <div class="step-b">Your dimensional profile is compared against 1,168 species, each scored on the same 25 axes. The closest match across all dimensions becomes your Zoëtype.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div class="step-h">You receive your result</div>
+      <div class="step-b">A full portrait of your animal and what it reveals about you. Personality, shadow, ecological role, species facts, and the option to go deeper with the full Zoëtype Report.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DIMENSIONS -->
+<section class="dims-section" id="dimensions">
+  <div class="sec-tag">The 25 dimensions</div>
+  <h2 class="sec-h">What we actually measure.</h2>
+  <p class="sec-body">
+    Each of these dimensions exists on a spectrum. You are scored somewhere along each one. So is every animal in the database. The match is where those spectrums converge.
+  </p>
+  <div class="dims-grid">
+    <div class="dim-pill">Cognitive style</div>
+    <div class="dim-pill">Emotional regulation</div>
+    <div class="dim-pill">Attachment style</div>
+    <div class="dim-pill">Social architecture</div>
+    <div class="dim-pill">Origin &amp; development</div>
+    <div class="dim-pill">Sexuality &amp; intimacy</div>
+    <div class="dim-pill">Institutional orientation</div>
+    <div class="dim-pill">Moral orientation</div>
+    <div class="dim-pill">Relationship to resources</div>
+    <div class="dim-pill">Biological rhythms</div>
+    <div class="dim-pill">Aspiration &amp; drive</div>
+    <div class="dim-pill">Relationship to time</div>
+    <div class="dim-pill">Creativity &amp; play</div>
+    <div class="dim-pill">Relationship to beauty</div>
+    <div class="dim-pill">Transformation</div>
+    <div class="dim-pill">Curiosity &amp; knowledge</div>
+    <div class="dim-pill">Physicality &amp; embodiment</div>
+    <div class="dim-pill">The shadow</div>
+    <div class="dim-pill">Relationship to mortality</div>
+    <div class="dim-pill">Legacy orientation</div>
+    <div class="dim-pill">Ecological role</div>
+    <div class="dim-pill">Camouflage vs display</div>
+    <div class="dim-pill">Social legibility</div>
+    <div class="dim-pill">Spirituality &amp; transcendence</div>
+    <div class="dim-pill">Nurturing instinct</div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="final-cta">
+  <h2 class="final-cta-h">Your animal is<br>in here <em>somewhere.</em></h2>
+  <div class="final-cta-tagline">
+    <span>1,168 species.</span> &nbsp;·&nbsp; <span>25 dimensions.</span> &nbsp;·&nbsp; <span>One result that is genuinely specific to you.</span>
+  </div>
+  <button class="btn-primary">Begin the test</button>
+  <p class="final-note">Free to take &nbsp;·&nbsp; Results delivered immediately &nbsp;·&nbsp; 30 to 45 minutes</p>
+</section>
+
+<footer>
+  <div class="f-logo">Zoëtype</div>
+  <div class="f-note">© 2026 &nbsp;·&nbsp; Built on science, not archetypes</div>
+</footer>
+
+<script>
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+let W, H, tick = 0;
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+const glows = [
+  { x: 0.12, y: 0.15, r: 420, col: 'rgba(0,232,255,' },
+  { x: 0.88, y: 0.45, r: 360, col: 'rgba(167,139,250,' },
+  { x: 0.45, y: 0.82, r: 300, col: 'rgba(0,255,163,' },
+];
+
+const particles = [];
+for (let i = 0; i < 90; i++) {
+  particles.push({
+    x: Math.random() * 1920,
+    y: Math.random() * 1080,
+    r: Math.random() * 1.3 + 0.2,
+    vx: (Math.random() - 0.5) * 0.1,
+    vy: (Math.random() - 0.5) * 0.09,
+    age: Math.floor(Math.random() * 300),
+    maxAge: 200 + Math.random() * 250,
+    col: ['rgba(0,232,255,', 'rgba(167,139,250,', 'rgba(0,255,163,'][Math.floor(Math.random() * 3)]
+  });
+}
+
+function makeTendril() {
+  return {
+    pts: [],
+    x: Math.random() * 1920,
+    y: 1080 + 30,
+    angle: -Math.PI / 2 + (Math.random() - 0.5) * 0.65,
+    speed: 0.18 + Math.random() * 0.22,
+    maxPts: 22 + Math.floor(Math.random() * 18),
+    age: 0,
+    maxAge: 280 + Math.random() * 320,
+    col: ['rgba(0,232,255,', 'rgba(167,139,250,', 'rgba(0,255,163,'][Math.floor(Math.random() * 3)],
+    w: 0.25 + Math.random() * 0.4
+  };
+}
+
+const tendrils = [];
+for (let i = 0; i < 7; i++) {
+  const t = makeTendril();
+  t.age = Math.floor(Math.random() * t.maxAge);
+  tendrils.push(t);
+}
+
+function loop() {
+  ctx.clearRect(0, 0, W, H);
+  tick++;
+
+  glows.forEach((g, i) => {
+    const a = Math.sin(tick * 0.007 + i * 2.1) * 0.025 + 0.04;
+    const px = g.x * W;
+    const py = g.y * H;
+    const grad = ctx.createRadialGradient(px, py, 0, px, py, g.r);
+    grad.addColorStop(0, g.col + a + ')');
+    grad.addColorStop(1, g.col + '0)');
+    ctx.beginPath();
+    ctx.arc(px, py, g.r, 0, Math.PI * 2);
+    ctx.fillStyle = grad;
+    ctx.fill();
+  });
+
+  tendrils.forEach((t, idx) => {
+    t.age++;
+    if (t.age > t.maxAge) { tendrils[idx] = makeTendril(); return; }
+    t.angle += (Math.random() - 0.5) * 0.038;
+    t.x += Math.cos(t.angle) * t.speed;
+    t.y += Math.sin(t.angle) * t.speed;
+    t.pts.push({ x: t.x, y: t.y });
+    if (t.pts.length > t.maxPts) t.pts.shift();
+    if (t.pts.length < 2) return;
+    const a = Math.sin((t.age / t.maxAge) * Math.PI) * 0.22;
+    ctx.beginPath();
+    ctx.moveTo(t.pts[0].x, t.pts[0].y);
+    for (let i = 1; i < t.pts.length; i++) ctx.lineTo(t.pts[i].x, t.pts[i].y);
+    ctx.strokeStyle = t.col + a + ')';
+    ctx.lineWidth = t.w;
+    ctx.stroke();
+  });
+
+  particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy; p.age++;
+    if (p.age > p.maxAge || p.x < 0 || p.x > W || p.y < 0 || p.y > H) {
+      p.x = Math.random() * W;
+      p.y = Math.random() * H;
+      p.age = 0;
+      p.maxAge = 200 + Math.random() * 250;
+    }
+    const a = Math.sin((p.age / p.maxAge) * Math.PI) * 0.45;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = p.col + a + ')';
+    ctx.fill();
+  });
+
+  requestAnimationFrame(loop);
+}
+loop();
+</script>
+</body>
+</html>
