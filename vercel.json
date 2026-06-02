@@ -1,4 +1,26 @@
 {
   "version": 2,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/api/match",
+      "dest": "/api/match.js"
+    },
+    {
+      "src": "/quiz",
+      "dest": "/quiz.html"
+    },
+    {
+      "src": "/result",
+      "dest": "/result.html"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
 }
