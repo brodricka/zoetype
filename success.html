@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoëtype — Report on its way</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#03070e;--cyan:#00e8ff;--violet:#a78bfa;--green:#00ffa3;--text:#e2e8f5;--text2:#8896b0;--text3:#4a5570;--border:rgba(255,255,255,0.07)}
+body{background:var(--ink);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;}
+#bg-canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.success-wrap{position:relative;z-index:5;text-align:center;max-width:560px;}
+.success-icon{font-size:3rem;margin-bottom:2rem;animation:float 3s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.success-eyebrow{font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--green);margin-bottom:1.2rem;}
+.success-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:300;line-height:1.2;color:var(--text);margin-bottom:1rem;}
+.success-body{font-size:0.95rem;line-height:1.85;color:var(--text2);margin-bottom:2.5rem;}
+.success-note{font-size:0.78rem;color:var(--text3);margin-bottom:2.5rem;padding:1.2rem 1.5rem;border:0.5px solid var(--border);background:rgba(255,255,255,0.02);}
+.btn-home{display:inline-block;background:transparent;color:var(--cyan);border:0.5px solid var(--cyan);padding:0.85rem 2.5rem;font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;text-decoration:none;}
+.btn-home:hover{background:var(--cyan);color:var(--ink);}
+</style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="success-wrap">
+  <div class="success-icon">◈</div>
+  <div class="success-eyebrow">Payment confirmed</div>
+  <h1 class="success-h">Your full report is on its way.</h1>
+  <p class="success-body">Check your email. Your complete Zoëtype Report — fifteen pages written for you alone — will arrive within the next few minutes.</p>
+  <div class="success-note">If you don't see it in your inbox within five minutes, check your spam folder. If it's still not there, email us at hello@zoetype.com and we'll sort it out immediately.</div>
+  <a href="/" class="btn-home">Back to Zoëtype</a>
+</div>
+<script>
+const canvas=document.getElementById('bg-canvas'),ctx=canvas.getContext('2d');let W,H,tick=0;
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}resize();window.addEventListener('resize',resize);
+const glows=[{x:.08,y:.2,r:380,col:'rgba(0,232,255,'},{x:.92,y:.5,r:320,col:'rgba(167,139,250,'},{x:.5,y:.9,r:280,col:'rgba(0,255,163,'}];
+const pts=[];for(let i=0;i<60;i++)pts.push({x:Math.random()*1920,y:Math.random()*1080,r:Math.random()*1.1+.2,vx:(Math.random()-.5)*.08,vy:(Math.random()-.5)*.07,age:Math.floor(Math.random()*300),maxAge:200+Math.random()*250,col:['rgba(0,232,255,','rgba(167,139,250,','rgba(0,255,163,'][Math.floor(Math.random()*3)]});
+function bgLoop(){ctx.clearRect(0,0,W,H);tick++;glows.forEach((g,i)=>{const a=Math.sin(tick*.007+i*2.1)*.02+.035,px=g.x*W,py=g.y*H,gr=ctx.createRadialGradient(px,py,0,px,py,g.r);gr.addColorStop(0,g.col+a+')');gr.addColorStop(1,g.col+'0)');ctx.beginPath();ctx.arc(px,py,g.r,0,Math.PI*2);ctx.fillStyle=gr;ctx.fill();});pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.age++;if(p.age>p.maxAge||p.x<0||p.x>W||p.y<0||p.y>H){p.x=Math.random()*W;p.y=Math.random()*H;p.age=0;p.maxAge=200+Math.random()*250;}const a=Math.sin((p.age/p.maxAge)*Math.PI)*.4;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=p.col+a+')';ctx.fill();});requestAnimationFrame(bgLoop);}bgLoop();
+</script>
+</body>
+</html>

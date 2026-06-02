@@ -507,7 +507,7 @@ footer{
     </div>
     <div class="cta-price-label">Full Zoëtype Report</div>
     <div class="cta-price"><sup>$</sup>12</div>
-    <button class="btn-cta">Get my full report</button>
+    <button class="btn-cta" id="btn-report" onclick="startCheckout()">Get my full report</button>
     <div class="cta-note">Delivered instantly by email &nbsp;·&nbsp; PDF &nbsp;·&nbsp; Written for you alone</div>
   </div>
 
@@ -750,6 +750,41 @@ async function startReveal() {
   // Fade out reveal, show result body
   reveal.classList.add('hide');
   showResultBody();
+}
+
+async function startCheckout() {
+  const btn = document.getElementById('btn-report');
+  btn.textContent = 'Loading...';
+  btn.style.opacity = '0.7';
+  btn.disabled = true;
+
+  const userData = JSON.parse(sessionStorage.getItem('zoetype_user') || '{}');
+  const animal = RESULT?.animal || {};
+
+  try {
+    const response = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: userData.email || '',
+        firstName: userData.firstName || '',
+        animalName: animal.common_name || '',
+        scientificName: animal.scientific_name || '',
+      }),
+    });
+
+    const data = await response.json();
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      throw new Error('No checkout URL');
+    }
+  } catch(e) {
+    console.error('Checkout error:', e);
+    btn.textContent = 'Get my full report';
+    btn.style.opacity = '1';
+    btn.disabled = false;
+  }
 }
 
 document.getElementById('result-body').style.display = 'none';
