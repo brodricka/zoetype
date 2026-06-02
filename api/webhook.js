@@ -98,7 +98,8 @@ ABSOLUTE WRITING RULES:
 - No vague profundity. Every sentence lands something specific.
 - Write like a sharp, compassionate observer who knows this animal deeply and sees this person clearly.
 - Short sentences hit harder than long ones.
-- Address ${firstName} by name occasionally but not constantly.
+- Write entirely in second person. "You" is the default throughout.
+- Use ${firstName}'s name sparingly — two or three times across the whole report — as a direct address only. "Brandon, you carry something of this." Never as a third-person subject. Never "Brandon does" or "Brandon is" or "Brandon feels." Always "you do" or "you are" or "you feel." The name punctuates; it does not narrate.
 
 STRUCTURE — write all 8 sections in full:
 
