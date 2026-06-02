@@ -5,7 +5,10 @@
 
 const { createClient } = require('@supabase/supabase-js');
 const Anthropic = require('@anthropic-ai/sdk');
+const { Resend } = require('resend');
 const { scoreAnswers, buildMatchVector, cosineSimilarity, MATCH_COLUMNS } = require('../scoring');
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
@@ -95,7 +98,21 @@ module.exports = async function handler(req, res) {
     // STEP 6: Generate personalized portrait using Claude
     const portrait = await generatePortrait(bestMatch, dimScores, userVector);
 
-    // STEP 7: Return full result
+    // STEP 7: Send result email if user provided email
+    if (user && user.email) {
+      const firstName = user.firstName || 'there';
+      const animalName = bestMatch.common_name || bestMatch.scientific_name;
+      const emailHtml = buildResultEmail(firstName, animalName, bestMatch.scientific_name, portrait, photoUrl);
+      
+      resend.emails.send({
+        from: 'Zoëtype <onboarding@resend.dev>',
+        to: user.email,
+        subject: `Your Zoëtype result: ${animalName}`,
+        html: emailHtml,
+      }).catch(err => console.error('Email error:', err));
+    }
+
+    // STEP 8: Return full result
     return res.status(200).json({
       user_first_name: user?.firstName || null,
       animal: {
@@ -260,6 +277,97 @@ Respond ONLY in this exact JSON format with no markdown, no backticks, no preamb
     };
   }
 }
+
+function buildResultEmail(firstName, animalName, scientificName, portrait, photoUrl) {
+  const paragraphs = portrait.paragraphs || [];
+  const shadow = portrait.shadow || '';
+  const funFact = portrait.fun_fact || '';
+  const photoHtml = photoUrl 
+    ? `<img src="${photoUrl}" alt="${animalName}" style="width:100%;max-height:400px;object-fit:cover;display:block;margin-bottom:32px;">`
+    : '';
+
+  return `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body style="margin:0;padding:0;background:#03070e;font-family:'Georgia',serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#03070e;">
+  <tr><td align="center" style="padding:40px 20px;">
+    <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+      
+      <!-- Header -->
+      <tr><td style="padding:0 0 32px 0;border-bottom:1px solid rgba(255,255,255,0.07);">
+        <p style="margin:0;font-family:'Georgia',serif;font-size:18px;color:#e2e8f5;letter-spacing:0.06em;">Zoë<em style="color:#00e8ff;">type</em></p>
+      </td></tr>
+
+      <!-- Eyebrow -->
+      <tr><td style="padding:40px 0 8px 0;">
+        <p style="margin:0;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:#4a5570;font-family:'Helvetica Neue',sans-serif;">Your Zoëtype</p>
+      </td></tr>
+
+      <!-- Animal Name -->
+      <tr><td style="padding:0 0 4px 0;">
+        <h1 style="margin:0;font-family:'Georgia',serif;font-size:52px;font-weight:300;color:#e2e8f5;line-height:1;">${animalName}</h1>
+      </td></tr>
+
+      <!-- Scientific Name -->
+      <tr><td style="padding:0 0 32px 0;">
+        <p style="margin:0;font-size:14px;font-style:italic;color:#4a5570;font-family:'Georgia',serif;">${scientificName}</p>
+      </td></tr>
+
+      <!-- Photo -->
+      <tr><td>${photoHtml}</td></tr>
+
+      <!-- Portrait -->
+      ${paragraphs.map(p => `
+      <tr><td style="padding:0 0 24px 0;">
+        <p style="margin:0;font-family:'Georgia',serif;font-size:18px;font-weight:300;line-height:1.85;color:#8896b0;">${p}</p>
+      </td></tr>`).join('')}
+
+      <!-- Divider -->
+      <tr><td style="padding:16px 0 32px 0;">
+        <div style="width:40px;height:1px;background:rgba(255,112,200,0.4);"></div>
+      </td></tr>
+
+      <!-- Shadow -->
+      <tr><td style="padding:0 0 8px 0;">
+        <p style="margin:0;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#ff70c8;font-family:'Helvetica Neue',sans-serif;">Shadow trait</p>
+      </td></tr>
+      <tr><td style="padding:0 0 32px 0;">
+        <p style="margin:0;font-family:'Georgia',serif;font-size:17px;font-weight:300;line-height:1.85;color:#8896b0;font-style:italic;">${shadow}</p>
+      </td></tr>
+
+      <!-- Fun Fact -->
+      <tr><td style="padding:24px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.07);margin-bottom:40px;">
+        <p style="margin:0 0 8px 0;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#00e8ff;font-family:'Helvetica Neue',sans-serif;">Species fact</p>
+        <p style="margin:0;font-size:15px;line-height:1.85;color:#8896b0;font-family:'Georgia',serif;">${funFact}</p>
+      </td></tr>
+
+      <!-- Spacer -->
+      <tr><td style="padding:8px 0;"></td></tr>
+
+      <!-- CTA -->
+      <tr><td style="padding:40px;background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.15);text-align:center;">
+        <p style="margin:0 0 8px 0;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#a78bfa;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report</p>
+        <h2 style="margin:0 0 16px 0;font-family:'Georgia',serif;font-size:28px;font-weight:300;color:#e2e8f5;line-height:1.3;">There are things this email does not tell you.</h2>
+        <p style="margin:0 0 24px 0;font-size:15px;line-height:1.8;color:#8896b0;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report covers what you do with it. Fifteen pages written from your answers and your animal alone. How you love. How you work. What restores you and what depletes you.</p>
+        <a href="https://zoetype.vercel.app" style="display:inline-block;background:#00e8ff;color:#03070e;text-decoration:none;padding:14px 36px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;">Get my full report — $12</a>
+      </td></tr>
+
+      <!-- Footer -->
+      <tr><td style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.07);margin-top:40px;">
+        <p style="margin:0;font-size:12px;color:#4a5570;font-family:'Helvetica Neue',sans-serif;">Zoëtype &nbsp;·&nbsp; Built on science, not archetypes &nbsp;·&nbsp; <a href="https://zoetype.vercel.app" style="color:#4a5570;">zoetype.vercel.app</a></p>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>`;
+}
+
 
 // Note: Run this SQL in Supabase to create the users table:
 // CREATE TABLE IF NOT EXISTS zoetype_users (
