@@ -1,5 +1,16 @@
 {
   "version": 2,
+  "outputDirectory": ".",
+  "builds": [
+    {
+      "src": "api/match.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
       "src": "/api/match",
