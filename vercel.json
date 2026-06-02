@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/match.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "routes": [
     {
       "src": "/api/match",
@@ -21,10 +16,6 @@
     {
       "src": "/result",
       "dest": "/result.html"
-    },
-    {
-      "src": "/(.*\\.(js|json|css))",
-      "dest": "/$1"
     },
     {
       "src": "/(.*)",
