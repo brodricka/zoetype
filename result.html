@@ -393,7 +393,7 @@ footer{
   <div class="reveal-bg" id="reveal-bg"></div>
   <div class="reveal-glow"></div>
   <div class="reveal-content">
-    <div class="reveal-eyebrow">Your Zoëtype</div>
+    <div class="reveal-eyebrow" id="reveal-eyebrow">Your Zoëtype</div>
     <div class="reveal-animal-name" id="reveal-name">Sea Otter</div>
     <div class="reveal-sci" id="reveal-sci">Enhydra lutris</div>
     <div class="reveal-rarity" id="reveal-rarity">IUCN: Endangered · North Pacific</div>
@@ -585,8 +585,13 @@ function renderResult(data) {
   const animal = data.animal;
   const emoji = getEmoji(animal.class);
 
+  const userData = JSON.parse(sessionStorage.getItem('zoetype_user') || '{}');
+  const firstName = data.user_first_name || userData.firstName || null;
   document.getElementById('reveal-name').textContent = animal.common_name;
   document.getElementById('reveal-sci').textContent = animal.scientific_name;
+  if (firstName) {
+    document.getElementById('reveal-eyebrow').textContent = firstName + ', your Zoëtype is';
+  }
   if (animal.iucn) {
     document.getElementById('reveal-rarity').textContent = 'IUCN: ' + animal.iucn;
     document.getElementById('reveal-rarity').style.display = 'inline-block';
@@ -651,10 +656,11 @@ async function loadResult() {
 
   if (answers && Object.keys(answers).length > 10) {
     try {
+      const userData = JSON.parse(sessionStorage.getItem('zoetype_user') || '{}');
       const response = await fetch('/api/match', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ answers }),
+        body: JSON.stringify({ answers, user: userData }),
       });
       if (response.ok) {
         const data = await response.json();
@@ -726,8 +732,13 @@ async function startReveal() {
   renderResult(data);
 
   const animal = data.animal;
+  const userData = JSON.parse(sessionStorage.getItem('zoetype_user') || '{}');
+  const firstName = data.user_first_name || userData.firstName || null;
   document.getElementById('reveal-name').textContent = animal.common_name;
   document.getElementById('reveal-sci').textContent = animal.scientific_name;
+  if (firstName) {
+    document.getElementById('reveal-eyebrow').textContent = firstName + ', your Zoëtype is';
+  }
   if (animal.iucn) {
     document.getElementById('reveal-rarity').textContent = 'IUCN: ' + animal.iucn;
     document.getElementById('reveal-rarity').style.display = 'inline-block';

@@ -74,6 +74,21 @@ module.exports = async function handler(req, res) {
       return res.status(500).json({ error: 'No match found' });
     }
 
+    // STEP 4b: Save user data if provided
+    const { user } = req.body;
+    if (user && user.email) {
+      await supabase.from('zoetype_users').insert({
+        first_name: user.firstName || null,
+        email: user.email,
+        age_range: user.age || null,
+        gender: user.gender || null,
+        animal_matched: bestMatch.scientific_name,
+        match_score: Math.round(bestScore * 100),
+      }).then(({ error }) => {
+        if (error) console.error('User save error:', error);
+      });
+    }
+
     // STEP 5: Get animal photo from GBIF
     const photoUrl = await getAnimalPhoto(bestMatch.scientific_name);
 
@@ -82,6 +97,7 @@ module.exports = async function handler(req, res) {
 
     // STEP 7: Return full result
     return res.status(200).json({
+      user_first_name: user?.firstName || null,
       animal: {
         scientific_name: bestMatch.scientific_name,
         common_name: bestMatch.common_name || formatScientificName(bestMatch.scientific_name),
@@ -244,3 +260,15 @@ Respond ONLY in this exact JSON format with no markdown, no backticks, no preamb
     };
   }
 }
+
+// Note: Run this SQL in Supabase to create the users table:
+// CREATE TABLE IF NOT EXISTS zoetype_users (
+//   id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+//   first_name text,
+//   email text,
+//   age_range text,
+//   gender text,
+//   animal_matched text,
+//   match_score integer,
+//   created_at timestamptz DEFAULT now()
+// );
