@@ -177,25 +177,38 @@ async function generatePortrait(animal, dimScores, userVector) {
     .map(([dim, score]) => `${dim.replace(/_/g, ' ')}: ${score > 0 ? '+' : ''}${score.toFixed(2)}`)
     .join(', ');
 
-  const prompt = `You are writing the result for someone who just completed the Zoëtype personality test. They have been matched to the ${animalName} (${animal.scientific_name}).
+  const prompt = `You are writing a personality result for someone matched to the ${animalName} (${animal.scientific_name}) by the Zoëtype system.
 
-Their top dimensional scores: ${topDims}
+ANIMAL DATA:
+- Ecological role: ${ecologicalRole}
+- Shadow behavior: ${shadowText}
+- Species fact: ${funFact}
+- Top dimensions: ${topDims}
 
-The ${animalName}'s ecological role: ${ecologicalRole}
-Known shadow behavior: ${shadowText}
-Known species fact: ${funFact}
+WRITING RULES — these are absolute, not guidelines:
+- No em dashes anywhere. Use periods or commas instead.
+- No "not X — Y" constructions ever.
+- No "you likely," "you may," "something of this," "a kind of," "in a way," "perhaps."
+- No dimension score names in the portrait text. Never say "your cognitive score" or "your attachment score."
+- No reaching for profundity. If a sentence sounds deep but vague, cut it.
+- No sentences that gesture at meaning without landing something specific.
+- Every psychological observation must be grounded in a specific biological fact about this animal.
+- Write like a sharp journalist who has spent years studying this animal and genuinely sees this person clearly.
+- Short sentences hit harder than long ones.
+- Trust the animal. The biology is interesting enough on its own.
 
-Write a personalized result for this person. Use the animal as the lens throughout — every insight should connect back to how this specific animal actually lives, behaves, and survives. Never make a psychological observation without grounding it in the animal's real biology or behavior.
+PORTRAIT — three paragraphs:
+Paragraph 1: Open with a specific biological fact about this animal that immediately reframes how the reader sees themselves. Make it land in the first sentence. Do not build to it. Three to four sentences.
+Paragraph 2: Go into how this animal processes its world — how it hunts, bonds, navigates, or survives — and connect that directly to how this person functions. Be specific about the animal. Be specific about the person. Four to five sentences.
+Paragraph 3: The ecological significance of this animal. What happens to its ecosystem without it. Connect this directly to what this person does in the systems around them. Do not explain. Just state it. Three to four sentences.
 
-Write three paragraphs for the portrait. Each paragraph should be 3-5 sentences. The first paragraph should be the strongest opening — it should stop the person in their tracks. The second should go deeper into how they process and connect. The third should connect them to the animal's ecological significance.
+SHADOW — one paragraph:
+What is the dark side of this animal's defining trait. What does this animal do that is uncomfortable or destructive. Connect it to the person without softening it. This is not a flaw. It is the cost of their gift. Three to four sentences.
 
-Then write one paragraph for the shadow trait — what darkness lives in this animal's nature, and what that reveals about this person. Be honest and specific. Do not soften it.
+SPECIES FACT — one paragraph:
+One true, striking, specific fact about this animal that lands as a revelation about the person. The fact should recontextualize something about how they live. End it with a sentence that makes the connection explicit. Three sentences maximum.
 
-Then write one species fact paragraph — something true and striking about this animal that lands as a revelation about the person reading it.
-
-Write in plain human voice. No em dashes. No "not X — Y" constructions. No AI-sounding sentence structures. Write like someone who genuinely knows this animal and genuinely sees this person.
-
-Respond only in this JSON format with no markdown:
+Respond ONLY in this exact JSON format with no markdown, no backticks, no preamble:
 {
   "paragraphs": ["paragraph 1", "paragraph 2", "paragraph 3"],
   "shadow": "shadow paragraph",
