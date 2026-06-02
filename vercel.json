@@ -29,6 +29,10 @@
       "dest": "/api/webhook.js"
     },
     {
+      "src": "/api/checkout-email",
+      "dest": "/api/checkout-email.js"
+    },
+    {
       "src": "/",
       "dest": "/index.html"
     },

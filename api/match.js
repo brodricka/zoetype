@@ -80,6 +80,7 @@ module.exports = async function handler(req, res) {
     // STEP 4b: Save user data if provided
     const { user } = req.body;
     if (user && user.email) {
+      // Save to users table
       await supabase.from('zoetype_users').insert({
         first_name: user.firstName || null,
         email: user.email,
@@ -97,6 +98,40 @@ module.exports = async function handler(req, res) {
 
     // STEP 6: Generate personalized portrait using Claude
     const portrait = await generatePortrait(bestMatch, dimScores, userVector);
+
+    // STEP 6b: Save full result to sessions table for email checkout
+    if (user && user.email) {
+      await supabase.from('zoetype_sessions').insert({
+        email: user.email,
+        first_name: user.firstName || null,
+        animal_name: bestMatch.common_name || bestMatch.scientific_name,
+        scientific_name: bestMatch.scientific_name,
+        photo_url: photoUrl || null,
+        portrait: portrait,
+        shadow: portrait.shadow || null,
+        fun_fact: portrait.fun_fact || null,
+        answers: req.body.answers || null,
+      }).then(({ error }) => {
+        if (error) console.error('Session save error:', error);
+      });
+    }
+
+    // STEP 6b: Save full result to sessions table for email checkout link
+    if (user && user.email) {
+      supabase.from('zoetype_sessions').insert({
+        email: user.email,
+        first_name: user.firstName || null,
+        animal_name: bestMatch.common_name || bestMatch.scientific_name,
+        scientific_name: bestMatch.scientific_name,
+        photo_url: photoUrl || null,
+        portrait: portrait,
+        shadow: portrait.shadow || null,
+        fun_fact: portrait.fun_fact || null,
+        answers: req.body.answers || null,
+      }).then(({ error }) => {
+        if (error) console.error('Session save error:', error);
+      });
+    }
 
     // STEP 7: Send result email if user provided email
     if (user && user.email) {
@@ -387,7 +422,7 @@ function buildResultEmail(firstName, animalName, scientificName, portrait, photo
         <p style="margin:0 0 8px 0;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#a78bfa;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report</p>
         <h2 style="margin:0 0 16px 0;font-family:'Georgia',serif;font-size:28px;font-weight:300;color:#e2e8f5;line-height:1.3;">There are things this email does not tell you.</h2>
         <p style="margin:0 0 24px 0;font-size:15px;line-height:1.8;color:#8896b0;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report covers what you do with it. Fifteen pages written from your answers and your animal alone. How you love. How you work. What restores you and what depletes you.</p>
-        <a href="https://zoetype.vercel.app" style="display:inline-block;background:#00e8ff;color:#03070e;text-decoration:none;padding:14px 36px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;">Get my full report — $12</a>
+        <a href="https://zoetype.vercel.app/api/checkout-email?email=${encodeURIComponent(user.email)}" style="display:inline-block;background:#00e8ff;color:#03070e;text-decoration:none;padding:14px 36px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;">Get my full report — $12</a>
       </td></tr>
 
       <!-- Footer -->
