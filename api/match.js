@@ -140,7 +140,7 @@ module.exports = async function handler(req, res) {
       const emailHtml = buildResultEmail(firstName, animalName, bestMatch.scientific_name, portrait, photoUrl, user.email);
       
       resend.emails.send({
-        from: 'Zoëtype <onboarding@resend.dev>',
+        from: 'Zoëtype <hello@zoetype.app>',
         to: user.email,
         subject: `Your Zoëtype result: ${animalName}`,
         html: emailHtml,

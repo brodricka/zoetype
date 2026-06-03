@@ -228,7 +228,7 @@ async function sendReportEmail(session, report) {
 </html>`;
 
   await resend.emails.send({
-    from: 'Zoëtype <onboarding@resend.dev>',
+    from: 'Zoëtype <hello@zoetype.app>',
     to: session.email,
     subject: `Your full Zoëtype Report: ${animalName}`,
     html,
