@@ -178,7 +178,7 @@ async function getAnimalPhoto(scientificName) {
     // Use iNaturalist taxa API — returns community-verified wildlife photos
     const url = `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(scientificName)}&per_page=1&rank=species`;
     const res = await fetch(url, {
-      headers: { 'User-Agent': 'Zoetype/1.0 (zoetype.vercel.app)' }
+      headers: { 'User-Agent': 'Zoetype/1.0 (zoetype.app)' }
     });
     const data = await res.json();
 
@@ -390,12 +390,12 @@ function buildResultEmail(firstName, animalName, scientificName, portrait, photo
         <p style="margin:0 0 8px 0;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#a78bfa;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report</p>
         <h2 style="margin:0 0 16px 0;font-family:'Georgia',serif;font-size:28px;font-weight:300;color:#e2e8f5;line-height:1.3;">There are things this email does not tell you.</h2>
         <p style="margin:0 0 24px 0;font-size:15px;line-height:1.8;color:#8896b0;font-family:'Helvetica Neue',sans-serif;">The full Zoëtype Report covers what you do with it. Fifteen pages written from your answers and your animal alone. How you love. How you work. What restores you and what depletes you.</p>
-        <a href="https://zoetype.vercel.app/api/checkout-email?email=${encodeURIComponent(userEmail)}" style="display:inline-block;background:#00e8ff;color:#03070e;text-decoration:none;padding:14px 36px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;">Get my full report — $12</a>
+        <a href="https://zoetype.app/api/checkout-email?email=${encodeURIComponent(userEmail)}" style="display:inline-block;background:#00e8ff;color:#03070e;text-decoration:none;padding:14px 36px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif;">Get my full report — $12</a>
       </td></tr>
 
       <!-- Footer -->
       <tr><td style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.07);margin-top:40px;">
-        <p style="margin:0;font-size:12px;color:#4a5570;font-family:'Helvetica Neue',sans-serif;">Zoëtype &nbsp;·&nbsp; Built on science, not archetypes &nbsp;·&nbsp; <a href="https://zoetype.vercel.app" style="color:#4a5570;">zoetype.vercel.app</a></p>
+        <p style="margin:0;font-size:12px;color:#4a5570;font-family:'Helvetica Neue',sans-serif;">Zoëtype &nbsp;·&nbsp; Built on science, not archetypes &nbsp;·&nbsp; <a href="https://zoetype.app" style="color:#4a5570;">zoetype.app</a></p>
       </td></tr>
 
     </table>

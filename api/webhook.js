@@ -218,7 +218,7 @@ async function sendReportEmail(session, report) {
       </td></tr>
 
       <tr><td style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.07);margin-top:40px;">
-        <p style="margin:0;font-size:12px;color:#4a5570;font-family:'Helvetica Neue',sans-serif;">Zoëtype &nbsp;·&nbsp; Built on science, not archetypes &nbsp;·&nbsp; <a href="https://zoetype.vercel.app" style="color:#4a5570;">zoetype.vercel.app</a></p>
+        <p style="margin:0;font-size:12px;color:#4a5570;font-family:'Helvetica Neue',sans-serif;">Zoëtype &nbsp;·&nbsp; Built on science, not archetypes &nbsp;·&nbsp; <a href="https://zoetype.app" style="color:#4a5570;">zoetype.app</a></p>
       </td></tr>
 
     </table>

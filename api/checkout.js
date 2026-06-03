@@ -30,8 +30,8 @@ module.exports = async function handler(req, res) {
         scientificName: scientificName || '',
         email: email || '',
       },
-      success_url: `https://zoetype.vercel.app/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `https://zoetype.vercel.app/result`,
+      success_url: `https://zoetype.app/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `https://zoetype.app/result`,
     });
 
     // Save full session data to Supabase keyed to Stripe session ID

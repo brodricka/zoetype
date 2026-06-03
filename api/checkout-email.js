@@ -45,8 +45,8 @@ module.exports = async function handler(req, res) {
         email: email,
         existing_session_id: session.id,
       },
-      success_url: `https://zoetype.vercel.app/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `https://zoetype.vercel.app/result`,
+      success_url: `https://zoetype.app/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `https://zoetype.app/result`,
     });
 
     // Update the session with the new Stripe session ID
