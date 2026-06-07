@@ -2,6 +2,9 @@
 // POST /api/webhook
 // Handles payment.succeeded — generates PDF report and emails it
 
+// Tell Vercel Pro to allow up to 300 seconds for this function
+module.exports.config = { maxDuration: 300 };
+
 const Stripe = require('stripe');
 const { createClient } = require('@supabase/supabase-js');
 const Anthropic = require('@anthropic-ai/sdk');

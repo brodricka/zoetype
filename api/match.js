@@ -1,5 +1,8 @@
 // ZOETYPE MATCHING ENGINE
 // Vercel serverless function — POST /api/match
+
+// Tell Vercel Pro to allow up to 300 seconds for this function
+module.exports.config = { maxDuration: 300 };
 // Body: { answers: { questionId: answerValue, ... } }
 // Returns: { animal, portrait, shadow, fun_fact, dimensions }
 
