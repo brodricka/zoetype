@@ -1,6 +1,12 @@
 {
   "version": 2,
   "outputDirectory": ".",
+  "functions": {
+    "api/match.js": { "maxDuration": 300 },
+    "api/webhook.js": { "maxDuration": 300 },
+    "api/checkout.js": { "maxDuration": 60 },
+    "api/checkout-email.js": { "maxDuration": 60 }
+  },
   "builds": [
     {
       "src": "api/*.js",
