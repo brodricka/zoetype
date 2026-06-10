@@ -7,56 +7,15 @@
     "api/checkout.js": { "maxDuration": 60 },
     "api/checkout-email.js": { "maxDuration": 60 }
   },
-  "builds": [
-    {
-      "src": "api/*.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "scoring.js",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
-    {
-      "src": "/api/match",
-      "dest": "/api/match.js"
-    },
-    {
-      "src": "/api/checkout",
-      "dest": "/api/checkout.js"
-    },
-    {
-      "src": "/api/webhook",
-      "dest": "/api/webhook.js"
-    },
-    {
-      "src": "/api/checkout-email",
-      "dest": "/api/checkout-email.js"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/quiz",
-      "dest": "/quiz.html"
-    },
-    {
-      "src": "/result",
-      "dest": "/result.html"
-    },
-    {
-      "src": "/success",
-      "dest": "/success.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "/api/match", "dest": "/api/match.js" },
+    { "src": "/api/checkout", "dest": "/api/checkout.js" },
+    { "src": "/api/webhook", "dest": "/api/webhook.js" },
+    { "src": "/api/checkout-email", "dest": "/api/checkout-email.js" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/quiz", "dest": "/quiz.html" },
+    { "src": "/result", "dest": "/result.html" },
+    { "src": "/success", "dest": "/success.html" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
