@@ -838,111 +838,60 @@ async function downloadResult() {
   const animal = RESULT?.animal || {};
   const animalName = animal.common_name || 'Your Animal';
   const sciName = animal.scientific_name || '';
-  const portrait = RESULT?.portrait?.[0] || '';
+  const portrait = RESULT?.portrait || [];
+  const shadow = RESULT?.shadow || '';
   const emoji = getEmoji(animal.class);
+  const photoUrl = animal.photo_url || null;
 
-  const canvas = document.createElement('canvas');
-  canvas.width = 1080;
-  canvas.height = 1080;
-  const ctx = canvas.getContext('2d');
+  const p1 = portrait[0] || '';
+  const p2 = portrait[1] || '';
 
-  // Dark background
-  ctx.fillStyle = '#03070e';
-  ctx.fillRect(0, 0, 1080, 1080);
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Zoëtype — ${animalName}</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#03070e;color:#e2e8f5;font-family:'DM Sans',sans-serif;font-weight:300;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px;}
+.card{max-width:680px;width:100%;background:rgba(255,255,255,0.02);border:0.5px solid rgba(255,255,255,0.08);padding:56px;}
+.eyebrow{font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#00e8ff;margin-bottom:20px;}
+.emoji{font-size:80px;margin-bottom:24px;display:block;}
+.name{font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;line-height:1;color:#e2e8f5;margin-bottom:8px;}
+.sci{font-size:16px;font-style:italic;color:#4a5570;margin-bottom:40px;}
+.divider{width:48px;height:1px;background:rgba(0,232,255,0.4);margin-bottom:40px;}
+.portrait{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;line-height:1.85;color:#8896b0;margin-bottom:24px;}
+.footer{margin-top:48px;padding-top:24px;border-top:0.5px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:18px;color:#4a5570;}
+.footer-logo em{color:#00e8ff;font-style:italic;}
+.footer-url{font-size:12px;color:#4a5570;letter-spacing:0.1em;}
+.print-btn{position:fixed;top:20px;right:20px;background:#00e8ff;color:#03070e;border:none;padding:10px 20px;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;}
+@media print{.print-btn{display:none}body{padding:0}canvas{display:none}}
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">Save as PDF</button>
+<div class="card">
+  <div class="eyebrow">Your Zoëtype</div>
+  <span class="emoji">${emoji}</span>
+  <div class="name">${animalName}</div>
+  <div class="sci">${sciName}</div>
+  <div class="divider"></div>
+  <p class="portrait">${p1}</p>
+  ${p2 ? `<p class="portrait">${p2}</p>` : ''}
+  <div class="footer">
+    <div class="footer-logo">Zoë<em>type</em></div>
+    <div class="footer-url">zoetype.app</div>
+  </div>
+</div>
+</body>
+</html>`;
 
-  // Bioluminescent gradient
-  const grad1 = ctx.createRadialGradient(200, 300, 0, 200, 300, 500);
-  grad1.addColorStop(0, 'rgba(0,232,255,0.12)');
-  grad1.addColorStop(1, 'rgba(0,0,0,0)');
-  ctx.fillStyle = grad1;
-  ctx.fillRect(0, 0, 1080, 1080);
-
-  const grad2 = ctx.createRadialGradient(900, 700, 0, 900, 700, 400);
-  grad2.addColorStop(0, 'rgba(167,139,250,0.10)');
-  grad2.addColorStop(1, 'rgba(0,0,0,0)');
-  ctx.fillStyle = grad2;
-  ctx.fillRect(0, 0, 1080, 1080);
-
-  const grad3 = ctx.createRadialGradient(540, 900, 0, 540, 900, 350);
-  grad3.addColorStop(0, 'rgba(0,255,163,0.08)');
-  grad3.addColorStop(1, 'rgba(0,0,0,0)');
-  ctx.fillStyle = grad3;
-  ctx.fillRect(0, 0, 1080, 1080);
-
-  // Large emoji centered in upper half
-  ctx.font = '220px serif';
-  ctx.textAlign = 'center';
-  ctx.fillText(emoji, 540, 420);
-  ctx.textAlign = 'left';
-
-  // Thin cyan line
-  ctx.strokeStyle = 'rgba(0,232,255,0.4)';
-  ctx.lineWidth = 1;
-  ctx.beginPath();
-  ctx.moveTo(80, 460);
-  ctx.lineTo(340, 460);
-  ctx.stroke();
-
-  // Eyebrow
-  ctx.fillStyle = '#00e8ff';
-  ctx.font = '300 18px Arial, sans-serif';
-  ctx.fillText('YOUR ZOËTYPE', 80, 510);
-
-  // Animal name — handle long names
-  ctx.fillStyle = '#e2e8f5';
-  let fontSize = 88;
-  ctx.font = `300 ${fontSize}px Georgia, serif`;
-  while (ctx.measureText(animalName).width > 920 && fontSize > 36) {
-    fontSize -= 4;
-    ctx.font = `300 ${fontSize}px Georgia, serif`;
-  }
-  ctx.fillText(animalName, 80, 600);
-
-  // Scientific name
-  ctx.fillStyle = '#4a5570';
-  ctx.font = 'italic 26px Georgia, serif';
-  ctx.fillText(sciName, 80, 645);
-
-  // Portrait excerpt — longer, better wrapping
-  const maxChars = 320;
-  const excerpt = portrait.length > maxChars ? portrait.substring(0, maxChars).trim() + '...' : portrait;
-  ctx.fillStyle = '#8896b0';
-  ctx.font = '300 24px Georgia, serif';
-
-  const words = excerpt.split(' ');
-  let line = '';
-  let y = 710;
-  const lineHeight = 38;
-  const maxW = 920;
-
-  for (let w of words) {
-    const test = line + w + ' ';
-    if (ctx.measureText(test).width > maxW && line) {
-      ctx.fillText(line.trim(), 80, y);
-      line = w + ' ';
-      y += lineHeight;
-      if (y > 960) { ctx.fillText(line.trim() + '...', 80, y); break; }
-    } else {
-      line = test;
-    }
-  }
-  if (y <= 960 && line.trim()) ctx.fillText(line.trim(), 80, y);
-
-  // Bottom branding
-  ctx.fillStyle = 'rgba(255,255,255,0.15)';
-  ctx.fillRect(0, 1010, 1080, 70);
-
-  ctx.fillStyle = '#4a5570';
-  ctx.font = '300 22px Georgia, serif';
-  ctx.fillText('zoetype.app', 80, 1052);
-
-  ctx.fillStyle = '#00e8ff';
-  ctx.font = '300 22px Georgia, serif';
-  ctx.textAlign = 'right';
-  ctx.fillText('Find the animal within you', 1000, 1052);
-  ctx.textAlign = 'left';
-
-  triggerDownload(canvas, animalName);
+  const blob = new Blob([html], { type: 'text/html' });
+  const url = URL.createObjectURL(blob);
+  window.open(url, '_blank');
 }
 
 function triggerDownload(canvas, animalName) {
