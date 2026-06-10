@@ -838,139 +838,111 @@ async function downloadResult() {
   const animal = RESULT?.animal || {};
   const animalName = animal.common_name || 'Your Animal';
   const sciName = animal.scientific_name || '';
-  const photoUrl = animal.photo_url || null;
   const portrait = RESULT?.portrait?.[0] || '';
+  const emoji = getEmoji(animal.class);
 
   const canvas = document.createElement('canvas');
   canvas.width = 1080;
   canvas.height = 1080;
   const ctx = canvas.getContext('2d');
 
-  // Background
+  // Dark background
   ctx.fillStyle = '#03070e';
   ctx.fillRect(0, 0, 1080, 1080);
 
-  // Subtle gradient overlay
-  const grad = ctx.createRadialGradient(540, 540, 0, 540, 540, 600);
-  grad.addColorStop(0, 'rgba(0,232,255,0.06)');
-  grad.addColorStop(0.5, 'rgba(167,139,250,0.04)');
-  grad.addColorStop(1, 'rgba(0,0,0,0)');
-  ctx.fillStyle = grad;
+  // Bioluminescent gradient
+  const grad1 = ctx.createRadialGradient(200, 300, 0, 200, 300, 500);
+  grad1.addColorStop(0, 'rgba(0,232,255,0.12)');
+  grad1.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = grad1;
   ctx.fillRect(0, 0, 1080, 1080);
 
-  const drawText = () => {
-    // Eyebrow
-    ctx.fillStyle = '#00e8ff';
-    ctx.font = '500 22px "DM Sans", sans-serif';
-    ctx.letterSpacing = '6px';
-    ctx.fillText('YOUR ZOËTYPE', 80, 120);
+  const grad2 = ctx.createRadialGradient(900, 700, 0, 900, 700, 400);
+  grad2.addColorStop(0, 'rgba(167,139,250,0.10)');
+  grad2.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = grad2;
+  ctx.fillRect(0, 0, 1080, 1080);
 
-    // Animal name
-    ctx.fillStyle = '#e2e8f5';
-    ctx.font = '300 90px "Cormorant Garamond", Georgia, serif';
-    ctx.letterSpacing = '0px';
+  const grad3 = ctx.createRadialGradient(540, 900, 0, 540, 900, 350);
+  grad3.addColorStop(0, 'rgba(0,255,163,0.08)');
+  grad3.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = grad3;
+  ctx.fillRect(0, 0, 1080, 1080);
 
-    // Handle long names
-    const maxWidth = 920;
-    let fontSize = 90;
+  // Large emoji centered in upper half
+  ctx.font = '220px serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(emoji, 540, 420);
+  ctx.textAlign = 'left';
+
+  // Thin cyan line
+  ctx.strokeStyle = 'rgba(0,232,255,0.4)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(80, 460);
+  ctx.lineTo(340, 460);
+  ctx.stroke();
+
+  // Eyebrow
+  ctx.fillStyle = '#00e8ff';
+  ctx.font = '300 18px Arial, sans-serif';
+  ctx.fillText('YOUR ZOËTYPE', 80, 510);
+
+  // Animal name — handle long names
+  ctx.fillStyle = '#e2e8f5';
+  let fontSize = 88;
+  ctx.font = `300 ${fontSize}px Georgia, serif`;
+  while (ctx.measureText(animalName).width > 920 && fontSize > 36) {
+    fontSize -= 4;
     ctx.font = `300 ${fontSize}px Georgia, serif`;
-    while (ctx.measureText(animalName).width > maxWidth && fontSize > 40) {
-      fontSize -= 4;
-      ctx.font = `300 ${fontSize}px Georgia, serif`;
-    }
-    ctx.fillText(animalName, 80, 220);
-
-    // Scientific name
-    ctx.fillStyle = '#4a5570';
-    ctx.font = 'italic 28px Georgia, serif';
-    ctx.fillText(sciName, 80, 270);
-
-    // Divider line
-    ctx.strokeStyle = 'rgba(0,232,255,0.3)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(80, 300);
-    ctx.lineTo(400, 300);
-    ctx.stroke();
-
-    // Portrait excerpt (first 180 chars)
-    const excerpt = portrait.length > 180 ? portrait.substring(0, 180) + '...' : portrait;
-    ctx.fillStyle = '#8896b0';
-    ctx.font = '300 26px Georgia, serif';
-    ctx.letterSpacing = '0px';
-
-    // Word wrap
-    const words = excerpt.split(' ');
-    let line = '';
-    let y = 760;
-    const lineHeight = 42;
-    const maxW = 920;
-
-    for (let w of words) {
-      const test = line + w + ' ';
-      if (ctx.measureText(test).width > maxW && line) {
-        ctx.fillText(line.trim(), 80, y);
-        line = w + ' ';
-        y += lineHeight;
-        if (y > 920) break;
-      } else {
-        line = test;
-      }
-    }
-    if (y <= 920) ctx.fillText(line.trim(), 80, y);
-
-    // Zoëtype branding
-    ctx.fillStyle = '#4a5570';
-    ctx.font = '300 24px Georgia, serif';
-    ctx.fillText('zoetype.app', 80, 1020);
-
-    ctx.fillStyle = '#00e8ff';
-    ctx.font = '300 24px Georgia, serif';
-    ctx.fillText('Find the animal within you', 540, 1020);
-  };
-
-  if (photoUrl) {
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = () => {
-      // Draw photo in middle section
-      ctx.save();
-      ctx.beginPath();
-      ctx.rect(80, 320, 920, 400);
-      ctx.clip();
-      // Scale to fill
-      const scale = Math.max(920 / img.width, 400 / img.height);
-      const w = img.width * scale;
-      const h = img.height * scale;
-      const x = 80 + (920 - w) / 2;
-      const y = 320 + (400 - h) / 2;
-      ctx.drawImage(img, x, y, w, h);
-      ctx.restore();
-
-      // Dark overlay on photo
-      const photoGrad = ctx.createLinearGradient(80, 320, 80, 720);
-      photoGrad.addColorStop(0, 'rgba(3,7,14,0.2)');
-      photoGrad.addColorStop(1, 'rgba(3,7,14,0.7)');
-      ctx.fillStyle = photoGrad;
-      ctx.fillRect(80, 320, 920, 400);
-
-      drawText();
-      triggerDownload(canvas, animalName);
-    };
-    img.onerror = () => {
-      drawText();
-      triggerDownload(canvas, animalName);
-    };
-    img.src = photoUrl;
-  } else {
-    // No photo — just draw emoji
-    ctx.font = '200px serif';
-    ctx.textAlign = 'center';
-    ctx.fillText('🐾', 540, 620);
-    ctx.textAlign = 'left';
-    drawText();
-    triggerDownload(canvas, animalName);
   }
+  ctx.fillText(animalName, 80, 600);
+
+  // Scientific name
+  ctx.fillStyle = '#4a5570';
+  ctx.font = 'italic 26px Georgia, serif';
+  ctx.fillText(sciName, 80, 645);
+
+  // Portrait excerpt — longer, better wrapping
+  const maxChars = 320;
+  const excerpt = portrait.length > maxChars ? portrait.substring(0, maxChars).trim() + '...' : portrait;
+  ctx.fillStyle = '#8896b0';
+  ctx.font = '300 24px Georgia, serif';
+
+  const words = excerpt.split(' ');
+  let line = '';
+  let y = 710;
+  const lineHeight = 38;
+  const maxW = 920;
+
+  for (let w of words) {
+    const test = line + w + ' ';
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line.trim(), 80, y);
+      line = w + ' ';
+      y += lineHeight;
+      if (y > 960) { ctx.fillText(line.trim() + '...', 80, y); break; }
+    } else {
+      line = test;
+    }
+  }
+  if (y <= 960 && line.trim()) ctx.fillText(line.trim(), 80, y);
+
+  // Bottom branding
+  ctx.fillStyle = 'rgba(255,255,255,0.15)';
+  ctx.fillRect(0, 1010, 1080, 70);
+
+  ctx.fillStyle = '#4a5570';
+  ctx.font = '300 22px Georgia, serif';
+  ctx.fillText('zoetype.app', 80, 1052);
+
+  ctx.fillStyle = '#00e8ff';
+  ctx.font = '300 22px Georgia, serif';
+  ctx.textAlign = 'right';
+  ctx.fillText('Find the animal within you', 1000, 1052);
+  ctx.textAlign = 'left';
+
+  triggerDownload(canvas, animalName);
 }
 
 function triggerDownload(canvas, animalName) {
