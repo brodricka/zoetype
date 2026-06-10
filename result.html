@@ -611,9 +611,72 @@ const SAMPLE = {
 
 let RESULT = null;
 
-function getEmoji(cls) {
-  const map = {Mammalia:'🦦',Aves:'🦅',Reptilia:'🐊',Amphibia:'🐸',Actinopterygii:'🐟',Insecta:'🦋',Arachnida:'🕷',Malacostraca:'🦀',Cephalopoda:'🐙'};
-  return map[cls] || '🐾';
+function getEmoji(cls, order, family) {
+  // Try order-level first for more specificity
+  const orderMap = {
+    // Birds by order
+    'Passeriformes': '🐦',      // songbirds, crows, finches
+    'Accipitriformes': '🦅',    // eagles, hawks
+    'Strigiformes': '🦉',       // owls
+    'Psittaciformes': '🦜',     // parrots
+    'Sphenisciformes': '🐧',    // penguins
+    'Anseriformes': '🦆',       // ducks, geese
+    'Galliformes': '🐓',        // chickens, pheasants
+    'Columbiformes': '🕊️',      // doves, pigeons
+    'Pelecaniformes': '🦢',     // pelicans, herons
+    'Phoenicopteriformes': '🦩', // flamingos
+    'Gruiformes': '🦩',         // cranes
+    // Mammals by order
+    'Chiroptera': '🦇',         // bats
+    'Primates': '🐒',           // primates
+    'Rodentia': '🐭',           // rodents
+    'Carnivora': '🦁',          // carnivores
+    'Cetacea': '🐋',            // whales, dolphins
+    'Cetartiodactyla': '🦌',    // deer, whales
+    'Perissodactyla': '🦓',     // horses, rhinos
+    'Proboscidea': '🐘',        // elephants
+    'Marsupialia': '🦘',        // marsupials
+    'Lagomorpha': '🐇',         // rabbits
+    'Eulipotyphla': '🦔',       // hedgehogs, shrews
+    'Pilosa': '🦥',             // sloths, anteaters
+    'Cingulata': '🦔',          // armadillos
+    // Reptiles by order
+    'Squamata': '🦎',           // lizards, snakes
+    'Testudines': '🐢',         // turtles
+    'Crocodilia': '🐊',         // crocodiles
+    // Fish by order
+    'Carcharhiniformes': '🦈',  // sharks
+    'Lamniformes': '🦈',        // great white etc
+    'Perciformes': '🐠',        // perch-like fish
+    'Tetraodontiformes': '🐡',  // pufferfish
+    // Insects
+    'Lepidoptera': '🦋',        // butterflies, moths
+    'Hymenoptera': '🐝',        // bees, wasps, ants
+    'Coleoptera': '🪲',         // beetles
+    'Odonata': '🪲',            // dragonflies
+    'Diptera': '🪰',            // flies
+    // Others
+    'Octopoda': '🐙',
+    'Scorpiones': '🦂',
+  };
+
+  // Class-level fallback
+  const classMap = {
+    'Mammalia': '🐾',
+    'Aves': '🐦',
+    'Reptilia': '🦎',
+    'Amphibia': '🐸',
+    'Actinopterygii': '🐟',
+    'Chondrichthyes': '🦈',
+    'Insecta': '🦋',
+    'Arachnida': '🕷️',
+    'Malacostraca': '🦀',
+    'Cephalopoda': '🐙',
+    'Asteroidea': '⭐',
+    'Scyphozoa': '🪼',
+  };
+
+  return orderMap[order] || classMap[cls] || '🐾';
 }
 
 function buildDims(dimensions) {
@@ -635,7 +698,7 @@ function animateBars() {
 
 function renderResult(data) {
   const animal = data.animal;
-  const emoji = getEmoji(animal.class);
+  const emoji = getEmoji(animal.class, animal.order);
 
   const userData = JSON.parse(sessionStorage.getItem('zoetype_user') || '{}');
   const firstName = data.user_first_name || userData.firstName || null;
@@ -840,7 +903,7 @@ async function downloadResult() {
   const sciName = animal.scientific_name || '';
   const portrait = RESULT?.portrait || [];
   const shadow = RESULT?.shadow || '';
-  const emoji = getEmoji(animal.class);
+  const emoji = getEmoji(animal.class, animal.order);
   const photoUrl = animal.photo_url || null;
 
   const p1 = portrait[0] || '';

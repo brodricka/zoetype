@@ -157,6 +157,7 @@ module.exports = async function handler(req, res) {
         scientific_name: bestMatch.scientific_name,
         common_name: bestMatch.common_name || formatScientificName(bestMatch.scientific_name),
         class: bestMatch.class,
+        order: bestMatch.order || null,
         ecological_role: bestMatch.ecological_role,
         photo_url: photoUrl,
         gbif_url: `https://www.gbif.org/species/search?q=${encodeURIComponent(bestMatch.scientific_name)}`,
