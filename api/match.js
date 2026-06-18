@@ -180,17 +180,22 @@ module.exports = async function handler(req, res) {
 async function getAnimalPhoto(scientificName) {
   try {
     // Use iNaturalist taxa API — returns community-verified wildlife photos
-    const url = `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(scientificName)}&per_page=1&rank=species`;
+    // Fetch multiple candidates and only accept an EXACT scientific name match,
+    // since loose text search can return unrelated species (e.g. a crab for "Gorilla gorilla")
+    const url = `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(scientificName)}&per_page=10&rank=species`;
     const res = await fetch(url, {
       headers: { 'User-Agent': 'Zoetype/1.0 (zoetype.app)' }
     });
     const data = await res.json();
 
-    const taxon = data.results?.[0];
-    if (!taxon) return null;
+    const results = data.results || [];
+    const exactMatch = results.find(
+      (r) => r.name?.toLowerCase().trim() === scientificName.toLowerCase().trim()
+    );
 
-    // Use the default_photo if available — this is curated by iNaturalist
-    const photo = taxon.default_photo;
+    if (!exactMatch) return null;
+
+    const photo = exactMatch.default_photo;
     if (photo?.medium_url) return photo.medium_url;
     if (photo?.url) return photo.url.replace('square', 'medium');
 
