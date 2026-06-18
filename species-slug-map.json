@@ -1,0 +1,402 @@
+[
+  {
+    "slug": "helarctos-malayanus",
+    "name": "Helarctos malayanus"
+  },
+  {
+    "slug": "ursus-arctos",
+    "name": "Ursus arctos"
+  },
+  {
+    "slug": "zalophus-californianus",
+    "name": "Zalophus californianus"
+  },
+  {
+    "slug": "eumetopias-jubatus",
+    "name": "Eumetopias jubatus"
+  },
+  {
+    "slug": "arctocephalus-philippii",
+    "name": "Arctocephalus philippii"
+  },
+  {
+    "slug": "arctocephalus-forsteri",
+    "name": "Arctocephalus forsteri"
+  },
+  {
+    "slug": "arctocephalus-pusillus",
+    "name": "Arctocephalus pusillus"
+  },
+  {
+    "slug": "callorhinus-ursinus",
+    "name": "Callorhinus ursinus"
+  },
+  {
+    "slug": "galidia-elegans",
+    "name": "Galidia elegans"
+  },
+  {
+    "slug": "arctocephalus-gazella",
+    "name": "Arctocephalus gazella"
+  },
+  {
+    "slug": "salanoia-concolor",
+    "name": "Salanoia concolor"
+  },
+  {
+    "slug": "nasua-narica",
+    "name": "Nasua narica"
+  },
+  {
+    "slug": "bassariscus-sumichrasti",
+    "name": "Bassariscus sumichrasti"
+  },
+  {
+    "slug": "potos-flavus",
+    "name": "Potos flavus"
+  },
+  {
+    "slug": "bassaricyon-alleni",
+    "name": "Bassaricyon alleni"
+  },
+  {
+    "slug": "lyncodon-patagonicus",
+    "name": "Lyncodon patagonicus"
+  },
+  {
+    "slug": "eira-barbara",
+    "name": "Eira barbara"
+  },
+  {
+    "slug": "lontra-provocax",
+    "name": "Lontra provocax"
+  },
+  {
+    "slug": "melogale-moschata",
+    "name": "Melogale moschata"
+  },
+  {
+    "slug": "melogale-personata",
+    "name": "Melogale personata"
+  },
+  {
+    "slug": "pithecia-pithecia",
+    "name": "Pithecia pithecia"
+  },
+  {
+    "slug": "pithecia-albicans",
+    "name": "Pithecia albicans"
+  },
+  {
+    "slug": "callicebus-barbarabrownae",
+    "name": "Callicebus barbarabrownae"
+  },
+  {
+    "slug": "callicebus-melanochir",
+    "name": "Callicebus melanochir"
+  },
+  {
+    "slug": "callicebus-nigrifrons",
+    "name": "Callicebus nigrifrons"
+  },
+  {
+    "slug": "eulemur-mongoz",
+    "name": "Eulemur mongoz"
+  },
+  {
+    "slug": "eulemur-macaco",
+    "name": "Eulemur macaco"
+  },
+  {
+    "slug": "eulemur-coronatus",
+    "name": "Eulemur coronatus"
+  },
+  {
+    "slug": "avahi-laniger",
+    "name": "Avahi laniger"
+  },
+  {
+    "slug": "hapalemur-griseus",
+    "name": "Hapalemur griseus"
+  },
+  {
+    "slug": "microcebus-murinus",
+    "name": "Microcebus murinus"
+  },
+  {
+    "slug": "cheirogaleus-medius",
+    "name": "Cheirogaleus medius"
+  },
+  {
+    "slug": "callimico-goeldii",
+    "name": "Callimico goeldii"
+  },
+  {
+    "slug": "saguinus-oedipus",
+    "name": "Saguinus oedipus"
+  },
+  {
+    "slug": "phaner-furcifer",
+    "name": "Phaner furcifer"
+  },
+  {
+    "slug": "saguinus-inustus",
+    "name": "Saguinus inustus"
+  },
+  {
+    "slug": "leontopithecus-caissara",
+    "name": "Leontopithecus caissara"
+  },
+  {
+    "slug": "leontopithecus-chrysomelas",
+    "name": "Leontopithecus chrysomelas"
+  },
+  {
+    "slug": "tarsius-pumilus",
+    "name": "Tarsius pumilus"
+  },
+  {
+    "slug": "lepilemur-ruficaudatus",
+    "name": "Lepilemur ruficaudatus"
+  },
+  {
+    "slug": "lepilemur-microdon",
+    "name": "Lepilemur microdon"
+  },
+  {
+    "slug": "inia-geoffrensis",
+    "name": "Inia geoffrensis"
+  },
+  {
+    "slug": "ziphius-cavirostris",
+    "name": "Ziphius cavirostris"
+  },
+  {
+    "slug": "eubalaena-australis",
+    "name": "Eubalaena australis"
+  },
+  {
+    "slug": "lepilemur-mustelinus",
+    "name": "Lepilemur mustelinus"
+  },
+  {
+    "slug": "indopacetus-pacificus",
+    "name": "Indopacetus pacificus"
+  },
+  {
+    "slug": "mesoplodon-europaeus",
+    "name": "Mesoplodon europaeus"
+  },
+  {
+    "slug": "mesoplodon-stejnegeri",
+    "name": "Mesoplodon stejnegeri"
+  },
+  {
+    "slug": "mesoplodon-peruvianus",
+    "name": "Mesoplodon peruvianus"
+  },
+  {
+    "slug": "tremarctos-ornatus",
+    "name": "Tremarctos ornatus"
+  },
+  {
+    "slug": "ursus-americanus",
+    "name": "Ursus americanus"
+  },
+  {
+    "slug": "ursus-maritimus",
+    "name": "Ursus maritimus"
+  },
+  {
+    "slug": "zalophus-wollebaeki",
+    "name": "Zalophus wollebaeki"
+  },
+  {
+    "slug": "phocarctos-hookeri",
+    "name": "Phocarctos hookeri"
+  },
+  {
+    "slug": "ailuropoda-melanoleuca",
+    "name": "Ailuropoda melanoleuca"
+  },
+  {
+    "slug": "arctocephalus-galapagoensis",
+    "name": "Arctocephalus galapagoensis"
+  },
+  {
+    "slug": "arctocephalus-australis",
+    "name": "Arctocephalus australis"
+  },
+  {
+    "slug": "neophoca-cinerea",
+    "name": "Neophoca cinerea"
+  },
+  {
+    "slug": "proteles-cristata",
+    "name": "Proteles cristata"
+  },
+  {
+    "slug": "melogale-orientalis",
+    "name": "Melogale orientalis"
+  },
+  {
+    "slug": "mungotictis-decemlineata",
+    "name": "Mungotictis decemlineata"
+  },
+  {
+    "slug": "fossa-fossana",
+    "name": "Fossa fossana"
+  },
+  {
+    "slug": "nasua-nasua",
+    "name": "Nasua nasua"
+  },
+  {
+    "slug": "bassariscus-astutus",
+    "name": "Bassariscus astutus"
+  },
+  {
+    "slug": "bassaricyon-gabbii",
+    "name": "Bassaricyon gabbii"
+  },
+  {
+    "slug": "cryptoprocta-ferox",
+    "name": "Cryptoprocta ferox"
+  },
+  {
+    "slug": "lutrogale-perspicillata",
+    "name": "Lutrogale perspicillata"
+  },
+  {
+    "slug": "mellivora-capensis",
+    "name": "Mellivora capensis"
+  },
+  {
+    "slug": "lontra-canadensis",
+    "name": "Lontra canadensis"
+  },
+  {
+    "slug": "lontra-felina",
+    "name": "Lontra felina"
+  },
+  {
+    "slug": "enhydra-lutris",
+    "name": "Enhydra lutris"
+  },
+  {
+    "slug": "pithecia-irrorata",
+    "name": "Pithecia irrorata"
+  },
+  {
+    "slug": "pithecia-monachus",
+    "name": "Pithecia monachus"
+  },
+  {
+    "slug": "callicebus-coimbrai",
+    "name": "Callicebus coimbrai"
+  },
+  {
+    "slug": "callicebus-personatus",
+    "name": "Callicebus personatus"
+  },
+  {
+    "slug": "pithecia-aequatorialis",
+    "name": "Pithecia aequatorialis"
+  },
+  {
+    "slug": "hapalemur-aureus",
+    "name": "Hapalemur aureus"
+  },
+  {
+    "slug": "eulemur-rubriventer",
+    "name": "Eulemur rubriventer"
+  },
+  {
+    "slug": "varecia-variegata",
+    "name": "Varecia variegata"
+  },
+  {
+    "slug": "indri-indri",
+    "name": "Indri indri"
+  },
+  {
+    "slug": "lemur-catta",
+    "name": "Lemur catta"
+  },
+  {
+    "slug": "allocebus-trichotis",
+    "name": "Allocebus trichotis"
+  },
+  {
+    "slug": "microcebus-rufus",
+    "name": "Microcebus rufus"
+  },
+  {
+    "slug": "cheirogaleus-major",
+    "name": "Cheirogaleus major"
+  },
+  {
+    "slug": "saguinus-geoffroyi",
+    "name": "Saguinus geoffroyi"
+  },
+  {
+    "slug": "gorilla-gorilla",
+    "name": "Gorilla gorilla"
+  },
+  {
+    "slug": "saguinus-mystax",
+    "name": "Saguinus mystax"
+  },
+  {
+    "slug": "saguinus-leucopus",
+    "name": "Saguinus leucopus"
+  },
+  {
+    "slug": "leontopithecus-chrysopygus",
+    "name": "Leontopithecus chrysopygus"
+  },
+  {
+    "slug": "leontopithecus-rosalia",
+    "name": "Leontopithecus rosalia"
+  },
+  {
+    "slug": "saguinus-imperator",
+    "name": "Saguinus imperator"
+  },
+  {
+    "slug": "lepilemur-edwardsi",
+    "name": "Lepilemur edwardsi"
+  },
+  {
+    "slug": "caperea-marginata",
+    "name": "Caperea marginata"
+  },
+  {
+    "slug": "balaena-mysticetus",
+    "name": "Balaena mysticetus"
+  },
+  {
+    "slug": "eubalaena-glacialis",
+    "name": "Eubalaena glacialis"
+  },
+  {
+    "slug": "lepilemur-septentrionalis",
+    "name": "Lepilemur septentrionalis"
+  },
+  {
+    "slug": "berardius-bairdii",
+    "name": "Berardius bairdii"
+  },
+  {
+    "slug": "mesoplodon-hectori",
+    "name": "Mesoplodon hectori"
+  },
+  {
+    "slug": "mesoplodon-carlhubbsi",
+    "name": "Mesoplodon carlhubbsi"
+  },
+  {
+    "slug": "mesoplodon-densirostris",
+    "name": "Mesoplodon densirostris"
+  }
+]

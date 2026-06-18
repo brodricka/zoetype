@@ -16,6 +16,7 @@
     { "src": "/quiz", "dest": "/quiz.html" },
     { "src": "/result", "dest": "/result.html" },
     { "src": "/success", "dest": "/success.html" },
+    { "src": "/species/([^/]+)", "dest": "/species/$1.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }

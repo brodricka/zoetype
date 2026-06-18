@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saguinus inustus — Zoëtype</title>
+<meta name="description" content="What it means to match with the Saguinus inustus on Zoëtype. Real biology, real psychology, no generic archetypes.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#03070e;--ink2:#070e1b;--ink3:#0b1526;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#e2e8f5;--text2:#8896b0;--text3:#4a5570;
+  --cyan:#00e8ff;--violet:#a78bfa;--green:#00ffa3;--pink:#ff70c8;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden}
+
+/* ── HEADER ── */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(3,7,14,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:0.5px solid var(--border);
+  padding:1rem 2.5rem;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.header-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.2rem;font-weight:300;color:var(--text);
+  text-decoration:none;
+}
+.header-logo em{color:var(--cyan);font-style:italic}
+.btn-quiz{
+  background:var(--cyan);color:var(--ink);border:none;
+  padding:0.65rem 1.4rem;font-size:0.7rem;font-weight:500;
+  letter-spacing:0.08em;text-transform:uppercase;
+  cursor:pointer;font-family:'DM Sans',sans-serif;
+  text-decoration:none;
+}
+.btn-quiz:hover{background:#fff}
+
+/* ── HERO ── */
+.hero{
+  max-width:820px;margin:0 auto;
+  padding:5rem 2.5rem 3rem;
+  text-align:left;
+}
+.hero-eyebrow{
+  font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:1.5rem;opacity:0.7;
+}
+.hero-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.8rem,6vw,4.5rem);font-weight:300;
+  color:var(--text);margin-bottom:0.4rem;line-height:1.05;
+}
+.hero-sci{
+  font-size:1rem;font-style:italic;
+  color:var(--text3);letter-spacing:0.02em;margin-bottom:1.5rem;
+}
+.hero-photo{
+  width:100%;max-height:420px;object-fit:cover;
+  border:0.5px solid var(--border2);
+  margin-bottom:2rem;
+}
+.hero-emoji{
+  font-size:5rem;margin-bottom:1.5rem;
+}
+.divider{
+  width:48px;height:1px;
+  background:linear-gradient(to right,transparent,var(--cyan),transparent);
+  margin-bottom:2rem;
+}
+
+/* ── PORTRAIT ── */
+.portrait-section{
+  max-width:820px;margin:0 auto;
+  padding:0 2.5rem 3rem;
+}
+.portrait-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.35rem;font-weight:300;
+  line-height:1.85;color:var(--text2);
+  margin-bottom:1.6rem;
+}
+.portrait-text:first-of-type{
+  font-size:1.55rem;color:var(--text);
+}
+
+/* ── SHADOW ── */
+.shadow-section{
+  max-width:820px;margin:0 auto;
+  padding:2.5rem 2.5rem;
+  border-top:0.5px solid var(--border);
+  border-bottom:0.5px solid var(--border);
+}
+.shadow-label{
+  font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;
+  color:var(--violet);margin-bottom:1.2rem;
+}
+.shadow-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;font-weight:300;font-style:italic;
+  line-height:1.8;color:var(--text2);
+}
+
+/* ── FUN FACT ── */
+.fact-section{
+  max-width:820px;margin:0 auto;
+  padding:2.5rem 2.5rem;
+}
+.fact-label{
+  font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;
+  color:var(--green);margin-bottom:1.2rem;
+}
+.fact-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;font-weight:300;
+  line-height:1.8;color:var(--text2);
+}
+
+/* ── SHARE ── */
+.share-section{
+  max-width:820px;margin:0 auto;
+  padding:0 2.5rem 3rem;
+}
+.share-label{
+  font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;
+  color:var(--text3);margin-bottom:1.2rem;
+}
+.btn-share{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:rgba(255,255,255,0.04);
+  border:0.5px solid var(--border2);
+  padding:0.75rem 1.4rem;
+  font-size:0.75rem;font-weight:400;
+  letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--text2);cursor:pointer;
+  font-family:'DM Sans',sans-serif;
+  transition:all 0.2s;
+}
+.btn-share:hover{
+  background:rgba(255,255,255,0.08);
+  border-color:rgba(255,255,255,0.2);
+  color:var(--text);
+}
+.btn-share svg{width:14px;height:14px;fill:currentColor}
+.share-copied{
+  font-size:0.7rem;color:var(--green);
+  opacity:0;transition:opacity 0.3s;
+  margin-top:0.75rem;min-height:1rem;
+}
+.share-copied.show{opacity:1}
+
+/* ── CTA ── */
+.cta-section{
+  max-width:820px;margin:0 auto;
+  padding:3rem 2.5rem 6rem;
+  text-align:center;
+}
+.cta-divider{
+  width:48px;height:1px;
+  background:linear-gradient(to right,transparent,var(--violet),transparent);
+  margin:0 auto 2rem;
+}
+.cta-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;font-weight:300;font-style:italic;
+  color:var(--text2);line-height:1.6;
+  margin-bottom:2rem;
+}
+.btn-primary{
+  display:inline-block;
+  background:var(--cyan);color:var(--ink);border:none;
+  padding:1rem 2.4rem;font-size:0.78rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  cursor:pointer;font-family:'DM Sans',sans-serif;
+  text-decoration:none;
+  transition:background 0.2s;
+}
+.btn-primary:hover{background:#fff}
+
+/* ── FOOTER ── */
+.footer{
+  max-width:820px;margin:0 auto;
+  padding:2rem 2.5rem 4rem;
+  border-top:0.5px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:0.7rem;color:var(--text3);
+}
+.footer a{color:var(--text3);text-decoration:none}
+.footer a:hover{color:var(--cyan)}
+
+@media(max-width:640px){
+  .hero{padding:3.5rem 1.5rem 2rem}
+  .portrait-section,.shadow-section,.fact-section,.share-section,.cta-section,.footer{padding-left:1.5rem;padding-right:1.5rem}
+  .header{padding:1rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="/" class="header-logo">Zoë<em>type</em></a>
+  <a href="/quiz" class="btn-quiz">Take the Quiz</a>
+</div>
+
+<div class="hero">
+  <div class="hero-eyebrow">Species Profile</div>
+  <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/350847979/medium.jpg" alt="Saguinus inustus" class="hero-photo">
+  <div class="hero-name">Saguinus inustus</div>
+  <div class="hero-sci">Saguinus inustus</div>
+  <div class="divider"></div>
+</div>
+
+<div class="portrait-section">
+  <p class="portrait-text">Saguinus inustus is so poorly understood that scientists have spent decades studying primates across South America and still cannot fill in the basic outline of how this tamarin lives. No behavioral profiles. No mapped territories. A mottled face moving through the canopy and leaving almost no record. You operate this way too. You move through environments that see you clearly enough to rely on you, but rarely stop to document you. The absence of data is not the same as an absence of substance.</p>
+  <p class="portrait-text">What field researchers do know about tamarins as a group points toward an animal built for reading complex social terrain with precision. They navigate multi-species troops, track shifting alliances, and respond to subtle changes in group chemistry before those changes become crises. You run the same kind of internal calculus. You notice the shift in someone's tone before they know they have shifted. You track what is unsaid across a conversation the way a tamarin tracks movement in dense canopy, fast and without announcing it. The precision you bring to other people's emotional states is one of the most specific things about you.</p>
+  <p class="portrait-text">Tamarins like Saguinus inustus occupy an omnivorous niche, moving across fruit, insects, and small prey in ways that connect multiple layers of a forest ecosystem. Seed dispersal, insect population pressure, the feeding patterns of larger predators that follow them. Pull that thread and the web shifts. When you withdraw, the people around you feel a specific kind of gap. The thinking that anticipated the problem. The connection that held two people in the same room together. The thread you were quietly running through everything goes slack. You are the connective tissue in systems that did not build a backup for you.</p>
+  <p class="portrait-text">Tamarin groups abandon or kill offspring when resources contract and social stability collapses. This is not cruelty. It is triage logic taken to its endpoint. You carry the same mechanism. When you are stretched past a threshold, the relationships and commitments that feel least sustainable get quietly dropped. No announcement. A slow withdrawal that leaves people confused about what happened. The cost is that people who depended on your consistency get cut without context, and the trust you spent months building dissolves faster than it was constructed.</p>
+  <p class="portrait-text">Saguinus inustus is one of the least studied primates on Earth, and the reason is not that it is rare in the way a near-extinct animal is rare. It lives in remote Amazonian forest and simply resists observation. It does not perform legibility. You have spent your life in rooms where people know you are present and still cannot quite account for you. That is not a failure of communication. It is what you are. The most real parts of you have always required someone willing to sit in the forest long enough to see them.</p>
+</div>
+
+<div class="shadow-section">
+  <div class="shadow-label">Shadow</div>
+  <div class="shadow-text">Tamarin groups abandon or kill offspring when resources contract and social stability collapses. This is not cruelty. It is triage logic taken to its endpoint. You carry the same mechanism. When you are stretched past a threshold, the relationships and commitments that feel least sustainable get quietly dropped. No announcement. A slow withdrawal that leaves people confused about what happened. The cost is that people who depended on your consistency get cut without context, and the trust you spent months building dissolves faster than it was constructed.</div>
+</div>
+
+<div class="fact-section">
+  <div class="fact-label">Species Fact</div>
+  <div class="fact-text">Saguinus inustus, the mottled-face tamarin, is one of the least studied primates in the world, with so little known about it that basic behavioral and ecological data remain largely absent from scientific literature even today.</div>
+</div>
+
+<div class="share-section">
+  <div class="share-label">Share This Animal</div>
+  <button class="btn-share" onclick="shareSpecies()">
+    <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
+    Share
+  </button>
+  <div class="share-copied" id="share-copied">Link copied to clipboard</div>
+</div>
+
+<div class="cta-section">
+  <div class="cta-divider"></div>
+  <div class="cta-text">This is what the Saguinus inustus reveals in general. Take the quiz to see what it reveals about you specifically.</div>
+  <a href="/quiz" class="btn-primary">Find Your Animal</a>
+</div>
+
+<div class="footer">
+  <span>Zoëtype</span>
+  <a href="/">zoetype.app</a>
+</div>
+
+<script>
+async function shareSpecies() {
+  const shareText = "The Saguinus inustus on Zoëtype. Real biology, real psychology, no generic archetypes.";
+  const shareUrl = window.location.href;
+
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: 'Saguinus inustus — Zoëtype',
+        text: shareText,
+        url: shareUrl,
+      });
+    } catch(e) {
+      if (e.name !== 'AbortError') copyToClipboard(shareUrl);
+    }
+  } else {
+    copyToClipboard(shareUrl);
+  }
+}
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const el = document.getElementById('share-copied');
+    el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 2500);
+  });
+}
+</script>
+
+</body>
+</html>
