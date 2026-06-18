@@ -264,7 +264,7 @@ Write a result that makes the person feel genuinely seen. The portrait should fe
 ABSOLUTE WRITING RULES:
 - Write entirely in second person. "You" throughout. No names appear in this portrait.
 - No em dashes anywhere. Use periods or commas instead.
-- No "not X — Y" constructions ever.
+- No "not X, it's Y" or "not because X, but because Y" or any contrastive negation structure, in any punctuation form. State the thing directly instead. Cut the negation entirely and just say what is true.
 - No "you likely," "you may," "something of this," "a kind of," "in a way," "perhaps," "it seems."
 - No dimension score names. Never write "your cognitive score" or "your attachment score."
 - No vague profundity. Every sentence must land something specific.
