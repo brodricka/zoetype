@@ -1,5 +1,6 @@
 // generate-species-pages.js
 // Reads species with completed result_portrait from Supabase, builds static HTML pages
+// Falls back to a class/order-based emoji when no photo exists
 // Run with: node generate-species-pages.js
 
 const fs = require('fs');
@@ -23,12 +24,40 @@ function slugify(text) {
     .replace(/-+/g, '-');
 }
 
+function getEmoji(cls, order) {
+  const orderMap = {
+    'Passeriformes': '🐦', 'Accipitriformes': '🦅', 'Strigiformes': '🦉',
+    'Psittaciformes': '🦜', 'Sphenisciformes': '🐧', 'Anseriformes': '🦆',
+    'Galliformes': '🐓', 'Columbiformes': '🕊️', 'Pelecaniformes': '🦢',
+    'Phoenicopteriformes': '🦩', 'Gruiformes': '🦩',
+    'Chiroptera': '🦇', 'Primates': '🐒', 'Rodentia': '🐭',
+    'Carnivora': '🦁', 'Cetacea': '🐋', 'Cetartiodactyla': '🦌',
+    'Perissodactyla': '🦓', 'Proboscidea': '🐘', 'Marsupialia': '🦘',
+    'Lagomorpha': '🐇', 'Eulipotyphla': '🦔', 'Pilosa': '🦥', 'Cingulata': '🦔',
+    'Squamata': '🦎', 'Testudines': '🐢', 'Crocodilia': '🐊',
+    'Carcharhiniformes': '🦈', 'Lamniformes': '🦈', 'Perciformes': '🐠',
+    'Tetraodontiformes': '🐡',
+    'Lepidoptera': '🦋', 'Hymenoptera': '🐝', 'Coleoptera': '🪲',
+    'Odonata': '🪲', 'Diptera': '🪰',
+    'Octopoda': '🐙', 'Scorpiones': '🦂',
+  };
+
+  const classMap = {
+    'Mammalia': '🐾', 'Aves': '🐦', 'Reptilia': '🦎', 'Amphibia': '🐸',
+    'Actinopterygii': '🐟', 'Chondrichthyes': '🦈', 'Insecta': '🦋',
+    'Arachnida': '🕷️', 'Malacostraca': '🦀', 'Cephalopoda': '🐙',
+    'Asteroidea': '⭐', 'Scyphozoa': '🪼',
+  };
+
+  return orderMap[order] || classMap[cls] || '🐾';
+}
+
 async function buildPages() {
   console.log('Fetching species with completed portraits...');
 
   const { data: speciesList, error } = await supabase
     .from('species')
-    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact, image_url')
+    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact, image_url, class, order')
     .not('result_portrait', 'is', null);
 
   if (error) {
@@ -52,14 +81,12 @@ async function buildPages() {
     const displayName = animal.common_name || animal.scientific_name;
     const slug = slugify(animal.common_name || animal.scientific_name);
 
-    console.log(`Building: ${displayName} (/species/${slug})...`);
-
     try {
       let portraitData;
       try {
         portraitData = JSON.parse(animal.result_portrait);
       } catch (e) {
-        console.error(`  Skipping ${displayName}: invalid portrait JSON`);
+        console.error(`Skipping ${displayName}: invalid portrait JSON`);
         failCount++;
         continue;
       }
@@ -69,11 +96,15 @@ async function buildPages() {
         .map((p) => `<p class="portrait-text">${p}</p>`)
         .join('\n  ');
 
-      // Use stored image_url from Supabase instead of live API call
       const photoUrl = animal.image_url || null;
-      const photoBlock = photoUrl
-        ? `<img src="${photoUrl}" alt="${displayName}" class="hero-photo">`
-        : '';
+      let photoBlock;
+
+      if (photoUrl) {
+        photoBlock = `<img src="${photoUrl}" alt="${displayName}" class="hero-photo">`;
+      } else {
+        const emoji = getEmoji(animal.class, animal.order);
+        photoBlock = `<div class="hero-emoji">${emoji}</div>`;
+      }
 
       let page = template
         .replaceAll('{{COMMON_NAME}}', displayName)
@@ -87,7 +118,7 @@ async function buildPages() {
       slugMap.push({ slug, name: displayName });
       successCount++;
     } catch (err) {
-      console.error(`  Failed on ${displayName}:`, err.message);
+      console.error(`Failed on ${displayName}:`, err.message);
       failCount++;
     }
   }
@@ -97,7 +128,7 @@ async function buildPages() {
     JSON.stringify(slugMap, null, 2)
   );
 
-  console.log(`\nDone. Built: ${successCount}, Failed: ${failCount}`);
+  console.log(`Done. Built: ${successCount}, Failed: ${failCount}`);
   console.log('Slug map saved to species-slug-map.json');
 }
 
