@@ -1,6 +1,6 @@
 // generate-species-pages.js
 // Reads species with completed result_portrait from Supabase, builds static HTML pages
-// Falls back to a class/order-based emoji when no photo exists
+// Always uses emoji fallback, no photo fetching
 // Run with: node generate-species-pages.js
 
 const fs = require('fs');
@@ -57,7 +57,7 @@ async function buildPages() {
 
   const { data: speciesList, error } = await supabase
     .from('species')
-    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact, image_url, class, order')
+    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact, class, order')
     .not('result_portrait', 'is', null);
 
   if (error) {
@@ -96,15 +96,9 @@ async function buildPages() {
         .map((p) => `<p class="portrait-text">${p}</p>`)
         .join('\n  ');
 
-      const photoUrl = animal.image_url || null;
-      let photoBlock;
-
-      if (photoUrl) {
-        photoBlock = `<img src="${photoUrl}" alt="${displayName}" class="hero-photo">`;
-      } else {
-        const emoji = getEmoji(animal.class, animal.order);
-        photoBlock = `<div class="hero-emoji">${emoji}</div>`;
-      }
+      // Always use emoji — no photo fetching
+      const emoji = getEmoji(animal.class, animal.order);
+      const photoBlock = `<div class="hero-emoji">${emoji}</div>`;
 
       let page = template
         .replaceAll('{{COMMON_NAME}}', displayName)
