@@ -23,25 +23,12 @@ function slugify(text) {
     .replace(/-+/g, '-');
 }
 
-async function getInaturalistPhoto(scientificName) {
-  try {
-    const res = await fetch(
-      `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(scientificName)}&per_page=1`
-    );
-    const data = await res.json();
-    const taxon = data.results?.[0];
-    return taxon?.default_photo?.medium_url || null;
-  } catch (e) {
-    return null;
-  }
-}
-
 async function buildPages() {
   console.log('Fetching species with completed portraits...');
 
   const { data: speciesList, error } = await supabase
     .from('species')
-    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact')
+    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact, image_url')
     .not('result_portrait', 'is', null);
 
   if (error) {
@@ -59,7 +46,7 @@ async function buildPages() {
 
   let successCount = 0;
   let failCount = 0;
-  const slugMap = []; // for sitemap generation later
+  const slugMap = [];
 
   for (const animal of speciesList) {
     const displayName = animal.common_name || animal.scientific_name;
@@ -82,7 +69,8 @@ async function buildPages() {
         .map((p) => `<p class="portrait-text">${p}</p>`)
         .join('\n  ');
 
-      const photoUrl = await getInaturalistPhoto(animal.scientific_name);
+      // Use stored image_url from Supabase instead of live API call
+      const photoUrl = animal.image_url || null;
       const photoBlock = photoUrl
         ? `<img src="${photoUrl}" alt="${displayName}" class="hero-photo">`
         : '';
@@ -97,7 +85,6 @@ async function buildPages() {
 
       fs.writeFileSync(path.join(OUTPUT_DIR, `${slug}.html`), page);
       slugMap.push({ slug, name: displayName });
-      console.log(`  Saved: /species/${slug}.html`);
       successCount++;
     } catch (err) {
       console.error(`  Failed on ${displayName}:`, err.message);
@@ -111,7 +98,7 @@ async function buildPages() {
   );
 
   console.log(`\nDone. Built: ${successCount}, Failed: ${failCount}`);
-  console.log('Slug map saved to species-slug-map.json for routing and sitemap setup.');
+  console.log('Slug map saved to species-slug-map.json');
 }
 
 buildPages();
