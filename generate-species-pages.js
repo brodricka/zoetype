@@ -1,6 +1,6 @@
 // generate-species-pages.js
 // Reads species with completed result_portrait from Supabase, builds static HTML pages
-// Always uses emoji fallback, no photo fetching
+// No images, no emoji — clean text-only pages until photo/emoji system is rebuilt properly
 // Run with: node generate-species-pages.js
 
 const fs = require('fs');
@@ -24,40 +24,12 @@ function slugify(text) {
     .replace(/-+/g, '-');
 }
 
-function getEmoji(cls, order) {
-  const orderMap = {
-    'Passeriformes': '🐦', 'Accipitriformes': '🦅', 'Strigiformes': '🦉',
-    'Psittaciformes': '🦜', 'Sphenisciformes': '🐧', 'Anseriformes': '🦆',
-    'Galliformes': '🐓', 'Columbiformes': '🕊️', 'Pelecaniformes': '🦢',
-    'Phoenicopteriformes': '🦩', 'Gruiformes': '🦩',
-    'Chiroptera': '🦇', 'Primates': '🐒', 'Rodentia': '🐭',
-    'Carnivora': '🦁', 'Cetacea': '🐋', 'Cetartiodactyla': '🦌',
-    'Perissodactyla': '🦓', 'Proboscidea': '🐘', 'Marsupialia': '🦘',
-    'Lagomorpha': '🐇', 'Eulipotyphla': '🦔', 'Pilosa': '🦥', 'Cingulata': '🦔',
-    'Squamata': '🦎', 'Testudines': '🐢', 'Crocodilia': '🐊',
-    'Carcharhiniformes': '🦈', 'Lamniformes': '🦈', 'Perciformes': '🐠',
-    'Tetraodontiformes': '🐡',
-    'Lepidoptera': '🦋', 'Hymenoptera': '🐝', 'Coleoptera': '🪲',
-    'Odonata': '🪲', 'Diptera': '🪰',
-    'Octopoda': '🐙', 'Scorpiones': '🦂',
-  };
-
-  const classMap = {
-    'Mammalia': '🐾', 'Aves': '🐦', 'Reptilia': '🦎', 'Amphibia': '🐸',
-    'Actinopterygii': '🐟', 'Chondrichthyes': '🦈', 'Insecta': '🦋',
-    'Arachnida': '🕷️', 'Malacostraca': '🦀', 'Cephalopoda': '🐙',
-    'Asteroidea': '⭐', 'Scyphozoa': '🪼',
-  };
-
-  return orderMap[order] || classMap[cls] || '🐾';
-}
-
 async function buildPages() {
   console.log('Fetching species with completed portraits...');
 
   const { data: speciesList, error } = await supabase
     .from('species')
-    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact, class, order')
+    .select('scientific_name, common_name, result_portrait, result_shadow, fun_fact')
     .not('result_portrait', 'is', null);
 
   if (error) {
@@ -96,9 +68,8 @@ async function buildPages() {
         .map((p) => `<p class="portrait-text">${p}</p>`)
         .join('\n  ');
 
-      // Always use emoji — no photo fetching
-      const emoji = getEmoji(animal.class, animal.order);
-      const photoBlock = `<div class="hero-emoji">${emoji}</div>`;
+      // No image, no emoji — empty photo block until a proper system is built
+      const photoBlock = '';
 
       let page = template
         .replaceAll('{{COMMON_NAME}}', displayName)
