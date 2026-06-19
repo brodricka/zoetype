@@ -1,1347 +1,1475 @@
 [
   {
-    "slug": "ceratotherium-simum",
-    "name": "Ceratotherium simum"
+    "slug": "drassodes-vorax",
+    "name": "Drassodes vorax"
   },
   {
-    "slug": "helarctos-malayanus",
-    "name": "Helarctos malayanus"
+    "slug": "california-sea-lion",
+    "name": "California Sea Lion"
   },
   {
-    "slug": "ursus-arctos",
-    "name": "Ursus arctos"
+    "slug": "steller-sea-lion",
+    "name": "Steller Sea Lion"
   },
   {
-    "slug": "zalophus-californianus",
-    "name": "Zalophus californianus"
+    "slug": "juan-fernndez-fur-seal",
+    "name": "Juan Fernández Fur Seal"
   },
   {
-    "slug": "eumetopias-jubatus",
-    "name": "Eumetopias jubatus"
+    "slug": "sun-bear",
+    "name": "Sun Bear"
   },
   {
-    "slug": "arctocephalus-philippii",
-    "name": "Arctocephalus philippii"
+    "slug": "brown-bear",
+    "name": "Brown Bear"
   },
   {
-    "slug": "equus-zebra",
-    "name": "Equus zebra"
+    "slug": "solomon-islands-eared-frog",
+    "name": "Solomon Islands Eared Frog"
   },
   {
-    "slug": "arctocephalus-forsteri",
-    "name": "Arctocephalus forsteri"
+    "slug": "ring-tailed-mongoose",
+    "name": "Ring-tailed Mongoose"
   },
   {
-    "slug": "arctocephalus-pusillus",
-    "name": "Arctocephalus pusillus"
+    "slug": "pristaulacus-tricolor",
+    "name": "Pristaulacus tricolor"
   },
   {
-    "slug": "callorhinus-ursinus",
-    "name": "Callorhinus ursinus"
+    "slug": "gint-maidensis",
+    "name": "Gint maidensis"
   },
   {
-    "slug": "galidia-elegans",
-    "name": "Galidia elegans"
+    "slug": "cape-fur-seal",
+    "name": "Cape Fur Seal"
   },
   {
-    "slug": "arctocephalus-gazella",
-    "name": "Arctocephalus gazella"
+    "slug": "northern-fur-seal",
+    "name": "Northern Fur Seal"
   },
   {
-    "slug": "equus-hartmannae",
-    "name": "Equus hartmannae"
+    "slug": "luzon-platymantis",
+    "name": "Luzon Platymantis"
   },
   {
-    "slug": "salanoia-concolor",
-    "name": "Salanoia concolor"
+    "slug": "allens-olingo",
+    "name": "Allen's Olingo"
   },
   {
-    "slug": "nasua-narica",
-    "name": "Nasua narica"
+    "slug": "limnichus-rufus",
+    "name": "Limnichus rufus"
   },
   {
-    "slug": "bassariscus-sumichrasti",
-    "name": "Bassariscus sumichrasti"
+    "slug": "cacomistle",
+    "name": "Cacomistle"
   },
   {
-    "slug": "bassaricyon-alleni",
-    "name": "Bassaricyon alleni"
+    "slug": "white-nosed-coati",
+    "name": "White-nosed Coati"
   },
   {
-    "slug": "lepus-townsendii",
-    "name": "Lepus townsendii"
+    "slug": "white-tailed-jackrabbit",
+    "name": "White-tailed Jackrabbit"
   },
   {
-    "slug": "gracilinanus-emiliae",
-    "name": "Gracilinanus emiliae"
+    "slug": "pseudopalicus-investigatoris",
+    "name": "Pseudopalicus investigatoris"
   },
   {
-    "slug": "lyncodon-patagonicus",
-    "name": "Lyncodon patagonicus"
+    "slug": "beautiful-jay",
+    "name": "Beautiful Jay"
   },
   {
-    "slug": "lontra-provocax",
-    "name": "Lontra provocax"
+    "slug": "drassodes-tarrhunensis",
+    "name": "Drassodes tarrhunensis"
   },
   {
-    "slug": "melogale-moschata",
-    "name": "Melogale moschata"
+    "slug": "west-african-crocodile",
+    "name": "West African Crocodile"
   },
   {
-    "slug": "melogale-personata",
-    "name": "Melogale personata"
+    "slug": "chinese-ferret-badger",
+    "name": "Chinese Ferret-Badger"
   },
   {
-    "slug": "cyanolyca-pulchra",
-    "name": "Cyanolyca pulchra"
+    "slug": "patagonian-weasel",
+    "name": "Patagonian weasel"
   },
   {
-    "slug": "platymantis-pygmaeus",
-    "name": "Platymantis pygmaeus"
+    "slug": "halicarcinus-whitei",
+    "name": "Halicarcinus whitei"
   },
   {
-    "slug": "pithecia-pithecia",
-    "name": "Pithecia pithecia"
+    "slug": "black-handed-titi",
+    "name": "Black-handed Titi"
   },
   {
-    "slug": "pithecia-albicans",
-    "name": "Pithecia albicans"
+    "slug": "black-fronted-titi",
+    "name": "Black-fronted Titi"
   },
   {
-    "slug": "callicebus-barbarabrownae",
-    "name": "Callicebus barbarabrownae"
+    "slug": "common-raven",
+    "name": "Common Raven"
   },
   {
-    "slug": "callicebus-melanochir",
-    "name": "Callicebus melanochir"
+    "slug": "white-footed-saki",
+    "name": "White-footed Saki"
   },
   {
-    "slug": "callicebus-nigrifrons",
-    "name": "Callicebus nigrifrons"
+    "slug": "blond-titi",
+    "name": "Blond Titi"
   },
   {
-    "slug": "gracilinanus-agilis",
-    "name": "Gracilinanus agilis"
+    "slug": "eastern-lesser-bamboo-lemur",
+    "name": "Eastern Lesser Bamboo Lemur"
   },
   {
-    "slug": "eulemur-mongoz",
-    "name": "Eulemur mongoz"
+    "slug": "synapturanus-mirandaribeiroi",
+    "name": "Synapturanus mirandaribeiroi"
   },
   {
-    "slug": "eulemur-macaco",
-    "name": "Eulemur macaco"
+    "slug": "tates-fat-tailed-mouse-opossum",
+    "name": "Tate's Fat-tailed Mouse Opossum"
   },
   {
-    "slug": "eulemur-coronatus",
-    "name": "Eulemur coronatus"
+    "slug": "mongoose-lemur",
+    "name": "Mongoose Lemur"
   },
   {
-    "slug": "hapalemur-griseus",
-    "name": "Hapalemur griseus"
+    "slug": "spanish-lobster",
+    "name": "Spanish lobster"
   },
   {
-    "slug": "gracilinanus-microtarsus",
-    "name": "Gracilinanus microtarsus"
+    "slug": "goeldis-monkey",
+    "name": "Goeldi's monkey"
   },
   {
-    "slug": "microcebus-murinus",
-    "name": "Microcebus murinus"
+    "slug": "fork-marked-lemur",
+    "name": "Fork-marked Lemur"
   },
   {
-    "slug": "cheirogaleus-medius",
-    "name": "Cheirogaleus medius"
+    "slug": "platypus",
+    "name": "Platypus"
   },
   {
-    "slug": "callimico-goeldii",
-    "name": "Callimico goeldii"
+    "slug": "grey-mouse-lemur",
+    "name": "Grey Mouse Lemur"
   },
   {
-    "slug": "phaner-furcifer",
-    "name": "Phaner furcifer"
+    "slug": "fat-tailed-dwarf-lemur",
+    "name": "Fat-tailed Dwarf Lemur"
   },
   {
-    "slug": "ornithorhynchus-anatinus",
-    "name": "Ornithorhynchus anatinus"
+    "slug": "sanderia-malayensis",
+    "name": "Sanderia malayensis"
   },
   {
-    "slug": "colluricincla-harmonica",
-    "name": "Colluricincla harmonica"
+    "slug": "pygmy-tarsier",
+    "name": "Pygmy Tarsier"
   },
   {
-    "slug": "saguinus-inustus",
-    "name": "Saguinus inustus"
+    "slug": "moustached-tamarin",
+    "name": "Moustached Tamarin"
   },
   {
-    "slug": "leontopithecus-chrysomelas",
-    "name": "Leontopithecus chrysomelas"
+    "slug": "uropeltis-rubromaculata",
+    "name": "Uropeltis rubromaculata"
   },
   {
-    "slug": "perisoreus-canadensis",
-    "name": "Perisoreus canadensis"
+    "slug": "sonans-salamander",
+    "name": "Sonan's salamander"
   },
   {
-    "slug": "tarsius-pumilus",
-    "name": "Tarsius pumilus"
+    "slug": "canada-jay",
+    "name": "Canada Jay"
   },
   {
-    "slug": "dendrocitta-leucogastra",
-    "name": "Dendrocitta leucogastra"
+    "slug": "caribbean-reef-shark",
+    "name": "Caribbean Reef Shark"
   },
   {
-    "slug": "lepilemur-microdon",
-    "name": "Lepilemur microdon"
+    "slug": "cuviers-beaked-whale",
+    "name": "Cuvier's Beaked Whale"
   },
   {
-    "slug": "orcynopsis-unicolor",
-    "name": "Orcynopsis unicolor"
+    "slug": "southern-right-whale",
+    "name": "Southern Right Whale"
   },
   {
-    "slug": "inia-geoffrensis",
-    "name": "Inia geoffrensis"
+    "slug": "small-toothed-sportive-lemur",
+    "name": "Small-toothed Sportive Lemur"
   },
   {
-    "slug": "ziphius-cavirostris",
-    "name": "Ziphius cavirostris"
+    "slug": "opostega-salaciella",
+    "name": "Opostega salaciella"
   },
   {
-    "slug": "eubalaena-australis",
-    "name": "Eubalaena australis"
+    "slug": "plain-bonito",
+    "name": "Plain Bonito"
   },
   {
-    "slug": "marmosa-lepida",
-    "name": "Marmosa lepida"
+    "slug": "opostega-stiriella",
+    "name": "Opostega stiriella"
   },
   {
-    "slug": "indopacetus-pacificus",
-    "name": "Indopacetus pacificus"
+    "slug": "limnichus-unistriatus",
+    "name": "Limnichus unistriatus"
   },
   {
-    "slug": "mesoplodon-europaeus",
-    "name": "Mesoplodon europaeus"
+    "slug": "chinese-hare",
+    "name": "Chinese Hare"
   },
   {
-    "slug": "mesoplodon-stejnegeri",
-    "name": "Mesoplodon stejnegeri"
+    "slug": "stejnegers-beaked-whale",
+    "name": "Stejneger's Beaked Whale"
   },
   {
-    "slug": "berardius-arnuxii",
-    "name": "Berardius arnuxii"
+    "slug": "gervais-beaked-whale",
+    "name": "Gervais' Beaked Whale"
   },
   {
-    "slug": "lepus-sinensis",
-    "name": "Lepus sinensis"
+    "slug": "arnouxs-beaked-whale",
+    "name": "Arnoux's Beaked Whale"
   },
   {
-    "slug": "tapirus-kabomani",
-    "name": "Tapirus kabomani"
+    "slug": "african-pygmy-squirrel",
+    "name": "African Pygmy Squirrel"
   },
   {
-    "slug": "mesoplodon-bowdoini",
-    "name": "Mesoplodon bowdoini"
+    "slug": "giant-panda",
+    "name": "Giant Panda"
   },
   {
-    "slug": "steno-bredanensis",
-    "name": "Steno bredanensis"
+    "slug": "little-crow",
+    "name": "Little Crow"
   },
   {
-    "slug": "corvus-florensis",
-    "name": "Corvus florensis"
+    "slug": "andrews-beaked-whale",
+    "name": "Andrew's Beaked Whale"
   },
   {
-    "slug": "mesoplodon-bidens",
-    "name": "Mesoplodon bidens"
+    "slug": "flores-crow",
+    "name": "Flores Crow"
   },
   {
-    "slug": "corvus-caurinus",
-    "name": "Corvus caurinus"
+    "slug": "hawaiian-crow",
+    "name": "Hawaiian Crow"
   },
   {
-    "slug": "rhogeessa-parvula",
-    "name": "Rhogeessa parvula"
+    "slug": "pine-false-webworm",
+    "name": "Pine False Webworm"
   },
   {
-    "slug": "scotomanes-ornatus",
-    "name": "Scotomanes ornatus"
+    "slug": "large-eared-pied-bat",
+    "name": "Large-eared Pied Bat"
   },
   {
-    "slug": "chalinolobus-dwyeri",
-    "name": "Chalinolobus dwyeri"
+    "slug": "little-yellow-bat",
+    "name": "Little Yellow Bat"
   },
   {
-    "slug": "rhogeessa-tumida",
-    "name": "Rhogeessa tumida"
+    "slug": "little-yellow-bat",
+    "name": "Little Yellow Bat"
   },
   {
-    "slug": "rhogeessa-mira",
-    "name": "Rhogeessa mira"
+    "slug": "harlequin-bat",
+    "name": "Harlequin Bat"
   },
   {
-    "slug": "pterodroma-inexpectata",
-    "name": "Pterodroma inexpectata"
+    "slug": "bullers-albatross",
+    "name": "Buller's Albatross"
   },
   {
-    "slug": "chalinolobus-morio",
-    "name": "Chalinolobus morio"
+    "slug": "namibian-long-eared-bat",
+    "name": "Namibian Long-eared Bat"
   },
   {
-    "slug": "histiotus-macrotus",
-    "name": "Histiotus macrotus"
+    "slug": "chocolate-wattled-bat",
+    "name": "Chocolate Wattled Bat"
   },
   {
-    "slug": "histiotus-velatus",
-    "name": "Histiotus velatus"
+    "slug": "big-eared-brown-bat",
+    "name": "Big-eared Brown Bat"
   },
   {
-    "slug": "laephotis-botswanae",
-    "name": "Laephotis botswanae"
+    "slug": "botswana-long-eared-bat",
+    "name": "Botswana Long-eared Bat"
   },
   {
-    "slug": "laephotis-namibensis",
-    "name": "Laephotis namibensis"
+    "slug": "snares-penguin",
+    "name": "Snares Penguin"
   },
   {
-    "slug": "cyanolyca-mirabilis",
-    "name": "Cyanolyca mirabilis"
+    "slug": "dusky-tube-nosed-bat",
+    "name": "Dusky Tube-nosed Bat"
   },
   {
-    "slug": "murina-puta",
-    "name": "Murina puta"
+    "slug": "taiwan-tube-nosed-bat",
+    "name": "Taiwan Tube-nosed Bat"
   },
   {
-    "slug": "murina-ussuriensis",
-    "name": "Murina ussuriensis"
+    "slug": "murina-tenebrosa-is-a-rare-bat-species-its-recognized-common-name-is-gloomy-tube-nosed-bat",
+    "name": "Murina tenebrosa is a rare bat species. Its recognized common name is:\n\nGloomy Tube-nosed Bat"
   },
   {
-    "slug": "murina-fusca",
-    "name": "Murina fusca"
+    "slug": "bronze-tube-nosed-bat",
+    "name": "Bronze Tube-nosed Bat"
   },
   {
-    "slug": "murina-tenebrosa",
-    "name": "Murina tenebrosa"
+    "slug": "ussuri-tube-nosed-bat",
+    "name": "Ussuri tube-nosed bat"
   },
   {
-    "slug": "murina-aenea",
-    "name": "Murina aenea"
+    "slug": "guadeloupe-big-brown-bat",
+    "name": "Guadeloupe Big Brown Bat"
   },
   {
-    "slug": "gyps-bengalensis",
-    "name": "Gyps bengalensis"
+    "slug": "black-faced-hawk",
+    "name": "Black-faced Hawk"
   },
   {
-    "slug": "scotoecus-albofuscus",
-    "name": "Scotoecus albofuscus"
+    "slug": "thomass-house-bat",
+    "name": "Thomas's House Bat"
   },
   {
-    "slug": "lasionycteris-noctivagans",
-    "name": "Lasionycteris noctivagans"
+    "slug": "light-winged-lesser-house-bat",
+    "name": "Light-winged Lesser House Bat"
   },
   {
-    "slug": "eptesicus-guadeloupensis",
-    "name": "Eptesicus guadeloupensis"
+    "slug": "silver-haired-bat",
+    "name": "Silver-haired Bat"
   },
   {
-    "slug": "leucopternis-melanops",
-    "name": "Leucopternis melanops"
+    "slug": "cape-dune-mole-rat",
+    "name": "Cape dune mole-rat"
   },
   {
-    "slug": "scotoecus-pallidus",
-    "name": "Scotoecus pallidus"
+    "slug": "tufted-ground-squirrel",
+    "name": "Tufted Ground Squirrel"
   },
   {
-    "slug": "haliastur-indus",
-    "name": "Haliastur indus"
+    "slug": "madagascar-long-eared-owl",
+    "name": "Madagascar Long-eared Owl"
   },
   {
-    "slug": "eptesicus-tatei",
-    "name": "Eptesicus tatei"
+    "slug": "sombre-bat",
+    "name": "Sombre Bat"
   },
   {
-    "slug": "heliophobius-argenteocinereus",
-    "name": "Heliophobius argenteocinereus"
+    "slug": "silvery-mole-rat",
+    "name": "Silvery Mole Rat"
   },
   {
-    "slug": "bathyergus-suillus",
-    "name": "Bathyergus suillus"
+    "slug": "hairy-footed-flying-squirrel",
+    "name": "Hairy-footed Flying Squirrel"
   },
   {
-    "slug": "rheithrosciurus-macrotis",
-    "name": "Rheithrosciurus macrotis"
+    "slug": "layards-striped-squirrel",
+    "name": "Layard's Striped Squirrel"
   },
   {
-    "slug": "asio-madagascariensis",
-    "name": "Asio madagascariensis"
+    "slug": "black-tailed-prairie-dog",
+    "name": "Black-tailed Prairie Dog"
   },
   {
-    "slug": "megascops-watsonii",
-    "name": "Megascops watsonii"
+    "slug": "sulawesi-long-nosed-squirrel",
+    "name": "Sulawesi long-nosed squirrel"
   },
   {
-    "slug": "cynomys-gunnisoni",
-    "name": "Cynomys gunnisoni"
+    "slug": "pristaulacus-fasciatus",
+    "name": "Pristaulacus fasciatus"
   },
   {
-    "slug": "belomys-pearsonii",
-    "name": "Belomys pearsonii"
+    "slug": "ansorges-gecko",
+    "name": "Ansorge's Gecko"
   },
   {
-    "slug": "funambulus-layardi",
-    "name": "Funambulus layardi"
+    "slug": "siberian-flying-squirrel",
+    "name": "Siberian Flying Squirrel"
   },
   {
-    "slug": "cynomys-ludovicianus",
-    "name": "Cynomys ludovicianus"
+    "slug": "swinhoes-striped-squirrel",
+    "name": "Swinhoe's Striped Squirrel"
   },
   {
-    "slug": "hyosciurus-ileile",
-    "name": "Hyosciurus ileile"
+    "slug": "siberut-flying-squirrel",
+    "name": "Siberut Flying Squirrel"
   },
   {
-    "slug": "ischnura-posita",
-    "name": "Ischnura posita"
+    "slug": "basilan-flying-squirrel",
+    "name": "Basilan Flying Squirrel"
   },
   {
-    "slug": "petinomys-genibarbis",
-    "name": "Petinomys genibarbis"
+    "slug": "whiskered-flying-squirrel",
+    "name": "Whiskered Flying Squirrel"
   },
   {
-    "slug": "pteromys-volans",
-    "name": "Pteromys volans"
+    "slug": "caribbean-blue-darner",
+    "name": "Caribbean Blue Darner"
   },
   {
-    "slug": "tamiops-swinhoei",
-    "name": "Tamiops swinhoei"
+    "slug": "bornean-mountain-ground-squirrel",
+    "name": "Bornean Mountain Ground Squirrel"
   },
   {
-    "slug": "petinomys-lugens",
-    "name": "Petinomys lugens"
+    "slug": "indo-pacific-slender-gecko",
+    "name": "Indo-Pacific Slender Gecko"
   },
   {
-    "slug": "petinomys-crinitus",
-    "name": "Petinomys crinitus"
+    "slug": "orange-bellied-himalayan-squirrel",
+    "name": "Orange-bellied Himalayan Squirrel"
   },
   {
-    "slug": "lepus-insularis",
-    "name": "Lepus insularis"
+    "slug": "douglas-squirrel",
+    "name": "Douglas Squirrel"
   },
   {
-    "slug": "dremomys-everetti",
-    "name": "Dremomys everetti"
+    "slug": "common-opossum",
+    "name": "Common Opossum"
   },
   {
-    "slug": "coryphaeschna-adnexa",
-    "name": "Coryphaeschna adnexa"
+    "slug": "caucasian-mountain-ground-squirrel",
+    "name": "Caucasian Mountain Ground Squirrel"
   },
   {
-    "slug": "micrathyria-aequalis",
-    "name": "Micrathyria aequalis"
+    "slug": "southern-pudu",
+    "name": "Southern Pudu"
   },
   {
-    "slug": "dremomys-lokriah",
-    "name": "Dremomys lokriah"
+    "slug": "daurian-ground-squirrel",
+    "name": "Daurian Ground Squirrel"
   },
   {
-    "slug": "tamiasciurus-douglasii",
-    "name": "Tamiasciurus douglasii"
+    "slug": "chinese-water-deer",
+    "name": "Chinese Water Deer"
   },
   {
-    "slug": "lepus-mandshuricus",
-    "name": "Lepus mandshuricus"
+    "slug": "scarlet-skimmer",
+    "name": "Scarlet Skimmer"
   },
   {
-    "slug": "pudu-puda",
-    "name": "Pudu puda"
+    "slug": "melanophidium-punctatum",
+    "name": "Melanophidium punctatum"
   },
   {
-    "slug": "crocothemis-servilia",
-    "name": "Crocothemis servilia"
+    "slug": "drummond-hays-earth-snake",
+    "name": "Drummond-hay's Earth Snake"
   },
   {
-    "slug": "spermophilus-dauricus",
-    "name": "Spermophilus dauricus"
+    "slug": "red-deer",
+    "name": "Red Deer"
   },
   {
-    "slug": "spermophilus-musicus",
-    "name": "Spermophilus musicus"
+    "slug": "gongshan-muntjac",
+    "name": "Gongshan Muntjac"
   },
   {
-    "slug": "hydropotes-inermis",
-    "name": "Hydropotes inermis"
+    "slug": "mule-deer",
+    "name": "Mule Deer"
   },
   {
-    "slug": "lepus-othus",
-    "name": "Lepus othus"
+    "slug": "indian-muntjac",
+    "name": "Indian Muntjac"
   },
   {
-    "slug": "cervus-elaphus",
-    "name": "Cervus elaphus"
+    "slug": "egyptian-tortoise",
+    "name": "Egyptian Tortoise"
   },
   {
-    "slug": "muntiacus-muntjak",
-    "name": "Muntiacus muntjak"
+    "slug": "alpine-musk-deer",
+    "name": "Alpine Musk Deer"
   },
   {
-    "slug": "rhinophis-drummondhayi",
-    "name": "Rhinophis drummondhayi"
+    "slug": "ebians-palm-squirrel",
+    "name": "Ebian's Palm Squirrel"
   },
   {
-    "slug": "muntiacus-gongshanensis",
-    "name": "Muntiacus gongshanensis"
+    "slug": "collared-peccary",
+    "name": "Collared Peccary"
   },
   {
-    "slug": "odocoileus-hemionus",
-    "name": "Odocoileus hemionus"
+    "slug": "silver-dik-dik",
+    "name": "Silver Dik-dik"
   },
   {
-    "slug": "gracilinanus-dryas",
-    "name": "Gracilinanus dryas"
+    "slug": "forest-musk-deer",
+    "name": "Forest Musk Deer"
   },
   {
-    "slug": "moschus-berezovskii",
-    "name": "Moschus berezovskii"
+    "slug": "anatolian-ground-squirrel",
+    "name": "Anatolian Ground Squirrel"
   },
   {
-    "slug": "madoqua-piacentinii",
-    "name": "Madoqua piacentinii"
+    "slug": "blue-sheep",
+    "name": "Blue Sheep"
   },
   {
-    "slug": "eudyptes-filholi",
-    "name": "Eudyptes filholi"
+    "slug": "silver-throated-jay",
+    "name": "Silver-throated Jay"
   },
   {
-    "slug": "moschus-chrysogaster",
-    "name": "Moschus chrysogaster"
-  },
-  {
-    "slug": "pecari-tajacu",
-    "name": "Pecari tajacu"
-  },
-  {
-    "slug": "naemorhedus-baileyi",
-    "name": "Naemorhedus baileyi"
-  },
-  {
-    "slug": "sandalus-porosus",
-    "name": "Sandalus porosus"
-  },
-  {
-    "slug": "bos-sauveli",
-    "name": "Bos sauveli"
-  },
-  {
-    "slug": "ammotragus-lervia",
-    "name": "Ammotragus lervia"
+    "slug": "burmese-star-tortoise",
+    "name": "Burmese Star Tortoise"
   },
   {
     "slug": "cnemaspis-timoriensis",
     "name": "Cnemaspis timoriensis"
   },
   {
-    "slug": "pseudois-nayaur",
-    "name": "Pseudois nayaur"
+    "slug": "red-goral",
+    "name": "Red Goral"
   },
   {
-    "slug": "equus-quagga",
-    "name": "Equus quagga"
+    "slug": "south-american-tapir",
+    "name": "South American Tapir"
   },
   {
-    "slug": "hydroscapha-natans",
-    "name": "Hydroscapha natans"
+    "slug": "big-eared-opossum",
+    "name": "Big-eared Opossum"
   },
   {
-    "slug": "diceros-bicornis",
-    "name": "Diceros bicornis"
+    "slug": "brook-trout",
+    "name": "Brook Trout"
   },
   {
-    "slug": "tapirus-terrestris",
-    "name": "Tapirus terrestris"
+    "slug": "black-rhinoceros",
+    "name": "Black Rhinoceros"
   },
   {
-    "slug": "rhinoceros-unicornis",
-    "name": "Rhinoceros unicornis"
+    "slug": "stream-salamander",
+    "name": "Stream Salamander"
   },
   {
-    "slug": "bunolagus-monticularis",
-    "name": "Bunolagus monticularis"
+    "slug": "plains-zebra",
+    "name": "Plains Zebra"
   },
   {
-    "slug": "limnichus-globosus",
-    "name": "Limnichus globosus"
+    "slug": "sumatran-striped-rabbit",
+    "name": "Sumatran Striped Rabbit"
   },
   {
-    "slug": "romerolagus-diazi",
-    "name": "Romerolagus diazi"
+    "slug": "drassodes-cupreus",
+    "name": "Drassodes cupreus"
   },
   {
-    "slug": "nesolagus-netscheri",
-    "name": "Nesolagus netscheri"
+    "slug": "variable-pitohui",
+    "name": "Variable Pitohui"
   },
   {
-    "slug": "lepus-peguensis",
-    "name": "Lepus peguensis"
+    "slug": "burmese-hare",
+    "name": "Burmese Hare"
   },
   {
-    "slug": "lepus-brachyurus",
-    "name": "Lepus brachyurus"
+    "slug": "centruroides-nitidus",
+    "name": "Centruroides nitidus"
   },
   {
-    "slug": "anorus-arizonicus",
-    "name": "Anorus arizonicus"
+    "slug": "southern-bluefin-tuna",
+    "name": "Southern Bluefin Tuna"
   },
   {
-    "slug": "lepus-habessinicus",
-    "name": "Lepus habessinicus"
+    "slug": "tehuantepec-jackrabbit",
+    "name": "Tehuantepec Jackrabbit"
   },
   {
-    "slug": "lepus-flavigularis",
-    "name": "Lepus flavigularis"
+    "slug": "sulawesi-serpent-eagle",
+    "name": "Sulawesi Serpent Eagle"
   },
   {
-    "slug": "lepus-victoriae",
-    "name": "Lepus victoriae"
+    "slug": "semiplumbeous-hawk",
+    "name": "Semiplumbeous Hawk"
   },
   {
-    "slug": "marmosa-robinsoni",
-    "name": "Marmosa robinsoni"
+    "slug": "abyssinian-hare",
+    "name": "Abyssinian Hare"
   },
   {
-    "slug": "limnichus-pygmaeus",
-    "name": "Limnichus pygmaeus"
+    "slug": "african-savanna-hare",
+    "name": "African Savanna Hare"
   },
   {
-    "slug": "gracilinanus-aceramarcae",
-    "name": "Gracilinanus aceramarcae"
+    "slug": "japanese-hare",
+    "name": "Japanese Hare"
   },
   {
-    "slug": "gracilinanus-marica",
-    "name": "Gracilinanus marica"
+    "slug": "robisons-mouse-opossum",
+    "name": "Robison's Mouse Opossum"
   },
   {
-    "slug": "marmosa-murina",
-    "name": "Marmosa murina"
+    "slug": "pristaulacus-oregonus",
+    "name": "Pristaulacus oregonus"
+  },
+  {
+    "slug": "aceramarca-gracile-opossum",
+    "name": "Aceramarca gracile opossum"
+  },
+  {
+    "slug": "rufous-treepie",
+    "name": "Rufous Treepie"
+  },
+  {
+    "slug": "murine-mouse-opossum",
+    "name": "Murine Mouse Opossum"
+  },
+  {
+    "slug": "northern-gracile-mouse-opossum",
+    "name": "Northern Gracile Mouse Opossum"
+  },
+  {
+    "slug": "dusky-headed-parakeet",
+    "name": "Dusky-headed Parakeet"
+  },
+  {
+    "slug": "alstons-mouse-opossum",
+    "name": "Alston's Mouse Opossum"
   },
   {
     "slug": "limnichus-demoulini",
     "name": "Limnichus demoulini"
   },
   {
-    "slug": "micoureus-phaeus",
-    "name": "Micoureus phaeus"
+    "slug": "little-woolly-mouse-opossum",
+    "name": "Little woolly mouse opossum"
   },
   {
-    "slug": "micoureus-constantiae",
-    "name": "Micoureus constantiae"
+    "slug": "elegant-fat-tailed-opossum",
+    "name": "Elegant Fat-tailed Opossum"
   },
   {
-    "slug": "micoureus-alstoni",
-    "name": "Micoureus alstoni"
+    "slug": "constants-woolly-mouse-opossum",
+    "name": "Constant's Woolly Mouse Opossum"
   },
   {
-    "slug": "thylamys-venustus",
-    "name": "Thylamys venustus"
+    "slug": "black-caiman",
+    "name": "Black Caiman"
   },
   {
-    "slug": "thylamys-sponsorius",
-    "name": "Thylamys sponsorius"
+    "slug": "andean-white-eared-opossum",
+    "name": "Andean White-eared Opossum"
+  },
+  {
+    "slug": "sponsorial-fat-tailed-mouse-opossum",
+    "name": "Sponsorial Fat-tailed Mouse Opossum"
+  },
+  {
+    "slug": "virginia-opossum",
+    "name": "Virginia Opossum"
+  },
+  {
+    "slug": "southeastern-four-eyed-opossum",
+    "name": "Southeastern Four-eyed Opossum"
   },
   {
     "slug": "limnichus-saegeri",
     "name": "Limnichus saegeri"
   },
   {
-    "slug": "didelphis-virginiana",
-    "name": "Didelphis virginiana"
+    "slug": "pinheiros-slender-mouse-opossum",
+    "name": "Pinheiro's Slender Mouse Opossum"
   },
   {
-    "slug": "didelphis-pernigra",
-    "name": "Didelphis pernigra"
+    "slug": "patagonian-opossum",
+    "name": "Patagonian Opossum"
   },
   {
-    "slug": "didelphis-imperfecta",
-    "name": "Didelphis imperfecta"
-  },
-  {
-    "slug": "lestodelphys-halli",
-    "name": "Lestodelphys halli"
-  },
-  {
-    "slug": "zaglossus-bruijni",
-    "name": "Zaglossus bruijni"
-  },
-  {
-    "slug": "marmosops-pinheiroi",
-    "name": "Marmosops pinheiroi"
-  },
-  {
-    "slug": "zaglossus-bartoni",
-    "name": "Zaglossus bartoni"
+    "slug": "bartons-long-beaked-echidna",
+    "name": "Barton's Long-beaked Echidna"
   },
   {
     "slug": "ectoedemia-agrimoniae",
     "name": "Ectoedemia agrimoniae"
   },
   {
-    "slug": "marmosa-tyleriana",
-    "name": "Marmosa tyleriana"
+    "slug": "limnichus-sericeus",
+    "name": "Limnichus sericeus"
+  },
+  {
+    "slug": "spectacled-bear",
+    "name": "Spectacled Bear"
+  },
+  {
+    "slug": "tylerias-mouse-opossum",
+    "name": "Tyleria's mouse opossum"
+  },
+  {
+    "slug": "laysan-albatross",
+    "name": "Laysan Albatross"
+  },
+  {
+    "slug": "california-scrub-jay",
+    "name": "California Scrub-Jay"
+  },
+  {
+    "slug": "south-american-fur-seal",
+    "name": "South American Fur Seal"
+  },
+  {
+    "slug": "yellow-billed-blue-magpie",
+    "name": "Yellow-billed Blue Magpie"
   },
   {
     "slug": "limnichus-fulvopubens",
     "name": "Limnichus fulvopubens"
   },
   {
-    "slug": "aphelocoma-californica",
-    "name": "Aphelocoma californica"
-  },
-  {
-    "slug": "aphelocoma-insularis",
-    "name": "Aphelocoma insularis"
-  },
-  {
-    "slug": "urocissa-flavirostris",
-    "name": "Urocissa flavirostris"
-  },
-  {
-    "slug": "perisoreus-infaustus",
-    "name": "Perisoreus infaustus"
+    "slug": "kerguelen-petrel",
+    "name": "Kerguelen Petrel"
   },
   {
     "slug": "limnichus-sulcatulus",
     "name": "Limnichus sulcatulus"
   },
   {
-    "slug": "dendrocitta-frontalis",
-    "name": "Dendrocitta frontalis"
+    "slug": "platymantis-subterrestris",
+    "name": "Platymantis subterrestris"
   },
   {
-    "slug": "urocissa-ornata",
-    "name": "Urocissa ornata"
+    "slug": "south-american-coati",
+    "name": "South American coati"
+  },
+  {
+    "slug": "african-dwarf-crocodile",
+    "name": "African Dwarf Crocodile"
+  },
+  {
+    "slug": "siberian-jay",
+    "name": "Siberian Jay"
+  },
+  {
+    "slug": "olingo",
+    "name": "Olingo"
+  },
+  {
+    "slug": "solomons-crow",
+    "name": "Solomons Crow"
   },
   {
     "slug": "limnichus-lederi",
     "name": "Limnichus lederi"
   },
   {
-    "slug": "corvus-enca",
-    "name": "Corvus enca"
+    "slug": "slender-billed-crow",
+    "name": "Slender-billed Crow"
   },
   {
-    "slug": "corvus-palmarum",
-    "name": "Corvus palmarum"
+    "slug": "brown-necked-raven",
+    "name": "Brown-necked Raven"
   },
   {
-    "slug": "corvus-meeki",
-    "name": "Corvus meeki"
+    "slug": "palm-crow",
+    "name": "Palm Crow"
   },
   {
-    "slug": "corvus-ruficollis",
-    "name": "Corvus ruficollis"
+    "slug": "sea-otter",
+    "name": "Sea Otter"
+  },
+  {
+    "slug": "hispaniolan-palm-crow",
+    "name": "Hispaniolan Palm Crow"
   },
   {
     "slug": "limnichus-micraspis",
     "name": "Limnichus micraspis"
   },
   {
-    "slug": "corvus-typicus",
-    "name": "Corvus typicus"
+    "slug": "piping-crow",
+    "name": "Piping Crow"
   },
   {
-    "slug": "corvus-rhipidurus",
-    "name": "Corvus rhipidurus"
+    "slug": "torresian-crow",
+    "name": "Torresian Crow"
   },
   {
-    "slug": "corvus-leucognaphalus",
-    "name": "Corvus leucognaphalus"
+    "slug": "fan-tailed-raven",
+    "name": "Fan-tailed Raven"
   },
   {
-    "slug": "corvus-orru",
-    "name": "Corvus orru"
-  },
-  {
-    "slug": "marmosa-mexicana",
-    "name": "Marmosa mexicana"
+    "slug": "mexican-mouse-opossum",
+    "name": "Mexican Mouse Opossum"
   },
   {
     "slug": "limnichus-aeneipennis",
     "name": "Limnichus aeneipennis"
   },
   {
-    "slug": "corvus-cornix",
-    "name": "Corvus cornix"
+    "slug": "brown-mouse-lemur",
+    "name": "Brown Mouse Lemur"
   },
   {
-    "slug": "corvus-crassirostris",
-    "name": "Corvus crassirostris"
+    "slug": "pristaulacus-colombianus",
+    "name": "Pristaulacus colombianus"
   },
   {
-    "slug": "corvus-frugilegus",
-    "name": "Corvus frugilegus"
+    "slug": "pristaulacus-tuberculiceps",
+    "name": "Pristaulacus tuberculiceps"
   },
   {
-    "slug": "corvus-sinaloae",
-    "name": "Corvus sinaloae"
+    "slug": "tube-nosed-bat",
+    "name": "Tube-nosed Bat"
   },
   {
-    "slug": "limnichus-aurosericus",
-    "name": "Limnichus aurosericus"
+    "slug": "forest-raven",
+    "name": "Forest Raven"
   },
   {
-    "slug": "corvus-nasicus",
-    "name": "Corvus nasicus"
+    "slug": "bowhead-whale",
+    "name": "Bowhead Whale"
   },
   {
-    "slug": "corvus-tasmanicus",
-    "name": "Corvus tasmanicus"
+    "slug": "pristaulacus-duporti",
+    "name": "Pristaulacus duporti"
   },
   {
-    "slug": "pitohui-dichrous",
-    "name": "Pitohui dichrous"
+    "slug": "cuban-crow",
+    "name": "Cuban Crow"
   },
   {
-    "slug": "cyanolyca-pumilo",
-    "name": "Cyanolyca pumilo"
+    "slug": "hooded-pitohui",
+    "name": "Hooded Pitohui"
   },
   {
-    "slug": "limnichus-punctatus",
-    "name": "Limnichus punctatus"
+    "slug": "sinaloa-crow",
+    "name": "Sinaloa Crow"
   },
   {
-    "slug": "chelictinia-riocourii",
-    "name": "Chelictinia riocourii"
+    "slug": "dwarf-jay",
+    "name": "Dwarf Jay"
   },
   {
-    "slug": "cyanolyca-nanus",
-    "name": "Cyanolyca nanus"
+    "slug": "grays-beaked-whale",
+    "name": "Gray's Beaked Whale"
   },
   {
-    "slug": "cyanolyca-turcosa",
-    "name": "Cyanolyca turcosa"
+    "slug": "turquoise-jay",
+    "name": "Turquoise Jay"
   },
   {
-    "slug": "elanus-caeruleus",
-    "name": "Elanus caeruleus"
+    "slug": "short-crested-jay",
+    "name": "Short-crested Jay"
   },
   {
-    "slug": "limnichus-curtus",
-    "name": "Limnichus curtus"
+    "slug": "st-paul-rock-spiny-lobster",
+    "name": "St. Paul Rock spiny lobster"
   },
   {
-    "slug": "gyps-coprotheres",
-    "name": "Gyps coprotheres"
+    "slug": "scissor-tailed-kite",
+    "name": "Scissor-tailed Kite"
   },
   {
-    "slug": "macheiramphus-alcinus",
-    "name": "Macheiramphus alcinus"
+    "slug": "bat-hawk",
+    "name": "Bat Hawk"
   },
   {
-    "slug": "gyps-indicus",
-    "name": "Gyps indicus"
+    "slug": "black-winged-kite",
+    "name": "Black-winged Kite"
   },
   {
-    "slug": "leucopternis-kuhli",
-    "name": "Leucopternis kuhli"
+    "slug": "cape-vulture",
+    "name": "Cape Vulture"
   },
   {
-    "slug": "pernis-apivorus",
-    "name": "Pernis apivorus"
+    "slug": "octopus-tsugarensis",
+    "name": "Octopus tsugarensis"
   },
   {
-    "slug": "gypohierax-angolensis",
-    "name": "Gypohierax angolensis"
+    "slug": "indian-vulture",
+    "name": "Indian Vulture"
   },
   {
-    "slug": "parabuteo-unicinctus",
-    "name": "Parabuteo unicinctus"
+    "slug": "palm-nut-vulture",
+    "name": "Palm-nut Vulture"
   },
   {
-    "slug": "haliaeetus-leucocephalus",
-    "name": "Haliaeetus leucocephalus"
+    "slug": "harriss-hawk",
+    "name": "Harris's Hawk"
   },
   {
-    "slug": "marmosa-andersoni",
-    "name": "Marmosa andersoni"
+    "slug": "pelagia-panopyra",
+    "name": "Pelagia panopyra"
   },
   {
-    "slug": "polemaetus-bellicosus",
-    "name": "Polemaetus bellicosus"
+    "slug": "bald-eagle",
+    "name": "Bald Eagle"
   },
   {
-    "slug": "limnichus-decorus",
-    "name": "Limnichus decorus"
+    "slug": "little-pied-bat",
+    "name": "Little Pied Bat"
   },
   {
-    "slug": "spilornis-elgini",
-    "name": "Spilornis elgini"
+    "slug": "white-browed-hawk",
+    "name": "White-browed Hawk"
   },
   {
-    "slug": "kaupifalco-monogrammicus",
-    "name": "Kaupifalco monogrammicus"
+    "slug": "andersons-mouse-opossum",
+    "name": "Anderson's Mouse Opossum"
   },
   {
-    "slug": "haliaeetus-vocifer",
-    "name": "Haliaeetus vocifer"
+    "slug": "long-tailed-bat",
+    "name": "Long-tailed Bat"
   },
   {
-    "slug": "limnichus-ater",
-    "name": "Limnichus ater"
+    "slug": "martial-eagle",
+    "name": "Martial Eagle"
   },
   {
-    "slug": "asio-otus",
-    "name": "Asio otus"
+    "slug": "lizard-buzzard",
+    "name": "Lizard Buzzard"
   },
   {
-    "slug": "athene-noctua",
-    "name": "Athene noctua"
+    "slug": "diplulmaris-malayensis",
+    "name": "Diplulmaris malayensis"
   },
   {
-    "slug": "asio-abyssinicus",
-    "name": "Asio abyssinicus"
+    "slug": "andaman-serpent-eagle",
+    "name": "Andaman Serpent Eagle"
   },
   {
-    "slug": "micoureus-regina",
-    "name": "Micoureus regina"
+    "slug": "aurosa-furcata",
+    "name": "Aurosa furcata"
   },
   {
-    "slug": "megascops-choliba",
-    "name": "Megascops choliba"
+    "slug": "little-golden-whiskered-bat",
+    "name": "Little Golden Whiskered Bat"
   },
   {
-    "slug": "megascops-trichopsis",
-    "name": "Megascops trichopsis"
+    "slug": "abyssinian-owl",
+    "name": "Abyssinian Owl"
   },
   {
-    "slug": "megascops-nudipes",
-    "name": "Megascops nudipes"
+    "slug": "cosmasterias-felipes",
+    "name": "Cosmasterias felipes"
   },
   {
-    "slug": "megascops-clarkii",
-    "name": "Megascops clarkii"
+    "slug": "harmless-big-brown-bat",
+    "name": "Harmless Big Brown Bat"
   },
   {
-    "slug": "spilornis-cheela",
-    "name": "Spilornis cheela"
+    "slug": "northern-palm-squirrel",
+    "name": "Northern Palm Squirrel"
   },
   {
-    "slug": "megascops-marshalli",
-    "name": "Megascops marshalli"
+    "slug": "puerto-rican-screech-owl",
+    "name": "Puerto Rican Screech-Owl"
   },
   {
-    "slug": "forpus-modestus",
-    "name": "Forpus modestus"
+    "slug": "neotropical-river-otter",
+    "name": "Neotropical River Otter"
   },
   {
-    "slug": "megascops-roboratus",
-    "name": "Megascops roboratus"
+    "slug": "tropical-screech-owl",
+    "name": "Tropical Screech-Owl"
   },
   {
-    "slug": "megascops-asio",
-    "name": "Megascops asio"
+    "slug": "bare-shanked-screech-owl",
+    "name": "Bare-shanked Screech-Owl"
   },
   {
-    "slug": "forpus-passerinus",
-    "name": "Forpus passerinus"
+    "slug": "sand-colored-woolly-mouse-opossum",
+    "name": "Sand-colored Woolly Mouse Opossum"
   },
   {
-    "slug": "forpus-coelestis",
-    "name": "Forpus coelestis"
+    "slug": "mexican-prairie-dog",
+    "name": "Mexican Prairie Dog"
   },
   {
-    "slug": "aratinga-auricapillus",
-    "name": "Aratinga auricapillus"
+    "slug": "peruvian-screech-owl",
+    "name": "Peruvian Screech-Owl"
   },
   {
-    "slug": "metriopelia-melanoptera",
-    "name": "Metriopelia melanoptera"
+    "slug": "crested-serpent-eagle",
+    "name": "Crested Serpent Eagle"
   },
   {
-    "slug": "aratinga-finschi",
-    "name": "Aratinga finschi"
+    "slug": "eastern-screech-owl",
+    "name": "Eastern Screech-Owl"
   },
   {
-    "slug": "aratinga-mitrata",
-    "name": "Aratinga mitrata"
+    "slug": "cloud-forest-screech-owl",
+    "name": "Cloud-forest Screech-owl"
   },
   {
-    "slug": "psittacella-madaraszi",
-    "name": "Psittacella madaraszi"
+    "slug": "dusky-billed-parrotlet",
+    "name": "Dusky-billed Parrotlet"
   },
   {
-    "slug": "probosciger-aterrimus",
-    "name": "Probosciger aterrimus"
+    "slug": "gold-capped-parakeet",
+    "name": "Gold-capped Parakeet"
   },
   {
-    "slug": "psittacella-modesta",
-    "name": "Psittacella modesta"
+    "slug": "yellow-ground-squirrel",
+    "name": "Yellow Ground Squirrel"
   },
   {
-    "slug": "psittacella-brehmii",
-    "name": "Psittacella brehmii"
+    "slug": "crimson-fronted-parakeet",
+    "name": "Crimson-fronted Parakeet"
   },
   {
-    "slug": "micropsitta-meeki",
-    "name": "Micropsitta meeki"
+    "slug": "green-rumped-parrotlet",
+    "name": "Green-rumped Parrotlet"
   },
   {
-    "slug": "eudyptes-chrysocome",
-    "name": "Eudyptes chrysocome"
+    "slug": "sika-deer",
+    "name": "Sika Deer"
   },
   {
-    "slug": "eudyptes-chrysolophus",
-    "name": "Eudyptes chrysolophus"
+    "slug": "black-winged-ground-dove",
+    "name": "Black-winged Ground Dove"
   },
   {
-    "slug": "megadyptes-antipodes",
-    "name": "Megadyptes antipodes"
+    "slug": "palm-cockatoo",
+    "name": "Palm Cockatoo"
   },
   {
-    "slug": "eudyptes-schlegeli",
-    "name": "Eudyptes schlegeli"
+    "slug": "white-lipped-peccary",
+    "name": "White-lipped Peccary"
   },
   {
-    "slug": "micoureus-demerarae",
-    "name": "Micoureus demerarae"
+    "slug": "brehms-tiger-parrot",
+    "name": "Brehm's Tiger Parrot"
+  },
+  {
+    "slug": "mitred-parakeet",
+    "name": "Mitred Parakeet"
+  },
+  {
+    "slug": "attenboroughs-long-beaked-echidna",
+    "name": "Attenborough's long-beaked echidna"
+  },
+  {
+    "slug": "macaroni-penguin",
+    "name": "Macaroni Penguin"
+  },
+  {
+    "slug": "florida-scrub-jay",
+    "name": "Florida Scrub-Jay"
+  },
+  {
+    "slug": "meeks-pygmy-parrot",
+    "name": "Meek's Pygmy Parrot"
+  },
+  {
+    "slug": "royal-penguin",
+    "name": "Royal Penguin"
+  },
+  {
+    "slug": "white-throated-magpie-jay",
+    "name": "White-throated Magpie-Jay"
+  },
+  {
+    "slug": "yellow-eyed-penguin",
+    "name": "Yellow-eyed Penguin"
+  },
+  {
+    "slug": "long-furred-woolly-mouse-opossum",
+    "name": "Long-furred Woolly Mouse Opossum"
   },
   {
     "slug": "limnichus-subelongatus",
     "name": "Limnichus subelongatus"
   },
   {
-    "slug": "spheniscus-mendiculus",
-    "name": "Spheniscus mendiculus"
+    "slug": "salsers-toad-frog",
+    "name": "Salser's Toad-frog"
   },
   {
-    "slug": "pygoscelis-antarcticus",
-    "name": "Pygoscelis antarcticus"
+    "slug": "galpagos-penguin",
+    "name": "Galápagos Penguin"
   },
   {
-    "slug": "eudyptula-minor",
-    "name": "Eudyptula minor"
+    "slug": "little-penguin",
+    "name": "Little Penguin"
   },
   {
-    "slug": "tramea-lacerata",
-    "name": "Tramea lacerata"
+    "slug": "sulawesi-thrush-tanager",
+    "name": "Sulawesi Thrush-Tanager"
   },
   {
-    "slug": "phoebastria-albatrus",
-    "name": "Phoebastria albatrus"
+    "slug": "bare-faced-ground-dove",
+    "name": "Bare-faced Ground Dove"
   },
   {
-    "slug": "thalassarche-chrysostoma",
-    "name": "Thalassarche chrysostoma"
+    "slug": "black-saddlebags",
+    "name": "Black Saddlebags"
   },
   {
-    "slug": "thalassarche-cauta",
-    "name": "Thalassarche cauta"
+    "slug": "stellers-sea-eagle",
+    "name": "Steller's Sea Eagle"
   },
   {
-    "slug": "metriopelia-aymara",
-    "name": "Metriopelia aymara"
+    "slug": "madagascar-fish-eagle",
+    "name": "Madagascar Fish Eagle"
   },
   {
-    "slug": "tramea-limbata",
-    "name": "Tramea limbata"
+    "slug": "fish-crow",
+    "name": "Fish Crow"
   },
   {
-    "slug": "pelecanoides-georgicus",
-    "name": "Pelecanoides georgicus"
+    "slug": "grey-headed-albatross",
+    "name": "Grey-headed Albatross"
   },
   {
-    "slug": "pterodroma-nigripennis",
-    "name": "Pterodroma nigripennis"
+    "slug": "black-winged-petrel",
+    "name": "Black-winged Petrel"
   },
   {
-    "slug": "fulmarus-glacialis",
-    "name": "Fulmarus glacialis"
+    "slug": "northern-fulmar",
+    "name": "Northern Fulmar"
   },
   {
-    "slug": "pterodroma-occulta",
-    "name": "Pterodroma occulta"
+    "slug": "ferruginous-glider",
+    "name": "Ferruginous Glider"
   },
   {
-    "slug": "tholymis-tillarga",
-    "name": "Tholymis tillarga"
+    "slug": "south-georgia-diving-petrel",
+    "name": "South Georgia Diving Petrel"
   },
   {
-    "slug": "pterodroma-brevipes",
-    "name": "Pterodroma brevipes"
+    "slug": "vanuatu-petrel",
+    "name": "Vanuatu Petrel"
   },
   {
-    "slug": "metriopelia-ceciliae",
-    "name": "Metriopelia ceciliae"
+    "slug": "white-throated-screech-owl",
+    "name": "White-throated Screech-Owl"
   },
   {
-    "slug": "pterodroma-incerta",
-    "name": "Pterodroma incerta"
+    "slug": "bare-faced-ground-dove",
+    "name": "Bare-faced Ground Dove"
   },
   {
-    "slug": "pterodroma-cervicalis",
-    "name": "Pterodroma cervicalis"
+    "slug": "atlantic-petrel",
+    "name": "Atlantic Petrel"
   },
   {
-    "slug": "marmosa-rubra",
-    "name": "Marmosa rubra"
+    "slug": "white-necked-petrel",
+    "name": "White-necked Petrel"
   },
   {
-    "slug": "cordulia-aenea",
-    "name": "Cordulia aenea"
+    "slug": "coral-tailed-cloudwing",
+    "name": "Coral-tailed Cloudwing"
   },
   {
-    "slug": "goura-cristata",
-    "name": "Goura cristata"
+    "slug": "collared-petrel",
+    "name": "Collared Petrel"
   },
   {
-    "slug": "goura-scheepmakeri",
-    "name": "Goura scheepmakeri"
+    "slug": "jandaya-parakeet",
+    "name": "Jandaya Parakeet"
   },
   {
-    "slug": "turacoena-manadensis",
-    "name": "Turacoena manadensis"
+    "slug": "red-mouse-opossum",
+    "name": "Red Mouse Opossum"
   },
   {
-    "slug": "gallicolumba-platenae",
-    "name": "Gallicolumba platenae"
+    "slug": "black-magpie",
+    "name": "Black Magpie"
   },
   {
-    "slug": "patagioenas-nigrirostris",
-    "name": "Patagioenas nigrirostris"
+    "slug": "downy-emerald",
+    "name": "Downy Emerald"
   },
   {
-    "slug": "gallicolumba-rufigula",
-    "name": "Gallicolumba rufigula"
+    "slug": "painted-tiger-parrot",
+    "name": "Painted Tiger Parrot"
   },
   {
-    "slug": "patagioenas-inornata",
-    "name": "Patagioenas inornata"
+    "slug": "white-faced-cuckoo-dove",
+    "name": "White-faced Cuckoo-Dove"
   },
   {
-    "slug": "gallicolumba-crinigera",
-    "name": "Gallicolumba crinigera"
+    "slug": "african-penguin",
+    "name": "African Penguin"
   },
   {
-    "slug": "crocodylus-mindorensis",
-    "name": "Crocodylus mindorensis"
+    "slug": "golden-heart-pigeon",
+    "name": "Golden-heart Pigeon"
   },
   {
-    "slug": "reddyanus-tibetanus",
-    "name": "Reddyanus tibetanus"
+    "slug": "palawan-ground-dove",
+    "name": "Palawan Ground Dove"
   },
   {
-    "slug": "crocodylus-siamensis",
-    "name": "Crocodylus siamensis"
+    "slug": "plain-pigeon",
+    "name": "Plain Pigeon"
   },
   {
-    "slug": "crocodylus-niloticus",
-    "name": "Crocodylus niloticus"
+    "slug": "mindanao-bleeding-heart",
+    "name": "Mindanao Bleeding-heart"
   },
   {
-    "slug": "patagioenas-araucana",
-    "name": "Patagioenas araucana"
+    "slug": "short-billed-pigeon",
+    "name": "Short-billed Pigeon"
+  },
+  {
+    "slug": "spectacled-parrotlet",
+    "name": "Spectacled Parrotlet"
+  },
+  {
+    "slug": "atlantic-yellow-nosed-albatross",
+    "name": "Atlantic Yellow-nosed Albatross"
+  },
+  {
+    "slug": "philippine-crocodile",
+    "name": "Philippine Crocodile"
+  },
+  {
+    "slug": "siamese-crocodile",
+    "name": "Siamese Crocodile"
+  },
+  {
+    "slug": "chilean-pigeon",
+    "name": "Chilean Pigeon"
+  },
+  {
+    "slug": "nile-crocodile",
+    "name": "Nile Crocodile"
+  },
+  {
+    "slug": "common-diving-petrel",
+    "name": "Common Diving Petrel"
+  },
+  {
+    "slug": "smooth-fronted-caiman",
+    "name": "Smooth-fronted Caiman"
   },
   {
     "slug": "epigomphus-quadrices",
     "name": "Epigomphus quadrices"
   },
   {
-    "slug": "colluricincla-tenebrosa",
-    "name": "Colluricincla tenebrosa"
+    "slug": "sooty-shrikethrush",
+    "name": "Sooty Shrikethrush"
   },
   {
-    "slug": "tomistoma-schlegelii",
-    "name": "Tomistoma schlegelii"
+    "slug": "false-gharial",
+    "name": "False Gharial"
   },
   {
-    "slug": "caiman-yacare",
-    "name": "Caiman yacare"
+    "slug": "yacare-caiman",
+    "name": "Yacare Caiman"
   },
   {
-    "slug": "paleosuchus-trigonatus",
-    "name": "Paleosuchus trigonatus"
-  },
-  {
-    "slug": "thylamys-pusillus",
-    "name": "Thylamys pusillus"
+    "slug": "hawaiian-petrel",
+    "name": "Hawaiian Petrel"
   },
   {
     "slug": "platymantis-indeprensus",
     "name": "Platymantis indeprensus"
   },
   {
-    "slug": "cornufer-macrops",
-    "name": "Cornufer macrops"
+    "slug": "large-eyed-elf-frog",
+    "name": "Large-eyed Elf Frog"
   },
   {
-    "slug": "platymantis-montanus",
-    "name": "Platymantis montanus"
+    "slug": "mountain-forest-frog",
+    "name": "Mountain Forest Frog"
   },
   {
-    "slug": "platymantis-corrugatus",
-    "name": "Platymantis corrugatus"
+    "slug": "corrugated-forest-frog",
+    "name": "Corrugated Forest Frog"
   },
   {
-    "slug": "platymantis-spelaeus",
-    "name": "Platymantis spelaeus"
+    "slug": "tiny-fat-tailed-opossum",
+    "name": "Tiny Fat-tailed Opossum"
   },
   {
-    "slug": "platymantis-cornutus",
-    "name": "Platymantis cornutus"
+    "slug": "tokay-gecko",
+    "name": "Tokay Gecko"
   },
   {
-    "slug": "platymantis-naomii",
-    "name": "Platymantis naomii"
+    "slug": "cave-platymantis",
+    "name": "Cave Platymantis"
   },
   {
-    "slug": "platymantis-polillensis",
-    "name": "Platymantis polillensis"
+    "slug": "horned-forest-frog",
+    "name": "Horned Forest Frog"
   },
   {
-    "slug": "platymantis-paengi",
-    "name": "Platymantis paengi"
+    "slug": "madang-mountain-pigeon",
+    "name": "Madang Mountain Pigeon"
   },
   {
-    "slug": "platymantis-diesmosi",
-    "name": "Platymantis diesmosi"
+    "slug": "negros-bleeding-heart",
+    "name": "Negros Bleeding-heart"
   },
   {
-    "slug": "cornufer-guentheri",
-    "name": "Cornufer guentheri"
+    "slug": "polillo-forest-frog",
+    "name": "Polillo Forest Frog"
   },
   {
-    "slug": "platymantis-taylori",
-    "name": "Platymantis taylori"
+    "slug": "wynaud-black-shieldtail",
+    "name": "Wynaud black shieldtail"
   },
   {
     "slug": "platymantis-banahao",
     "name": "Platymantis banahao"
   },
   {
-    "slug": "cornufer-guppyi",
-    "name": "Cornufer guppyi"
+    "slug": "pale-vented-pigeon",
+    "name": "Pale-vented Pigeon"
   },
   {
-    "slug": "phrynomantis-affinis",
-    "name": "Phrynomantis affinis"
+    "slug": "orinoco-crocodile",
+    "name": "Orinoco Crocodile"
   },
   {
-    "slug": "tramea-abdominalis",
-    "name": "Tramea abdominalis"
+    "slug": "mugger-crocodile",
+    "name": "Mugger Crocodile"
   },
   {
-    "slug": "cornufer-myersi",
-    "name": "Cornufer myersi"
+    "slug": "taylors-forest-frog",
+    "name": "Taylor's Forest Frog"
   },
   {
-    "slug": "dermatonotus-muelleri",
-    "name": "Dermatonotus muelleri"
+    "slug": "central-african-snake-necked-frog",
+    "name": "Central African Snake-necked Frog"
   },
   {
-    "slug": "pseudohynobius-flavomaculatus",
-    "name": "Pseudohynobius flavomaculatus"
+    "slug": "purple-frog",
+    "name": "Purple Frog"
   },
   {
-    "slug": "scaphiophryne-marmorata",
-    "name": "Scaphiophryne marmorata"
+    "slug": "leopard-tortoise",
+    "name": "Leopard Tortoise"
   },
   {
-    "slug": "drassodes-stationis",
-    "name": "Drassodes stationis"
+    "slug": "mllers-termite-frog",
+    "name": "Müller's Termite Frog"
   },
   {
-    "slug": "scaphiophryne-calcarata",
-    "name": "Scaphiophryne calcarata"
+    "slug": "yellow-spotted-salamander",
+    "name": "Yellow-spotted Salamander"
+  },
+  {
+    "slug": "myerss-limestone-frog",
+    "name": "Myers's Limestone Frog"
   },
   {
     "slug": "scaphiophryne-boribory",
     "name": "Scaphiophryne boribory"
   },
   {
-    "slug": "scaphiophryne-gottlebei",
-    "name": "Scaphiophryne gottlebei"
+    "slug": "smooth-platymantis",
+    "name": "Smooth Platymantis"
   },
   {
-    "slug": "pachyhynobius-shangchengensis",
-    "name": "Pachyhynobius shangchengensis"
+    "slug": "pancake-tortoise",
+    "name": "Pancake Tortoise"
+  },
+  {
+    "slug": "madagascar-burrowing-frog",
+    "name": "Madagascar Burrowing Frog"
+  },
+  {
+    "slug": "rainbow-burrowing-frog",
+    "name": "Rainbow Burrowing Frog"
+  },
+  {
+    "slug": "marbled-rain-frog",
+    "name": "Marbled Rain Frog"
+  },
+  {
+    "slug": "longdong-stream-salamander",
+    "name": "Longdong Stream Salamander"
+  },
+  {
+    "slug": "shangcheng-stout-salamander",
+    "name": "Shangcheng Stout Salamander"
   },
   {
     "slug": "drassodes-helenae",
     "name": "Drassodes helenae"
   },
   {
-    "slug": "batrachuperus-yenyuanensis",
-    "name": "Batrachuperus yenyuanensis"
+    "slug": "semirechensk-salamander",
+    "name": "Semirechensk Salamander"
   },
   {
-    "slug": "batrachuperus-londongensis",
-    "name": "Batrachuperus londongensis"
+    "slug": "island-forest-frog",
+    "name": "Island Forest Frog"
   },
   {
-    "slug": "ranodon-sibiricus",
-    "name": "Ranodon sibiricus"
+    "slug": "cagayan-forest-frog",
+    "name": "Cagayan Forest Frog"
+  },
+  {
+    "slug": "menabe-burrowing-frog",
+    "name": "Menabe Burrowing Frog"
+  },
+  {
+    "slug": "yiwu-salamander",
+    "name": "Yiwu Salamander"
   },
   {
     "slug": "drassodes-infletus",
     "name": "Drassodes infletus"
   },
   {
-    "slug": "hynobius-tsuensis",
-    "name": "Hynobius tsuensis"
+    "slug": "tsue-salamander",
+    "name": "Tsue Salamander"
   },
   {
-    "slug": "hynobius-formosanus",
-    "name": "Hynobius formosanus"
+    "slug": "taiwan-salamander",
+    "name": "Taiwan salamander"
   },
   {
-    "slug": "hynobius-yiwuensis",
-    "name": "Hynobius yiwuensis"
+    "slug": "taiwan-salamander",
+    "name": "Taiwan Salamander"
   },
   {
-    "slug": "hynobius-fucus",
-    "name": "Hynobius fucus"
+    "slug": "tohoku-salamander",
+    "name": "Tohoku Salamander"
   },
   {
-    "slug": "hynobius-abei",
-    "name": "Hynobius abei"
+    "slug": "karl-schmidts-stream-salamander",
+    "name": "Karl Schmidt's Stream Salamander"
   },
   {
-    "slug": "drassodes-ellenae",
-    "name": "Drassodes ellenae"
+    "slug": "sabertooth-salmon",
+    "name": "Sabertooth Salmon"
   },
   {
-    "slug": "hynobius-kimurae",
-    "name": "Hynobius kimurae"
+    "slug": "redbelly-tilapia",
+    "name": "Redbelly Tilapia"
   },
   {
-    "slug": "hynobius-boulengeri",
-    "name": "Hynobius boulengeri"
+    "slug": "abes-salamander",
+    "name": "Abe's Salamander"
   },
   {
-    "slug": "rhizoprionodon-lalandii",
-    "name": "Rhizoprionodon lalandii"
+    "slug": "nicaraguan-cichlid",
+    "name": "Nicaraguan Cichlid"
   },
   {
-    "slug": "carcharhinus-brachyurus",
-    "name": "Carcharhinus brachyurus"
+    "slug": "smooth-hound",
+    "name": "Smooth-hound"
   },
   {
-    "slug": "drassodes-caffrerianus",
-    "name": "Drassodes caffrerianus"
+    "slug": "chinese-salamander",
+    "name": "Chinese Salamander"
   },
   {
-    "slug": "sphyrna-zygaena",
-    "name": "Sphyrna zygaena"
+    "slug": "kribensis",
+    "name": "Kribensis"
   },
   {
-    "slug": "mustelus-mustelus",
-    "name": "Mustelus mustelus"
+    "slug": "smooth-hammerhead",
+    "name": "Smooth Hammerhead"
   },
   {
-    "slug": "hemipristis-elongata",
-    "name": "Hemipristis elongata"
+    "slug": "spotted-salamander",
+    "name": "Spotted Salamander"
   },
   {
-    "slug": "drassodes-dregei",
-    "name": "Drassodes dregei"
+    "slug": "copper-shark",
+    "name": "Copper Shark"
   },
   {
-    "slug": "opostega-phaeospila",
-    "name": "Opostega phaeospila"
+    "slug": "atlantic-mackerel",
+    "name": "Atlantic Mackerel"
+  },
+  {
+    "slug": "opostega-horaria",
+    "name": "Opostega horaria"
   },
   {
     "slug": "opostega-nubifera",
@@ -1356,36 +1484,48 @@
     "name": "Palaeoscyllium tenuidens"
   },
   {
+    "slug": "opostega-phaeospila",
+    "name": "Opostega phaeospila"
+  },
+  {
     "slug": "opostega-brithys",
     "name": "Opostega brithys"
   },
   {
-    "slug": "drassodes-gooldi",
-    "name": "Drassodes gooldi"
+    "slug": "opostega-orestias",
+    "name": "Opostega orestias"
+  },
+  {
+    "slug": "ectoedemia-commiphorella",
+    "name": "Ectoedemia commiphorella"
   },
   {
     "slug": "opostega-atypa",
     "name": "Opostega atypa"
   },
   {
+    "slug": "aulacus-hyalinipennis",
+    "name": "Aulacus hyalinipennis"
+  },
+  {
     "slug": "opostega-arthrota",
     "name": "Opostega arthrota"
-  },
-  {
-    "slug": "opostega-radiosa",
-    "name": "Opostega radiosa"
-  },
-  {
-    "slug": "drassodes-lyriger",
-    "name": "Drassodes lyriger"
   },
   {
     "slug": "opostegoides-bicolorella",
     "name": "Opostegoides bicolorella"
   },
   {
+    "slug": "ectoedemia-rubivora",
+    "name": "Ectoedemia rubivora"
+  },
+  {
     "slug": "opostegoides-albella",
     "name": "Opostegoides albella"
+  },
+  {
+    "slug": "drassodes-solitarius",
+    "name": "Drassodes solitarius"
   },
   {
     "slug": "fomoria-luisae",
@@ -1400,24 +1540,24 @@
     "name": "Ectoedemia angulifasciella"
   },
   {
-    "slug": "drassodes-tortuosus",
-    "name": "Drassodes tortuosus"
-  },
-  {
-    "slug": "ectoedemia-mauni",
-    "name": "Ectoedemia mauni"
+    "slug": "pristaulacus-minor",
+    "name": "Pristaulacus minor"
   },
   {
     "slug": "ectoedemia-pubescivora",
     "name": "Ectoedemia pubescivora"
   },
   {
+    "slug": "ectoedemia-mauni",
+    "name": "Ectoedemia mauni"
+  },
+  {
     "slug": "ectoedemia-haraldi",
     "name": "Ectoedemia haraldi"
   },
   {
-    "slug": "enteucha-cyanochlora",
-    "name": "Enteucha cyanochlora"
+    "slug": "limnichus-vagegluttatus",
+    "name": "Limnichus vagegluttatus"
   },
   {
     "slug": "drassodes-ereptor",
@@ -1436,32 +1576,44 @@
     "name": "Rhodotoxotis plutostola"
   },
   {
-    "slug": "aulacus-hyalinipennis",
-    "name": "Aulacus hyalinipennis"
+    "slug": "discomedusa-philippina",
+    "name": "Discomedusa philippina"
   },
   {
-    "slug": "drassodes-bechuanicus",
-    "name": "Drassodes bechuanicus"
+    "slug": "drassodes-prosthesimiformis",
+    "name": "Drassodes prosthesimiformis"
   },
   {
     "slug": "exallonyx-trifoveatus",
     "name": "Exallonyx trifoveatus"
   },
   {
-    "slug": "pamphilus-persicum",
-    "name": "Pamphilus persicum"
+    "slug": "new-guinea-big-eared-bat",
+    "name": "New Guinea Big-eared Bat"
   },
   {
     "slug": "pristaulacus-karinulus",
     "name": "Pristaulacus karinulus"
   },
   {
+    "slug": "forrests-rock-squirrel",
+    "name": "Forrest's rock squirrel"
+  },
+  {
+    "slug": "isometrus-lao",
+    "name": "Isometrus lao"
+  },
+  {
+    "slug": "crowned-lemur",
+    "name": "Crowned Lemur"
+  },
+  {
     "slug": "pristaulacus-leviceps",
     "name": "Pristaulacus leviceps"
   },
   {
-    "slug": "amarinus-lacustris",
-    "name": "Amarinus lacustris"
+    "slug": "solomons-mountain-pigeon",
+    "name": "Solomons Mountain Pigeon"
   },
   {
     "slug": "pristaulacus-annulatus",
@@ -1476,36 +1628,36 @@
     "name": "Pristaulacus rubriventer"
   },
   {
-    "slug": "drassodes-solitarius",
-    "name": "Drassodes solitarius"
-  },
-  {
-    "slug": "pristaulacus-angularis",
-    "name": "Pristaulacus angularis"
-  },
-  {
-    "slug": "pristaulacus-sexdentatus",
-    "name": "Pristaulacus sexdentatus"
+    "slug": "papuan-mountain-pigeon",
+    "name": "Papuan Mountain Pigeon"
   },
   {
     "slug": "pristaulacus-rubidus",
     "name": "Pristaulacus rubidus"
   },
   {
+    "slug": "timber-rattlesnake",
+    "name": "Timber Rattlesnake"
+  },
+  {
     "slug": "pristaulacus-brasiliensis",
     "name": "Pristaulacus brasiliensis"
   },
   {
-    "slug": "pristaulacus-tricolor",
-    "name": "Pristaulacus tricolor"
+    "slug": "badens-gecko",
+    "name": "Baden's Gecko"
   },
   {
-    "slug": "drassodes-lophognathus",
-    "name": "Drassodes lophognathus"
+    "slug": "geometric-tortoise",
+    "name": "Geometric Tortoise"
   },
   {
     "slug": "pristaulacus-excisus",
     "name": "Pristaulacus excisus"
+  },
+  {
+    "slug": "ectoedemia-intimella",
+    "name": "Ectoedemia intimella"
   },
   {
     "slug": "pristaulacus-occidentalis",
@@ -1520,12 +1672,16 @@
     "name": "Pristaulacus ambiguus"
   },
   {
-    "slug": "haliastur-sphenurus",
-    "name": "Haliastur sphenurus"
+    "slug": "drassodes-lophognathus",
+    "name": "Drassodes lophognathus"
   },
   {
     "slug": "sandalus-cribricollis",
     "name": "Sandalus cribricollis"
+  },
+  {
+    "slug": "pristaulacus-variegatus",
+    "name": "Pristaulacus variegatus"
   },
   {
     "slug": "sandalus-petrophya",
@@ -1540,12 +1696,8 @@
     "name": "Limnichus picinus"
   },
   {
-    "slug": "limnichus-vagegluttatus",
-    "name": "Limnichus vagegluttatus"
-  },
-  {
-    "slug": "thylamys-velutinus",
-    "name": "Thylamys velutinus"
+    "slug": "bolson-tortoise",
+    "name": "Bolson Tortoise"
   },
   {
     "slug": "limnichus-monticola",
@@ -1556,6 +1708,10 @@
     "name": "Limnichus africanus"
   },
   {
+    "slug": "mangrove-land-crab",
+    "name": "Mangrove Land Crab"
+  },
+  {
     "slug": "limnichus-palawanus",
     "name": "Limnichus palawanus"
   },
@@ -1564,12 +1720,8 @@
     "name": "Limnichus punctipennis"
   },
   {
-    "slug": "limnichus-rufus",
-    "name": "Limnichus rufus"
-  },
-  {
-    "slug": "phaps-histrionica",
-    "name": "Phaps histrionica"
+    "slug": "velvet-thylamys",
+    "name": "Velvet Thylamys"
   },
   {
     "slug": "limnichus-subnotatus",
@@ -1580,6 +1732,10 @@
     "name": "Limnichus latiusculus"
   },
   {
+    "slug": "african-palm-civet",
+    "name": "African Palm Civet"
+  },
+  {
     "slug": "limnichus-turkestanicus",
     "name": "Limnichus turkestanicus"
   },
@@ -1588,52 +1744,52 @@
     "name": "Limnichus rufulopubens"
   },
   {
-    "slug": "agriocnemis-lacteola",
-    "name": "Agriocnemis lacteola"
+    "slug": "flock-bronzewing",
+    "name": "Flock Bronzewing"
   },
   {
-    "slug": "megascops-atricapilla",
-    "name": "Megascops atricapilla"
+    "slug": "brown-hawker",
+    "name": "Brown Hawker"
+  },
+  {
+    "slug": "parumbrosa-polylobata",
+    "name": "Parumbrosa polylobata"
+  },
+  {
+    "slug": "agriocnemis-lacteola",
+    "name": "Agriocnemis lacteola"
   },
   {
     "slug": "micrathyria-didyma",
     "name": "Micrathyria didyma"
   },
   {
-    "slug": "aeshna-grandis",
-    "name": "Aeshna grandis"
+    "slug": "roseate-skimmer",
+    "name": "Roseate Skimmer"
   },
   {
-    "slug": "orthemis-ferruginea",
-    "name": "Orthemis ferruginea"
+    "slug": "amazon-river-dolphin",
+    "name": "Amazon river dolphin"
   },
   {
-    "slug": "crocodylus-rhombifer",
-    "name": "Crocodylus rhombifer"
+    "slug": "norfolk-hawker",
+    "name": "Norfolk Hawker"
   },
   {
-    "slug": "erythemis-plebeja",
-    "name": "Erythemis plebeja"
+    "slug": "black-polished-skimmer",
+    "name": "Black-polished Skimmer"
   },
   {
-    "slug": "aeshna-isosceles",
-    "name": "Aeshna isosceles"
-  },
-  {
-    "slug": "leucorrhinia-dubia",
-    "name": "Leucorrhinia dubia"
+    "slug": "white-faced-darter",
+    "name": "White-faced Darter"
   },
   {
     "slug": "macromia-amphigena",
     "name": "Macromia amphigena"
   },
   {
-    "slug": "drassodes-prosthesimiformis",
-    "name": "Drassodes prosthesimiformis"
-  },
-  {
-    "slug": "thylamys-macrurus",
-    "name": "Thylamys macrurus"
+    "slug": "yellowfin-tuna",
+    "name": "Yellowfin Tuna"
   },
   {
     "slug": "drassodes-masculus",
@@ -1642,6 +1798,10 @@
   {
     "slug": "drassodes-sesquidentatus",
     "name": "Drassodes sesquidentatus"
+  },
+  {
+    "slug": "long-tailed-fat-tailed-mouse-opossum",
+    "name": "Long-tailed Fat-tailed Mouse Opossum"
   },
   {
     "slug": "drassodes-gilvus",
@@ -1656,32 +1816,28 @@
     "name": "Drassodes calceatus"
   },
   {
-    "slug": "crocodylus-suchus",
-    "name": "Crocodylus suchus"
-  },
-  {
-    "slug": "drassodes-vorax",
-    "name": "Drassodes vorax"
-  },
-  {
     "slug": "drassodes-kibonotensis",
     "name": "Drassodes kibonotensis"
   },
   {
-    "slug": "drassodes-tarrhunensis",
-    "name": "Drassodes tarrhunensis"
+    "slug": "red-handed-tamarin",
+    "name": "Red-handed Tamarin"
+  },
+  {
+    "slug": "sowerbys-beaked-whale",
+    "name": "Sowerby's Beaked Whale"
+  },
+  {
+    "slug": "narrow-striped-mongoose",
+    "name": "Narrow-striped Mongoose"
   },
   {
     "slug": "drassodes-tesselatus",
     "name": "Drassodes tesselatus"
   },
   {
-    "slug": "cornufer-solomonis",
-    "name": "Cornufer solomonis"
-  },
-  {
-    "slug": "euscorpius-flavicaudis",
-    "name": "Euscorpius flavicaudis"
+    "slug": "european-yellow-tailed-scorpion",
+    "name": "European yellow-tailed scorpion"
   },
   {
     "slug": "buthus-confucius",
@@ -1692,76 +1848,68 @@
     "name": "Compsobuthus kafkai"
   },
   {
-    "slug": "orthochirus-kinzelbachi",
-    "name": "Orthochirus kinzelbachi"
+    "slug": "black-winged-little-yellow-bat",
+    "name": "Black-winged Little Yellow Bat"
+  },
+  {
+    "slug": "peach-fruit-moth",
+    "name": "Peach Fruit Moth"
+  },
+  {
+    "slug": "big-red-jellyfish",
+    "name": "Big Red Jellyfish"
+  },
+  {
+    "slug": "white-tailed-kite",
+    "name": "White-tailed Kite"
   },
   {
     "slug": "orthochirus-kaspareki",
     "name": "Orthochirus kaspareki"
   },
   {
-    "slug": "isometrus-lao",
-    "name": "Isometrus lao"
-  },
-  {
-    "slug": "gint-maidensis",
-    "name": "Gint maidensis"
-  },
-  {
-    "slug": "carposina-sasakii",
-    "name": "Carposina sasakii"
-  },
-  {
-    "slug": "platymantis-luzonensis",
-    "name": "Platymantis luzonensis"
-  },
-  {
-    "slug": "ocypode-quadrata",
-    "name": "Ocypode quadrata"
-  },
-  {
-    "slug": "pseudopalicus-investigatoris",
-    "name": "Pseudopalicus investigatoris"
+    "slug": "orthochirus-kinzelbachi",
+    "name": "Orthochirus kinzelbachi"
   },
   {
     "slug": "ocypode-pallidula",
     "name": "Ocypode pallidula"
   },
   {
+    "slug": "atlantic-ghost-crab",
+    "name": "Atlantic ghost crab"
+  },
+  {
     "slug": "exopalicus-maculatus",
     "name": "Exopalicus maculatus"
   },
   {
-    "slug": "colluricincla-woodwardi",
-    "name": "Colluricincla woodwardi"
+    "slug": "golden-bamboo-lemur",
+    "name": "Golden Bamboo Lemur"
   },
   {
-    "slug": "platymantis-rabori",
-    "name": "Platymantis rabori"
+    "slug": "sandstone-shrikethrush",
+    "name": "Sandstone Shrikethrush"
   },
   {
-    "slug": "halicarcinus-whitei",
-    "name": "Halicarcinus whitei"
-  },
-  {
-    "slug": "halicarcinus-ovatus",
-    "name": "Halicarcinus ovatus"
+    "slug": "rabors-forest-frog",
+    "name": "Rabor's Forest Frog"
   },
   {
     "slug": "elamena-producta",
     "name": "Elamena producta"
   },
   {
-    "slug": "synapturanus-mirandaribeiroi",
-    "name": "Synapturanus mirandaribeiroi"
+    "slug": "morelets-crocodile",
+    "name": "Morelet's Crocodile"
   },
   {
-    "slug": "justitia-longimanus",
-    "name": "Justitia longimanus"
+    "slug": "halicarcinus-ovatus",
+    "name": "Halicarcinus ovatus"
   },
   {
-    "slug": "palinurus-mauritanicus",
-    "name": "Palinurus mauritanicus"
+    "slug": "canary-spiny-lobster",
+    "name": "Canary spiny lobster"
   },
   {
     "slug": "robsonella-huttoni",
@@ -1772,16 +1920,16 @@
     "name": "Octopus globosus"
   },
   {
-    "slug": "corvus-corax",
-    "name": "Corvus corax"
+    "slug": "ring-tailed-lemur",
+    "name": "Ring-tailed Lemur"
   },
   {
     "slug": "otophryne-steyermarki",
     "name": "Otophryne steyermarki"
   },
   {
-    "slug": "octopus-sasakii",
-    "name": "Octopus sasakii"
+    "slug": "mimic-octopus",
+    "name": "Mimic octopus"
   },
   {
     "slug": "octopus-alatus",
@@ -1796,480 +1944,448 @@
     "name": "Graneledone gonzalezi"
   },
   {
-    "slug": "thylamys-pallidior",
-    "name": "Thylamys pallidior"
+    "slug": "diplulmaris-antarctica",
+    "name": "Diplulmaris antarctica"
   },
   {
     "slug": "pelagia-flaveola",
     "name": "Pelagia flaveola"
   },
   {
-    "slug": "diplulmaris-antarctica",
-    "name": "Diplulmaris antarctica"
+    "slug": "deepstaria-jellyfish",
+    "name": "Deepstaria jellyfish"
   },
   {
-    "slug": "sanderia-malayensis",
-    "name": "Sanderia malayensis"
+    "slug": "pallid-fat-tailed-mouse-opossum",
+    "name": "Pallid Fat-tailed Mouse Opossum"
   },
   {
-    "slug": "deepstaria-enigmatica",
-    "name": "Deepstaria enigmatica"
-  },
-  {
-    "slug": "corvus-cryptoleucus",
-    "name": "Corvus cryptoleucus"
+    "slug": "chihuahuan-raven",
+    "name": "Chihuahuan Raven"
   },
   {
     "slug": "sthenonia-albida",
     "name": "Sthenonia albida"
   },
   {
-    "slug": "hynobius-sonani",
-    "name": "Hynobius sonani"
-  },
-  {
-    "slug": "pisaster-giganteus",
-    "name": "Pisaster giganteus"
+    "slug": "giant-spined-sea-star",
+    "name": "Giant Spined Sea Star"
   },
   {
     "slug": "calasterias-toyamensis",
     "name": "Calasterias toyamensis"
   },
   {
-    "slug": "lethasterias-acutispina",
-    "name": "Lethasterias acutispina"
-  },
-  {
-    "slug": "carcharhinus-perezii",
-    "name": "Carcharhinus perezii"
-  },
-  {
-    "slug": "arctocephalus-tropicalis",
-    "name": "Arctocephalus tropicalis"
+    "slug": "emperor-tamarin",
+    "name": "Emperor Tamarin"
   },
   {
     "slug": "lethasterias-fusca",
     "name": "Lethasterias fusca"
   },
   {
-    "slug": "coscinasterias-calamaria",
-    "name": "Coscinasterias calamaria"
+    "slug": "lethasterias-acutispina",
+    "name": "Lethasterias acutispina"
   },
   {
-    "slug": "thylamys-tatei",
-    "name": "Thylamys tatei"
+    "slug": "subantarctic-fur-seal",
+    "name": "Subantarctic Fur Seal"
   },
   {
-    "slug": "zeuzera-pyrina",
-    "name": "Zeuzera pyrina"
+    "slug": "eleven-armed-sea-star",
+    "name": "Eleven-armed Sea Star"
   },
   {
-    "slug": "cacajao-calvus",
-    "name": "Cacajao calvus"
+    "slug": "trues-beaked-whale",
+    "name": "True's Beaked Whale"
   },
   {
-    "slug": "arctonyx-collaris",
-    "name": "Arctonyx collaris"
+    "slug": "hog-badger",
+    "name": "Hog Badger"
   },
   {
-    "slug": "saguinus-bicolor",
-    "name": "Saguinus bicolor"
+    "slug": "bald-uakari",
+    "name": "Bald Uakari"
   },
   {
-    "slug": "opostega-salaciella",
-    "name": "Opostega salaciella"
+    "slug": "pied-tamarin",
+    "name": "Pied Tamarin"
   },
   {
-    "slug": "laephotis-angolensis",
-    "name": "Laephotis angolensis"
+    "slug": "leopard-moth",
+    "name": "Leopard Moth"
   },
   {
-    "slug": "eptesicus-fuscus",
-    "name": "Eptesicus fuscus"
+    "slug": "big-brown-bat",
+    "name": "Big Brown Bat"
   },
   {
-    "slug": "rhogeessa-minutilla",
-    "name": "Rhogeessa minutilla"
+    "slug": "tiny-yellow-bat",
+    "name": "Tiny Yellow Bat"
   },
   {
-    "slug": "murina-cyclotis",
-    "name": "Murina cyclotis"
+    "slug": "angolan-long-eared-bat",
+    "name": "Angolan Long-eared Bat"
   },
   {
-    "slug": "cynomys-parvidens",
-    "name": "Cynomys parvidens"
+    "slug": "round-eared-tube-nosed-bat",
+    "name": "Round-eared Tube-nosed Bat"
   },
   {
-    "slug": "opostega-stiriella",
-    "name": "Opostega stiriella"
+    "slug": "gunnisons-prairie-dog",
+    "name": "Gunnison's Prairie Dog"
   },
   {
-    "slug": "myosciurus-pumilio",
-    "name": "Myosciurus pumilio"
+    "slug": "maritime-striped-squirrel",
+    "name": "Maritime Striped Squirrel"
   },
   {
-    "slug": "tamiops-maritimus",
-    "name": "Tamiops maritimus"
+    "slug": "utah-prairie-dog",
+    "name": "Utah Prairie Dog"
   },
   {
-    "slug": "alces-alces",
-    "name": "Alces alces"
+    "slug": "moose",
+    "name": "Moose"
   },
   {
-    "slug": "lepus-arcticus",
-    "name": "Lepus arcticus"
-  },
-  {
-    "slug": "equus-africanus",
-    "name": "Equus africanus"
+    "slug": "micrathyria-aequalis",
+    "name": "Micrathyria aequalis"
   },
   {
     "slug": "ectoedemia-quinquella",
     "name": "Ectoedemia quinquella"
   },
   {
-    "slug": "thylamys-karimii",
-    "name": "Thylamys karimii"
+    "slug": "arctic-hare",
+    "name": "Arctic Hare"
   },
   {
-    "slug": "marmosa-xerophila",
-    "name": "Marmosa xerophila"
+    "slug": "dryland-mouse-opossum",
+    "name": "Dryland Mouse Opossum"
   },
   {
-    "slug": "dendrocitta-formosae",
-    "name": "Dendrocitta formosae"
+    "slug": "karimis-fat-tailed-mouse-opossum",
+    "name": "Karimi's fat-tailed mouse opossum"
   },
   {
-    "slug": "megascops-cooperi",
-    "name": "Megascops cooperi"
+    "slug": "african-wild-ass",
+    "name": "African Wild Ass"
   },
   {
-    "slug": "corvus-hawaiiensis",
-    "name": "Corvus hawaiiensis"
+    "slug": "grey-treepie",
+    "name": "Grey Treepie"
   },
   {
-    "slug": "corvus-bennetti",
-    "name": "Corvus bennetti"
+    "slug": "black-collared-jay",
+    "name": "Black-collared Jay"
   },
   {
-    "slug": "cyanolyca-armillata",
-    "name": "Cyanolyca armillata"
+    "slug": "common-wonder-gecko",
+    "name": "Common Wonder Gecko"
   },
   {
-    "slug": "acantholyda-erythrocephala",
-    "name": "Acantholyda erythrocephala"
+    "slug": "forstens-tortoise",
+    "name": "Forsten's Tortoise"
   },
   {
-    "slug": "asio-stygius",
-    "name": "Asio stygius"
+    "slug": "mottled-owl",
+    "name": "Mottled Owl"
   },
   {
-    "slug": "megascops-petersoni",
-    "name": "Megascops petersoni"
+    "slug": "cinnamon-screech-owl",
+    "name": "Cinnamon Screech-Owl"
   },
   {
-    "slug": "patagioenas-squamosa",
-    "name": "Patagioenas squamosa"
+    "slug": "scaly-naped-pigeon",
+    "name": "Scaly-naped Pigeon"
   },
   {
-    "slug": "forpus-xanthops",
-    "name": "Forpus xanthops"
+    "slug": "yellow-faced-parrotlet",
+    "name": "Yellow-faced Parrotlet"
   },
   {
-    "slug": "eudyptes-robustus",
-    "name": "Eudyptes robustus"
+    "slug": "stygian-owl",
+    "name": "Stygian Owl"
   },
   {
-    "slug": "gymnophaps-albertisii",
-    "name": "Gymnophaps albertisii"
+    "slug": "allens-yellow-bat",
+    "name": "Allen's Yellow Bat"
   },
   {
-    "slug": "thalassarche-bulleri",
-    "name": "Thalassarche bulleri"
+    "slug": "sulawesi-ground-dove",
+    "name": "Sulawesi Ground Dove"
   },
   {
-    "slug": "gallicolumba-tristigmata",
-    "name": "Gallicolumba tristigmata"
+    "slug": "de-wintons-long-eared-bat",
+    "name": "De Winton's Long-eared Bat"
   },
   {
-    "slug": "sphaerodactylus-argus",
-    "name": "Sphaerodactylus argus"
+    "slug": "serotine-bat",
+    "name": "Serotine Bat"
   },
   {
-    "slug": "pristaulacus-fasciatus",
-    "name": "Pristaulacus fasciatus"
+    "slug": "ocellated-gecko",
+    "name": "Ocellated Gecko"
   },
   {
-    "slug": "macrovipera-schweizeri",
-    "name": "Macrovipera schweizeri"
+    "slug": "milos-viper",
+    "name": "Milos Viper"
   },
   {
-    "slug": "hemitheconyx-taylori",
-    "name": "Hemitheconyx taylori"
+    "slug": "somali-sand-gecko",
+    "name": "Somali Sand Gecko"
   },
   {
-    "slug": "tarentola-annularis",
-    "name": "Tarentola annularis"
+    "slug": "ringed-wall-gecko",
+    "name": "Ringed Wall Gecko"
   },
   {
-    "slug": "aeluroscalabotes-felinus",
-    "name": "Aeluroscalabotes felinus"
+    "slug": "kouprey",
+    "name": "Kouprey"
   },
   {
-    "slug": "afrogecko-ansorgii",
-    "name": "Afrogecko ansorgii"
+    "slug": "stump-toed-gecko",
+    "name": "Stump-toed Gecko"
   },
   {
-    "slug": "hemiphyllodactylus-typus",
-    "name": "Hemiphyllodactylus typus"
+    "slug": "cat-gecko",
+    "name": "Cat Gecko"
   },
   {
-    "slug": "gehyra-mutilata",
-    "name": "Gehyra mutilata"
+    "slug": "eastern-gecko",
+    "name": "Eastern Gecko"
   },
   {
-    "slug": "crossobamon-orientalis",
-    "name": "Crossobamon orientalis"
+    "slug": "little-raven",
+    "name": "Little Raven"
   },
   {
-    "slug": "teratoscincus-przewalskii",
-    "name": "Teratoscincus przewalskii"
+    "slug": "przewalskis-wonder-gecko",
+    "name": "Przewalski's Wonder Gecko"
   },
   {
-    "slug": "platymantis-dorsalis",
-    "name": "Platymantis dorsalis"
+    "slug": "madagascar-giant-day-gecko",
+    "name": "Madagascar Giant Day Gecko"
   },
   {
-    "slug": "phelsuma-guimbeaui",
-    "name": "Phelsuma guimbeaui"
+    "slug": "lowland-forest-day-gecko",
+    "name": "Lowland Forest Day Gecko"
   },
   {
-    "slug": "gekko-badenii",
-    "name": "Gekko badenii"
+    "slug": "philippine-forest-frog",
+    "name": "Philippine Forest Frog"
   },
   {
-    "slug": "phelsuma-grandis",
-    "name": "Phelsuma grandis"
+    "slug": "hydroscapha-natans",
+    "name": "Hydroscapha natans"
   },
   {
     "slug": "xenosaurus-rackhami",
     "name": "Xenosaurus rackhami"
   },
   {
-    "slug": "didelphis-marsupialis",
-    "name": "Didelphis marsupialis"
+    "slug": "knob-scaled-lizard",
+    "name": "Knob-scaled Lizard"
   },
   {
-    "slug": "loxocemus-bicolor",
-    "name": "Loxocemus bicolor"
+    "slug": "mexican-burrowing-python",
+    "name": "Mexican Burrowing Python"
   },
   {
-    "slug": "xenosaurus-grandis",
-    "name": "Xenosaurus grandis"
+    "slug": "aru-island-pipe-snake",
+    "name": "Aru Island Pipe Snake"
   },
   {
-    "slug": "cylindrophis-aruensis",
-    "name": "Cylindrophis aruensis"
+    "slug": "american-crow",
+    "name": "American Crow"
   },
   {
-    "slug": "corytophanes-cristatus",
-    "name": "Corytophanes cristatus"
-  },
-  {
-    "slug": "melanophidium-punctatum",
-    "name": "Melanophidium punctatum"
-  },
-  {
-    "slug": "chamaeleo-dilepis",
-    "name": "Chamaeleo dilepis"
+    "slug": "flap-necked-chameleon",
+    "name": "Flap-necked Chameleon"
   },
   {
     "slug": "rhinophis-sanguineus",
     "name": "Rhinophis sanguineus"
   },
   {
-    "slug": "uropeltis-rubromaculata",
-    "name": "Uropeltis rubromaculata"
+    "slug": "helmeted-iguana",
+    "name": "Helmeted Iguana"
   },
   {
-    "slug": "cyanolyca-argentigula",
-    "name": "Cyanolyca argentigula"
+    "slug": "indian-one-horned-rhinoceros",
+    "name": "Indian One-horned Rhinoceros"
   },
   {
-    "slug": "ischnura-ramburii",
-    "name": "Ischnura ramburii"
+    "slug": "limnichus-globosus",
+    "name": "Limnichus globosus"
   },
   {
-    "slug": "geochelone-platynota",
-    "name": "Geochelone platynota"
+    "slug": "ramburs-forktail",
+    "name": "Rambur's Forktail"
   },
   {
-    "slug": "testudo-kleinmanni",
-    "name": "Testudo kleinmanni"
+    "slug": "indian-star-tortoise",
+    "name": "Indian Star Tortoise"
   },
   {
-    "slug": "geochelone-elegans",
-    "name": "Geochelone elegans"
+    "slug": "riverine-rabbit",
+    "name": "Riverine Rabbit"
   },
   {
-    "slug": "didelphis-aurita",
-    "name": "Didelphis aurita"
+    "slug": "nogeys-hinge-back-tortoise",
+    "name": "Nogey's Hinge-back Tortoise"
   },
   {
-    "slug": "psammobates-oculiferus",
-    "name": "Psammobates oculiferus"
+    "slug": "serrated-tortoise",
+    "name": "Serrated Tortoise"
   },
   {
-    "slug": "kinixys-nogueyi",
-    "name": "Kinixys nogueyi"
+    "slug": "volcano-rabbit",
+    "name": "Volcano Rabbit"
   },
   {
-    "slug": "psammobates-geometricus",
-    "name": "Psammobates geometricus"
+    "slug": "anorus-arizonicus",
+    "name": "Anorus arizonicus"
   },
   {
-    "slug": "drassodes-simplex",
-    "name": "Drassodes simplex"
-  },
-  {
-    "slug": "manouria-emys",
-    "name": "Manouria emys"
+    "slug": "limnichus-pygmaeus",
+    "name": "Limnichus pygmaeus"
   },
   {
     "slug": "synapturanus-rabus",
     "name": "Synapturanus rabus"
   },
   {
-    "slug": "gopherus-flavomarginatus",
-    "name": "Gopherus flavomarginatus"
+    "slug": "drassodes-simplex",
+    "name": "Drassodes simplex"
   },
   {
-    "slug": "chelydra-serpentina",
-    "name": "Chelydra serpentina"
+    "slug": "asian-brown-tortoise",
+    "name": "Asian Brown Tortoise"
   },
   {
-    "slug": "hynobius-nebulosus",
-    "name": "Hynobius nebulosus"
+    "slug": "snapping-turtle",
+    "name": "Snapping Turtle"
   },
   {
-    "slug": "salvelinus-fontinalis",
-    "name": "Salvelinus fontinalis"
+    "slug": "white-headed-vulture",
+    "name": "White-headed Vulture"
   },
   {
-    "slug": "batrachuperus-pinchonii",
-    "name": "Batrachuperus pinchonii"
+    "slug": "clouded-salamander",
+    "name": "Clouded Salamander"
   },
   {
-    "slug": "sphyrna-gilberti",
-    "name": "Sphyrna gilberti"
+    "slug": "carolina-hammerhead",
+    "name": "Carolina Hammerhead"
   },
   {
-    "slug": "salvelinus-namaycush",
-    "name": "Salvelinus namaycush"
+    "slug": "lake-trout",
+    "name": "Lake Trout"
   },
   {
-    "slug": "amphilophus-citrinellus",
-    "name": "Amphilophus citrinellus"
+    "slug": "sun-parakeet",
+    "name": "Sun Parakeet"
   },
   {
-    "slug": "drassodes-cupreus",
-    "name": "Drassodes cupreus"
+    "slug": "midas-cichlid",
+    "name": "Midas Cichlid"
   },
   {
-    "slug": "australoheros-facetus",
-    "name": "Australoheros facetus"
+    "slug": "common-snook",
+    "name": "Common Snook"
   },
   {
-    "slug": "centropomus-undecimalis",
-    "name": "Centropomus undecimalis"
+    "slug": "chameleon-cichlid",
+    "name": "Chameleon Cichlid"
   },
   {
-    "slug": "astronotus-ocellatus",
-    "name": "Astronotus ocellatus"
+    "slug": "oscar",
+    "name": "Oscar"
   },
   {
-    "slug": "hemichromis-elongatus",
-    "name": "Hemichromis elongatus"
-  },
-  {
-    "slug": "centruroides-nitidus",
-    "name": "Centruroides nitidus"
-  },
-  {
-    "slug": "oreochromis-macrochir",
-    "name": "Oreochromis macrochir"
+    "slug": "buff-faced-pygmy-parrot",
+    "name": "Buff-faced Pygmy Parrot"
   },
   {
     "slug": "tylochromis-praecox",
     "name": "Tylochromis praecox"
   },
   {
-    "slug": "oreochromis-mossambicus",
-    "name": "Oreochromis mossambicus"
+    "slug": "banded-jewel-cichlid",
+    "name": "Banded Jewel Cichlid"
   },
   {
-    "slug": "cybiosarda-elegans",
-    "name": "Cybiosarda elegans"
+    "slug": "longfin-tilapia",
+    "name": "Longfin Tilapia"
   },
   {
-    "slug": "megascops-barbarus",
-    "name": "Megascops barbarus"
+    "slug": "mozambique-tilapia",
+    "name": "Mozambique Tilapia"
   },
   {
-    "slug": "thunnus-maccoyii",
-    "name": "Thunnus maccoyii"
+    "slug": "western-long-beaked-echidna",
+    "name": "Western Long-beaked Echidna"
   },
   {
-    "slug": "thunnus-albacares",
-    "name": "Thunnus albacares"
+    "slug": "leaping-bonito",
+    "name": "Leaping Bonito"
   },
   {
-    "slug": "halicarcinus-planatus",
-    "name": "Halicarcinus planatus"
+    "slug": "kakapo",
+    "name": "Kakapo"
   },
   {
-    "slug": "gasterochisma-melampus",
-    "name": "Gasterochisma melampus"
+    "slug": "island-scrub-jay",
+    "name": "Island Scrub-Jay"
   },
   {
-    "slug": "spilornis-rufipectus",
-    "name": "Spilornis rufipectus"
+    "slug": "bridled-screech-owl",
+    "name": "Bridled Screech-Owl"
   },
   {
-    "slug": "scomber-colias",
-    "name": "Scomber colias"
+    "slug": "spider-crab",
+    "name": "Spider Crab"
   },
   {
-    "slug": "scomberomorus-regalis",
-    "name": "Scomberomorus regalis"
+    "slug": "butterfly-tuna",
+    "name": "Butterfly Tuna"
   },
   {
-    "slug": "anorus-piceus",
-    "name": "Anorus piceus"
+    "slug": "atlantic-chub-mackerel",
+    "name": "Atlantic chub mackerel"
   },
   {
-    "slug": "pantala-hymenaea",
-    "name": "Pantala hymenaea"
+    "slug": "cero",
+    "name": "Cero"
   },
   {
-    "slug": "pristaulacus-oregonus",
-    "name": "Pristaulacus oregonus"
-  },
-  {
-    "slug": "limnichus-unistriatus",
-    "name": "Limnichus unistriatus"
+    "slug": "collared-treepie",
+    "name": "Collared Treepie"
   },
   {
     "slug": "drassodes-lyratus",
     "name": "Drassodes lyratus"
   },
   {
-    "slug": "compsobuthus-sobotniki",
-    "name": "Compsobuthus sobotniki"
+    "slug": "spot-winged-glider",
+    "name": "Spot-winged Glider"
   },
   {
-    "slug": "dendrocitta-vagabunda",
-    "name": "Dendrocitta vagabunda"
+    "slug": "tokyo-salamander",
+    "name": "Tokyo salamander"
+  },
+  {
+    "slug": "anorus-piceus",
+    "name": "Anorus piceus"
+  },
+  {
+    "slug": "pearlscale-cichlid",
+    "name": "Pearlscale Cichlid"
+  },
+  {
+    "slug": "compsobuthus-sobotniki",
+    "name": "Compsobuthus sobotniki"
   },
   {
     "slug": "olivierus-bolensis",
@@ -2280,40 +2396,32 @@
     "name": "Projasus parkeri"
   },
   {
-    "slug": "octopus-prashadi",
-    "name": "Octopus prashadi"
+    "slug": "longarm-octopus",
+    "name": "Longarm Octopus"
   },
   {
-    "slug": "saguinus-midas",
-    "name": "Saguinus midas"
-  },
-  {
-    "slug": "corvus-tristis",
-    "name": "Corvus tristis"
-  },
-  {
-    "slug": "cryptomys-hottentotus",
-    "name": "Cryptomys hottentotus"
+    "slug": "lemon-shark",
+    "name": "Lemon Shark"
   },
   {
     "slug": "psalidaster-mordax",
     "name": "Psalidaster mordax"
   },
   {
-    "slug": "madoqua-kirkii",
-    "name": "Madoqua kirkii"
+    "slug": "kirks-dik-dik",
+    "name": "Kirk's Dik-dik"
   },
   {
-    "slug": "pisaster-ochraceus",
-    "name": "Pisaster ochraceus"
+    "slug": "gray-crow",
+    "name": "Gray Crow"
   },
   {
-    "slug": "melanosuchus-niger",
-    "name": "Melanosuchus niger"
+    "slug": "common-mole-rat",
+    "name": "Common Mole Rat"
   },
   {
-    "slug": "aratinga-weddellii",
-    "name": "Aratinga weddellii"
+    "slug": "ochre-sea-star",
+    "name": "Ochre Sea Star"
   },
   {
     "slug": "platymantis-mimulus",
@@ -2324,396 +2432,372 @@
     "name": "Opostega luticilia"
   },
   {
-    "slug": "laemanctus-serratus",
-    "name": "Laemanctus serratus"
+    "slug": "thick-billed-raven",
+    "name": "Thick-billed Raven"
   },
   {
-    "slug": "limnichus-sericeus",
-    "name": "Limnichus sericeus"
+    "slug": "serrated-casque-headed-iguana",
+    "name": "Serrated Casque-headed Iguana"
   },
   {
     "slug": "drassodes-adisensis",
     "name": "Drassodes adisensis"
   },
   {
-    "slug": "vipera-ammodytes",
-    "name": "Vipera ammodytes"
+    "slug": "nose-horned-viper",
+    "name": "Nose-horned Viper"
   },
   {
-    "slug": "aristelliger-praesignis",
-    "name": "Aristelliger praesignis"
+    "slug": "jamaican-croaking-gecko",
+    "name": "Jamaican Croaking Gecko"
   },
   {
-    "slug": "cosmasterias-lurida",
-    "name": "Cosmasterias lurida"
+    "slug": "rook",
+    "name": "Rook"
   },
   {
-    "slug": "thorichthys-meeki",
-    "name": "Thorichthys meeki"
+    "slug": "multiradiate-sea-star",
+    "name": "Multiradiate sea star"
   },
   {
-    "slug": "tremarctos-ornatus",
-    "name": "Tremarctos ornatus"
+    "slug": "firemouth-cichlid",
+    "name": "Firemouth Cichlid"
   },
   {
-    "slug": "astrochelys-yniphora",
-    "name": "Astrochelys yniphora"
+    "slug": "indo-pacific-king-mackerel",
+    "name": "Indo-Pacific King Mackerel"
   },
   {
-    "slug": "scomberomorus-guttatus",
-    "name": "Scomberomorus guttatus"
+    "slug": "angonoka-tortoise",
+    "name": "Angonoka tortoise"
   },
   {
-    "slug": "zalophus-wollebaeki",
-    "name": "Zalophus wollebaeki"
+    "slug": "limnichus-aurosericus",
+    "name": "Limnichus aurosericus"
   },
   {
-    "slug": "ailuropoda-melanoleuca",
-    "name": "Ailuropoda melanoleuca"
+    "slug": "new-zealand-sea-lion",
+    "name": "New Zealand Sea Lion"
   },
   {
-    "slug": "arctocephalus-australis",
-    "name": "Arctocephalus australis"
+    "slug": "galpagos-sea-lion",
+    "name": "Galápagos Sea Lion"
   },
   {
-    "slug": "phocarctos-hookeri",
-    "name": "Phocarctos hookeri"
+    "slug": "sumatran-rhinoceros",
+    "name": "Sumatran Rhinoceros"
   },
   {
-    "slug": "proteles-cristata",
-    "name": "Proteles cristata"
+    "slug": "short-beaked-echidna",
+    "name": "Short-beaked Echidna"
   },
   {
-    "slug": "mungotictis-decemlineata",
-    "name": "Mungotictis decemlineata"
+    "slug": "limnichus-punctatus",
+    "name": "Limnichus punctatus"
   },
   {
-    "slug": "nasua-nasua",
-    "name": "Nasua nasua"
+    "slug": "javan-ferret-badger",
+    "name": "Javan Ferret-badger"
   },
   {
-    "slug": "melogale-orientalis",
-    "name": "Melogale orientalis"
+    "slug": "aardwolf",
+    "name": "Aardwolf"
   },
   {
-    "slug": "bassaricyon-gabbii",
-    "name": "Bassaricyon gabbii"
+    "slug": "donkey",
+    "name": "Donkey"
   },
   {
-    "slug": "lutrogale-perspicillata",
-    "name": "Lutrogale perspicillata"
+    "slug": "limnichus-curtus",
+    "name": "Limnichus curtus"
   },
   {
-    "slug": "lontra-canadensis",
-    "name": "Lontra canadensis"
+    "slug": "honey-badger",
+    "name": "Honey Badger"
   },
   {
-    "slug": "cryptoprocta-ferox",
-    "name": "Cryptoprocta ferox"
+    "slug": "smooth-coated-otter",
+    "name": "Smooth-coated Otter"
   },
   {
-    "slug": "mellivora-capensis",
-    "name": "Mellivora capensis"
+    "slug": "european-honey-buzzard",
+    "name": "European Honey Buzzard"
   },
   {
-    "slug": "enhydra-lutris",
-    "name": "Enhydra lutris"
+    "slug": "north-american-river-otter",
+    "name": "North American River Otter"
   },
   {
-    "slug": "pithecia-monachus",
-    "name": "Pithecia monachus"
+    "slug": "fossa",
+    "name": "Fossa"
   },
   {
-    "slug": "callicebus-personatus",
-    "name": "Callicebus personatus"
+    "slug": "monk-saki",
+    "name": "Monk Saki"
   },
   {
-    "slug": "pithecia-irrorata",
-    "name": "Pithecia irrorata"
+    "slug": "atlantic-titi",
+    "name": "Atlantic titi"
   },
   {
-    "slug": "hapalemur-aureus",
-    "name": "Hapalemur aureus"
+    "slug": "limnichus-decorus",
+    "name": "Limnichus decorus"
   },
   {
-    "slug": "varecia-variegata",
-    "name": "Varecia variegata"
+    "slug": "gray-monk-saki",
+    "name": "Gray Monk Saki"
   },
   {
-    "slug": "lemur-catta",
-    "name": "Lemur catta"
+    "slug": "limnichus-ater",
+    "name": "Limnichus ater"
   },
   {
-    "slug": "eulemur-rubriventer",
-    "name": "Eulemur rubriventer"
+    "slug": "black-and-white-ruffed-lemur",
+    "name": "Black-and-white Ruffed Lemur"
   },
   {
-    "slug": "indri-indri",
-    "name": "Indri indri"
+    "slug": "red-bellied-lemur",
+    "name": "Red-bellied Lemur"
   },
   {
-    "slug": "microcebus-rufus",
-    "name": "Microcebus rufus"
+    "slug": "indri",
+    "name": "Indri"
   },
   {
-    "slug": "saguinus-geoffroyi",
-    "name": "Saguinus geoffroyi"
+    "slug": "western-gorilla",
+    "name": "Western Gorilla"
   },
   {
-    "slug": "saguinus-mystax",
-    "name": "Saguinus mystax"
+    "slug": "geoffroys-tamarin",
+    "name": "Geoffroy's Tamarin"
   },
   {
-    "slug": "cheirogaleus-major",
-    "name": "Cheirogaleus major"
+    "slug": "little-owl",
+    "name": "Little Owl"
   },
   {
-    "slug": "gorilla-gorilla",
-    "name": "Gorilla gorilla"
+    "slug": "mustached-tamarin",
+    "name": "Mustached Tamarin"
   },
   {
-    "slug": "leontopithecus-chrysopygus",
-    "name": "Leontopithecus chrysopygus"
+    "slug": "greater-dwarf-lemur",
+    "name": "Greater Dwarf Lemur"
   },
   {
-    "slug": "saguinus-imperator",
-    "name": "Saguinus imperator"
+    "slug": "milne-edwards-sportive-lemur",
+    "name": "Milne-Edwards' Sportive Lemur"
   },
   {
-    "slug": "murina-florium",
-    "name": "Murina florium"
+    "slug": "cotton-top-tamarin",
+    "name": "Cotton-top Tamarin"
   },
   {
-    "slug": "lepilemur-edwardsi",
-    "name": "Lepilemur edwardsi"
+    "slug": "black-lion-tamarin",
+    "name": "Black Lion Tamarin"
   },
   {
-    "slug": "balaena-mysticetus",
-    "name": "Balaena mysticetus"
+    "slug": "long-eared-owl",
+    "name": "Long-eared Owl"
   },
   {
-    "slug": "lepilemur-septentrionalis",
-    "name": "Lepilemur septentrionalis"
+    "slug": "bairds-beaked-whale",
+    "name": "Baird's Beaked Whale"
   },
   {
-    "slug": "mesoplodon-hectori",
-    "name": "Mesoplodon hectori"
+    "slug": "northern-sportive-lemur",
+    "name": "Northern Sportive Lemur"
   },
   {
-    "slug": "eubalaena-glacialis",
-    "name": "Eubalaena glacialis"
+    "slug": "whiskered-screech-owl",
+    "name": "Whiskered Screech-Owl"
   },
   {
-    "slug": "berardius-bairdii",
-    "name": "Berardius bairdii"
+    "slug": "hectors-beaked-whale",
+    "name": "Hector's Beaked Whale"
   },
   {
-    "slug": "mesoplodon-densirostris",
-    "name": "Mesoplodon densirostris"
+    "slug": "north-atlantic-right-whale",
+    "name": "North Atlantic right whale"
   },
   {
-    "slug": "mesoplodon-mirus",
-    "name": "Mesoplodon mirus"
+    "slug": "blainvilles-beaked-whale",
+    "name": "Blainville's Beaked Whale"
   },
   {
-    "slug": "mesoplodon-layardii",
-    "name": "Mesoplodon layardii"
+    "slug": "strap-toothed-whale",
+    "name": "Strap-toothed Whale"
   },
   {
-    "slug": "mesoplodon-grayi",
-    "name": "Mesoplodon grayi"
+    "slug": "rohus-bat",
+    "name": "Rohu's Bat"
   },
   {
-    "slug": "mesoplodon-hotaula",
-    "name": "Mesoplodon hotaula"
+    "slug": "deraniyagalas-beaked-whale",
+    "name": "Deraniyagala's Beaked Whale"
   },
   {
-    "slug": "rhogeessa-alleni",
-    "name": "Rhogeessa alleni"
+    "slug": "genowayss-yellow-bat",
+    "name": "Genoways's Yellow Bat"
   },
   {
-    "slug": "philetor-brachypterus",
-    "name": "Philetor brachypterus"
+    "slug": "slender-yellow-bat",
+    "name": "Slender Yellow Bat"
   },
   {
-    "slug": "rhogeessa-genowaysi",
-    "name": "Rhogeessa genowaysi"
+    "slug": "strange-big-eared-brown-bat",
+    "name": "Strange Big-eared Brown Bat"
   },
   {
-    "slug": "rhogeessa-gracilis",
-    "name": "Rhogeessa gracilis"
+    "slug": "black-headed-uakari",
+    "name": "Black-headed Uakari"
   },
   {
-    "slug": "chalinolobus-picatus",
-    "name": "Chalinolobus picatus"
+    "slug": "pacific-parrotlet",
+    "name": "Pacific Parrotlet"
   },
   {
-    "slug": "histiotus-alienus",
-    "name": "Histiotus alienus"
+    "slug": "light-winged-lesser-house-bat",
+    "name": "Light-winged Lesser House Bat"
   },
   {
-    "slug": "chalinolobus-tuberculatus",
-    "name": "Chalinolobus tuberculatus"
+    "slug": "evening-bat",
+    "name": "Evening Bat"
   },
   {
-    "slug": "laephotis-wintoni",
-    "name": "Laephotis wintoni"
+    "slug": "indo-pacific-bottlenose-dolphin",
+    "name": "Indo-Pacific Bottlenose Dolphin"
   },
   {
-    "slug": "murina-aurata",
-    "name": "Murina aurata"
+    "slug": "pallid-bat",
+    "name": "Pallid Bat"
   },
   {
-    "slug": "nycticeius-humeralis",
-    "name": "Nycticeius humeralis"
+    "slug": "rozendaals-bat",
+    "name": "Rozendaal's Bat"
   },
   {
-    "slug": "antrozous-pallidus",
-    "name": "Antrozous pallidus"
+    "slug": "damaraland-mole-rat",
+    "name": "Damaraland Mole Rat"
   },
   {
-    "slug": "murina-rozendaali",
-    "name": "Murina rozendaali"
+    "slug": "bottas-serotine",
+    "name": "Botta's Serotine"
   },
   {
-    "slug": "scotoecus-hirundo",
-    "name": "Scotoecus hirundo"
+    "slug": "namaqua-dune-mole-rat",
+    "name": "Namaqua Dune Mole Rat"
   },
   {
-    "slug": "eptesicus-bottae",
-    "name": "Eptesicus bottae"
+    "slug": "greater-tube-nosed-bat",
+    "name": "Greater Tube-nosed Bat"
   },
   {
-    "slug": "eptesicus-serotinus",
-    "name": "Eptesicus serotinus"
+    "slug": "madaraszs-tiger-parrot",
+    "name": "Madarasz's Tiger Parrot"
   },
   {
-    "slug": "bathyergus-janetta",
-    "name": "Bathyergus janetta"
+    "slug": "montane-long-nosed-squirrel",
+    "name": "Montane Long-nosed Squirrel"
   },
   {
-    "slug": "murina-leucogaster",
-    "name": "Murina leucogaster"
+    "slug": "indian-palm-squirrel",
+    "name": "Indian Palm Squirrel"
   },
   {
-    "slug": "cryptomys-damarensis",
-    "name": "Cryptomys damarensis"
+    "slug": "modest-tiger-parrot",
+    "name": "Modest Tiger Parrot"
   },
   {
-    "slug": "eptesicus-innoxius",
-    "name": "Eptesicus innoxius"
+    "slug": "hagens-flying-squirrel",
+    "name": "Hagen's Flying Squirrel"
   },
   {
-    "slug": "hyosciurus-heinrichi",
-    "name": "Hyosciurus heinrichi"
+    "slug": "rockhopper-penguin",
+    "name": "Rockhopper Penguin"
   },
   {
-    "slug": "funambulus-pennantii",
-    "name": "Funambulus pennantii"
+    "slug": "temmincks-flying-squirrel",
+    "name": "Temminck's Flying Squirrel"
   },
   {
-    "slug": "cynomys-mexicanus",
-    "name": "Cynomys mexicanus"
+    "slug": "japanese-dwarf-flying-squirrel",
+    "name": "Japanese dwarf flying squirrel"
   },
   {
-    "slug": "petinomys-hageni",
-    "name": "Petinomys hageni"
+    "slug": "vordermanns-flying-squirrel",
+    "name": "Vordermann's Flying Squirrel"
   },
   {
-    "slug": "petinomys-setosus",
-    "name": "Petinomys setosus"
+    "slug": "mearnss-squirrel",
+    "name": "Mearns's Squirrel"
   },
   {
-    "slug": "pteromys-momonga",
-    "name": "Pteromys momonga"
+    "slug": "black-eared-pygmy-squirrel",
+    "name": "Black-eared Pygmy Squirrel"
   },
   {
-    "slug": "petinomys-vordermanni",
-    "name": "Petinomys vordermanni"
+    "slug": "american-red-squirrel",
+    "name": "American red squirrel"
   },
   {
-    "slug": "epixerus-ebii",
-    "name": "Epixerus ebii"
+    "slug": "reevess-muntjac",
+    "name": "Reeves's Muntjac"
   },
   {
-    "slug": "tamiasciurus-mearnsi",
-    "name": "Tamiasciurus mearnsi"
+    "slug": "northern-pudu",
+    "name": "Northern Pudu"
   },
   {
-    "slug": "nannosciurus-melanotis",
-    "name": "Nannosciurus melanotis"
+    "slug": "onager",
+    "name": "Onager"
   },
   {
-    "slug": "tamiasciurus-hudsonicus",
-    "name": "Tamiasciurus hudsonicus"
+    "slug": "feas-muntjac",
+    "name": "Fea's Muntjac"
   },
   {
-    "slug": "spermophilus-xanthoprymnus",
-    "name": "Spermophilus xanthoprymnus"
+    "slug": "chital",
+    "name": "Chital"
   },
   {
-    "slug": "spermophilus-fulvus",
-    "name": "Spermophilus fulvus"
+    "slug": "black-musk-deer",
+    "name": "Black Musk Deer"
   },
   {
-    "slug": "pudu-mephistophiles",
-    "name": "Pudu mephistophiles"
+    "slug": "bornean-yellow-muntjac",
+    "name": "Bornean Yellow Muntjac"
   },
   {
-    "slug": "muntiacus-feae",
-    "name": "Muntiacus feae"
+    "slug": "chinstrap-penguin",
+    "name": "Chinstrap Penguin"
   },
   {
-    "slug": "axis-axis",
-    "name": "Axis axis"
+    "slug": "siberian-musk-deer",
+    "name": "Siberian Musk Deer"
   },
   {
-    "slug": "muntiacus-reevesi",
-    "name": "Muntiacus reevesi"
+    "slug": "south-andean-deer",
+    "name": "South Andean Deer"
   },
   {
-    "slug": "cervus-nippon",
-    "name": "Cervus nippon"
+    "slug": "bishops-slender-mouse-opossum",
+    "name": "Bishop's Slender Mouse Opossum"
   },
   {
-    "slug": "muntiacus-atherodes",
-    "name": "Muntiacus atherodes"
+    "slug": "taruca",
+    "name": "Taruca"
   },
   {
-    "slug": "moschus-moschiferus",
-    "name": "Moschus moschiferus"
+    "slug": "northern-white-rhinoceros",
+    "name": "Northern White Rhinoceros"
   },
   {
-    "slug": "hippocamelus-bisulcus",
-    "name": "Hippocamelus bisulcus"
+    "slug": "dwarf-blue-sheep",
+    "name": "Dwarf Blue Sheep"
   },
   {
-    "slug": "moschus-fuscus",
-    "name": "Moschus fuscus"
-  },
-  {
-    "slug": "tayassu-pecari",
-    "name": "Tayassu pecari"
-  },
-  {
-    "slug": "hippocamelus-antisensis",
-    "name": "Hippocamelus antisensis"
-  },
-  {
-    "slug": "pseudois-schaeferi",
-    "name": "Pseudois schaeferi"
-  },
-  {
-    "slug": "madoqua-guentheri",
-    "name": "Madoqua guentheri"
-  },
-  {
-    "slug": "marmosops-bishopi",
-    "name": "Marmosops bishopi"
-  },
-  {
-    "slug": "zaglossus-attenboroughi",
-    "name": "Zaglossus attenboroughi"
+    "slug": "gnthers-dik-dik",
+    "name": "Günther's Dik-dik"
   },
   {
     "slug": "zelotes-laetus",
@@ -2728,292 +2812,256 @@
     "name": "Drassodes splendens"
   },
   {
-    "slug": "isometrus-maculatus",
-    "name": "Isometrus maculatus"
+    "slug": "lesser-brown-scorpion",
+    "name": "Lesser Brown Scorpion"
   },
   {
-    "slug": "aphelocoma-coerulescens",
-    "name": "Aphelocoma coerulescens"
+    "slug": "formosan-magpie",
+    "name": "Formosan Magpie"
   },
   {
-    "slug": "colluricincla-megarhyncha",
-    "name": "Colluricincla megarhyncha"
+    "slug": "little-shrikethrush",
+    "name": "Little Shrikethrush"
   },
   {
-    "slug": "perisoreus-internigrans",
-    "name": "Perisoreus internigrans"
+    "slug": "shy-albatross",
+    "name": "Shy Albatross"
   },
   {
-    "slug": "aphelocoma-unicolor",
-    "name": "Aphelocoma unicolor"
+    "slug": "sichuan-jay",
+    "name": "Sichuan Jay"
   },
   {
-    "slug": "urocissa-caerulea",
-    "name": "Urocissa caerulea"
+    "slug": "unicolored-jay",
+    "name": "Unicolored Jay"
   },
   {
-    "slug": "calocitta-formosa",
-    "name": "Calocitta formosa"
+    "slug": "jamaican-crow",
+    "name": "Jamaican Crow"
   },
   {
-    "slug": "corvus-unicolor",
-    "name": "Corvus unicolor"
+    "slug": "banggai-crow",
+    "name": "Banggai Crow"
   },
   {
-    "slug": "corvus-moneduloides",
-    "name": "Corvus moneduloides"
+    "slug": "western-crowned-pigeon",
+    "name": "Western Crowned Pigeon"
   },
   {
-    "slug": "rhagologus-leucostigma",
-    "name": "Rhagologus leucostigma"
+    "slug": "new-caledonian-crow",
+    "name": "New Caledonian Crow"
   },
   {
-    "slug": "corvus-jamaicensis",
-    "name": "Corvus jamaicensis"
+    "slug": "mottled-whistler",
+    "name": "Mottled Whistler"
   },
   {
-    "slug": "ptilostomus-afer",
-    "name": "Ptilostomus afer"
+    "slug": "white-billed-crow",
+    "name": "White-billed Crow"
   },
   {
-    "slug": "corvus-fuscicapillus",
-    "name": "Corvus fuscicapillus"
+    "slug": "piapiac",
+    "name": "Piapiac"
   },
   {
-    "slug": "corvus-mellori",
-    "name": "Corvus mellori"
+    "slug": "brown-headed-crow",
+    "name": "Brown-headed Crow"
   },
   {
-    "slug": "corvus-woodfordi",
-    "name": "Corvus woodfordi"
+    "slug": "large-billed-crow",
+    "name": "Large-billed Crow"
   },
   {
-    "slug": "corvus-macrorhynchos",
-    "name": "Corvus macrorhynchos"
+    "slug": "moluccan-crow",
+    "name": "Moluccan Crow"
   },
   {
-    "slug": "corvus-validus",
-    "name": "Corvus validus"
+    "slug": "rufous-naped-whistler",
+    "name": "Rufous-naped Whistler"
   },
   {
-    "slug": "corvus-brachyrhynchos",
-    "name": "Corvus brachyrhynchos"
+    "slug": "mariana-crow",
+    "name": "Mariana Crow"
   },
   {
-    "slug": "aleadryas-rufinucha",
-    "name": "Aleadryas rufinucha"
+    "slug": "plum-faced-lorikeet-wait-let-me-reconsider-wattled-ploughbill",
+    "name": "Plum-faced Lorikeet\n\nWait, let me reconsider.\n\nWattled Ploughbill"
   },
   {
-    "slug": "corvus-kubaryi",
-    "name": "Corvus kubaryi"
+    "slug": "cape-crow",
+    "name": "Cape Crow"
   },
   {
-    "slug": "corvus-capensis",
-    "name": "Corvus capensis"
+    "slug": "scheepmakers-crowned-pigeon",
+    "name": "Scheepmaker's Crowned Pigeon"
   },
   {
-    "slug": "pitohui-kirhocephalus",
-    "name": "Pitohui kirhocephalus"
+    "slug": "bateleur",
+    "name": "Bateleur"
   },
   {
-    "slug": "synapturanus-salseri",
-    "name": "Synapturanus salseri"
+    "slug": "rppells-vulture",
+    "name": "Rüppell's Vulture"
   },
   {
-    "slug": "eulacestoma-nigropectus",
-    "name": "Eulacestoma nigropectus"
+    "slug": "balsas-screech-owl",
+    "name": "Balsas Screech-owl"
   },
   {
-    "slug": "hylocitrea-bonensis",
-    "name": "Hylocitrea bonensis"
+    "slug": "philippine-eagle",
+    "name": "Philippine Eagle"
   },
   {
-    "slug": "terathopius-ecaudatus",
-    "name": "Terathopius ecaudatus"
+    "slug": "reddyanus-tibetanus",
+    "name": "Reddyanus tibetanus"
   },
   {
-    "slug": "gyps-rueppellii",
-    "name": "Gyps rueppellii"
+    "slug": "celebes-honey-buzzard",
+    "name": "Celebes Honey Buzzard"
   },
   {
-    "slug": "pithecophaga-jefferyi",
-    "name": "Pithecophaga jefferyi"
+    "slug": "snail-kite",
+    "name": "Snail Kite"
   },
   {
-    "slug": "leucopternis-semiplumbeus",
-    "name": "Leucopternis semiplumbeus"
+    "slug": "kinabalu-serpent-eagle",
+    "name": "Kinabalu Serpent Eagle"
   },
   {
-    "slug": "pernis-celebensis",
-    "name": "Pernis celebensis"
+    "slug": "short-eared-owl",
+    "name": "Short-eared Owl"
   },
   {
-    "slug": "trigonoceps-occipitalis",
-    "name": "Trigonoceps occipitalis"
+    "slug": "burrowing-owl",
+    "name": "Burrowing Owl"
   },
   {
-    "slug": "rostrhamus-sociabilis",
-    "name": "Rostrhamus sociabilis"
+    "slug": "magellanic-penguin",
+    "name": "Magellanic Penguin"
   },
   {
-    "slug": "spilornis-kinabaluensis",
-    "name": "Spilornis kinabaluensis"
+    "slug": "marsh-owl",
+    "name": "Marsh Owl"
   },
   {
-    "slug": "haliaeetus-pelagicus",
-    "name": "Haliaeetus pelagicus"
+    "slug": "spotted-owlet",
+    "name": "Spotted Owlet"
   },
   {
-    "slug": "athene-cunicularia",
-    "name": "Athene cunicularia"
+    "slug": "colombian-screech-owl",
+    "name": "Colombian Screech-Owl"
   },
   {
-    "slug": "asio-capensis",
-    "name": "Asio capensis"
+    "slug": "rufescent-screech-owl",
+    "name": "Rufescent Screech-Owl"
   },
   {
-    "slug": "athene-brama",
-    "name": "Athene brama"
+    "slug": "cnemaspis-africana",
+    "name": "Cnemaspis africana"
   },
   {
-    "slug": "asio-flammeus",
-    "name": "Asio flammeus"
+    "slug": "western-screech-owl",
+    "name": "Western Screech-Owl"
   },
   {
-    "slug": "haliaeetus-vociferoides",
-    "name": "Haliaeetus vociferoides"
+    "slug": "hoys-screech-owl",
+    "name": "Hoy's Screech-Owl"
   },
   {
-    "slug": "megascops-ingens",
-    "name": "Megascops ingens"
+    "slug": "red-masked-parakeet",
+    "name": "Red-masked Parakeet"
   },
   {
-    "slug": "megascops-kennicottii",
-    "name": "Megascops kennicottii"
+    "slug": "vermiculated-screech-owl",
+    "name": "Vermiculated Screech-Owl"
   },
   {
-    "slug": "megascops-hoyi",
-    "name": "Megascops hoyi"
+    "slug": "platymantis-naomii",
+    "name": "Platymantis naomii"
   },
   {
-    "slug": "megascops-colombianus",
-    "name": "Megascops colombianus"
+    "slug": "blue-crowned-parakeet",
+    "name": "Blue-crowned Parakeet"
   },
   {
-    "slug": "megascops-albogularis",
-    "name": "Megascops albogularis"
+    "slug": "blue-winged-parrotlet",
+    "name": "Blue-winged Parrotlet"
   },
   {
-    "slug": "megascops-guatemalae",
-    "name": "Megascops guatemalae"
+    "slug": "orange-fronted-parakeet",
+    "name": "Orange-fronted Parakeet"
   },
   {
-    "slug": "aratinga-acuticaudata",
-    "name": "Aratinga acuticaudata"
+    "slug": "chinese-crocodile-lizard",
+    "name": "Chinese Crocodile Lizard"
   },
   {
-    "slug": "forpus-xanthopterygius",
-    "name": "Forpus xanthopterygius"
+    "slug": "platymantis-diesmosi",
+    "name": "Platymantis diesmosi"
   },
   {
-    "slug": "aratinga-erythrogenys",
-    "name": "Aratinga erythrogenys"
+    "slug": "african-spurred-tortoise",
+    "name": "African Spurred Tortoise"
   },
   {
-    "slug": "aratinga-jandaya",
-    "name": "Aratinga jandaya"
+    "slug": "white-eyed-parakeet",
+    "name": "White-eyed Parakeet"
   },
   {
-    "slug": "aratinga-canicularis",
-    "name": "Aratinga canicularis"
+    "slug": "erect-crested-penguin",
+    "name": "Erect-crested Penguin"
   },
   {
-    "slug": "psittacella-picta",
-    "name": "Psittacella picta"
+    "slug": "emperor-penguin",
+    "name": "Emperor Penguin"
   },
   {
-    "slug": "aratinga-solstitialis",
-    "name": "Aratinga solstitialis"
+    "slug": "gentoo-penguin",
+    "name": "Gentoo Penguin"
   },
   {
-    "slug": "aratinga-leucophthalma",
-    "name": "Aratinga leucophthalma"
+    "slug": "northern-rockhopper-penguin",
+    "name": "Northern Rockhopper Penguin"
   },
   {
-    "slug": "micropsitta-pusio",
-    "name": "Micropsitta pusio"
+    "slug": "dark-rumped-petrel",
+    "name": "Dark-rumped Petrel"
   },
   {
-    "slug": "eudyptes-sclateri",
-    "name": "Eudyptes sclateri"
+    "slug": "black-browed-albatross",
+    "name": "Black-browed Albatross"
   },
   {
-    "slug": "spheniscus-demersus",
-    "name": "Spheniscus demersus"
+    "slug": "adlie-penguin",
+    "name": "Adélie Penguin"
   },
   {
-    "slug": "strigops-habroptila",
-    "name": "Strigops habroptila"
+    "slug": "radiated-tortoise",
+    "name": "Radiated Tortoise"
   },
   {
-    "slug": "aptenodytes-forsteri",
-    "name": "Aptenodytes forsteri"
+    "slug": "magellanic-diving-petrel",
+    "name": "Magellanic Diving Petrel"
   },
   {
-    "slug": "eudyptes-moseleyi",
-    "name": "Eudyptes moseleyi"
+    "slug": "light-mantled-albatross",
+    "name": "Light-mantled Albatross"
   },
   {
-    "slug": "pygoscelis-papua",
-    "name": "Pygoscelis papua"
+    "slug": "southern-fulmar",
+    "name": "Southern Fulmar"
   },
   {
-    "slug": "pterodroma-phaeopygia",
-    "name": "Pterodroma phaeopygia"
+    "slug": "defilippes-petrel",
+    "name": "Defilippe's Petrel"
   },
   {
-    "slug": "pygoscelis-adeliae",
-    "name": "Pygoscelis adeliae"
+    "slug": "soft-plumaged-petrel",
+    "name": "Soft-plumaged Petrel"
   },
   {
-    "slug": "phoebastria-immutabilis",
-    "name": "Phoebastria immutabilis"
-  },
-  {
-    "slug": "thalassarche-chlororhynchos",
-    "name": "Thalassarche chlororhynchos"
-  },
-  {
-    "slug": "thalassarche-melanophris",
-    "name": "Thalassarche melanophris"
-  },
-  {
-    "slug": "phoebetria-palpebrata",
-    "name": "Phoebetria palpebrata"
-  },
-  {
-    "slug": "pelecanoides-magellani",
-    "name": "Pelecanoides magellani"
-  },
-  {
-    "slug": "fulmarus-glacialoides",
-    "name": "Fulmarus glacialoides"
-  },
-  {
-    "slug": "aphrodroma-brevirostris",
-    "name": "Aphrodroma brevirostris"
-  },
-  {
-    "slug": "pterodroma-defilippiana",
-    "name": "Pterodroma defilippiana"
-  },
-  {
-    "slug": "pelecanoides-urinatrix",
-    "name": "Pelecanoides urinatrix"
-  },
-  {
-    "slug": "pterodroma-mollis",
-    "name": "Pterodroma mollis"
+    "slug": "seaside-dragonlet-wait-let-me-reconsider-tramea-abdominalis-is-a-dragonfly-in-the-family-libellulidae-the-genus-tramea-are-known-as-saddlebags-dragonflies-due-to-their-wing-mark",
+    "name": "Seaside Dragonlet\n\n---\n\nWait, let me reconsider. Tramea abdominalis is a dragonfly in the family Libellulidae. The genus Tramea are known as \"saddlebags\" dragonflies due to their wing mark"
   },
   {
     "slug": "bothriurus-wilhelmi",
@@ -3024,96 +3072,76 @@
     "name": "Buthacus macrocentrus"
   },
   {
-    "slug": "pterodroma-leucoptera",
-    "name": "Pterodroma leucoptera"
+    "slug": "goulds-petrel",
+    "name": "Gould's Petrel"
   },
   {
-    "slug": "pterodroma-sandwichensis",
-    "name": "Pterodroma sandwichensis"
+    "slug": "brush-bronzewing",
+    "name": "Brush Bronzewing"
   },
   {
-    "slug": "phaps-chalcoptera",
-    "name": "Phaps chalcoptera"
+    "slug": "common-bronzewing",
+    "name": "Common Bronzewing"
   },
   {
-    "slug": "goura-victoria",
-    "name": "Goura victoria"
+    "slug": "drassodes-stationis",
+    "name": "Drassodes stationis"
   },
   {
-    "slug": "ocyphaps-lophotes",
-    "name": "Ocyphaps lophotes"
+    "slug": "victoria-crowned-pigeon",
+    "name": "Victoria Crowned Pigeon"
   },
   {
-    "slug": "phaps-elegans",
-    "name": "Phaps elegans"
+    "slug": "crested-pigeon",
+    "name": "Crested Pigeon"
   },
   {
-    "slug": "gymnophaps-mada",
-    "name": "Gymnophaps mada"
+    "slug": "sulu-bleeding-heart",
+    "name": "Sulu Bleeding-heart"
   },
   {
-    "slug": "gallicolumba-menagei",
-    "name": "Gallicolumba menagei"
+    "slug": "yenyuan-stream-salamander",
+    "name": "Yenyuan Stream Salamander"
   },
   {
-    "slug": "gallicolumba-luzonica",
-    "name": "Gallicolumba luzonica"
+    "slug": "luzon-bleeding-heart",
+    "name": "Luzon Bleeding-heart"
   },
   {
-    "slug": "patagioenas-fasciata",
-    "name": "Patagioenas fasciata"
+    "slug": "band-tailed-pigeon",
+    "name": "Band-tailed Pigeon"
   },
   {
-    "slug": "gallicolumba-keayi",
-    "name": "Gallicolumba keayi"
+    "slug": "american-crocodile",
+    "name": "American Crocodile"
   },
   {
-    "slug": "patagioenas-cayennensis",
-    "name": "Patagioenas cayennensis"
+    "slug": "new-guinea-crocodile",
+    "name": "New Guinea Crocodile"
   },
   {
-    "slug": "crocodylus-acutus",
-    "name": "Crocodylus acutus"
+    "slug": "lake-whitefish",
+    "name": "Lake Whitefish"
   },
   {
-    "slug": "crocodylus-palustris",
-    "name": "Crocodylus palustris"
+    "slug": "freshwater-crocodile",
+    "name": "Freshwater Crocodile"
   },
   {
-    "slug": "crocodylus-novaeguineae",
-    "name": "Crocodylus novaeguineae"
+    "slug": "american-alligator",
+    "name": "American Alligator"
   },
   {
-    "slug": "crocodylus-intermedius",
-    "name": "Crocodylus intermedius"
+    "slug": "african-slender-snouted-crocodile",
+    "name": "African Slender-snouted Crocodile"
   },
   {
-    "slug": "alligator-mississippiensis",
-    "name": "Alligator mississippiensis"
+    "slug": "drassodes-ellenae",
+    "name": "Drassodes ellenae"
   },
   {
-    "slug": "mecistops-cataphractus",
-    "name": "Mecistops cataphractus"
-  },
-  {
-    "slug": "nasikabatrachus-sahyadrensis",
-    "name": "Nasikabatrachus sahyadrensis"
-  },
-  {
-    "slug": "osteolaemus-tetraspis",
-    "name": "Osteolaemus tetraspis"
-  },
-  {
-    "slug": "crocodylus-johnsoni",
-    "name": "Crocodylus johnsoni"
-  },
-  {
-    "slug": "platymantis-levigatus",
-    "name": "Platymantis levigatus"
-  },
-  {
-    "slug": "cornufer-montanus",
-    "name": "Cornufer montanus"
+    "slug": "mountain-papuan-frog",
+    "name": "Mountain Papuan Frog"
   },
   {
     "slug": "platymantis-pseudodorsalis",
@@ -3124,132 +3152,132 @@
     "name": "Cornufer aculeodactylus"
   },
   {
-    "slug": "platymantis-negrosensis",
-    "name": "Platymantis negrosensis"
+    "slug": "negros-flat-headed-frog",
+    "name": "Negros Flat-headed Frog"
   },
   {
-    "slug": "platymantis-insulatus",
-    "name": "Platymantis insulatus"
+    "slug": "drassodes-caffrerianus",
+    "name": "Drassodes caffrerianus"
   },
   {
-    "slug": "cornufer-neckeri",
-    "name": "Cornufer neckeri"
+    "slug": "neckers-rana",
+    "name": "Necker's Rana"
   },
   {
-    "slug": "platymantis-guentheri",
-    "name": "Platymantis guentheri"
+    "slug": "snaggletooth-shark",
+    "name": "Snaggletooth Shark"
+  },
+  {
+    "slug": "gnthers-flathead-frog",
+    "name": "Günther's Flathead Frog"
   },
   {
     "slug": "elamena-momona",
     "name": "Elamena momona"
   },
   {
-    "slug": "cornufer-pelewensis",
-    "name": "Cornufer pelewensis"
+    "slug": "palau-frog",
+    "name": "Palau Frog"
   },
   {
-    "slug": "platymantis-cagayanensis",
-    "name": "Platymantis cagayanensis"
+    "slug": "gilliards-ground-frog",
+    "name": "Gilliard's Ground Frog"
   },
   {
-    "slug": "cornufer-gilliardi",
-    "name": "Cornufer gilliardi"
+    "slug": "west-african-rubber-frog",
+    "name": "West African rubber frog"
   },
   {
-    "slug": "platymantis-subterrestris",
-    "name": "Platymantis subterrestris"
+    "slug": "sierra-madre-forest-frog",
+    "name": "Sierra Madre Forest Frog"
   },
   {
-    "slug": "phrynomantis-microps",
-    "name": "Phrynomantis microps"
+    "slug": "drassodes-dregei",
+    "name": "Drassodes dregei"
   },
   {
-    "slug": "platymantis-sierramadrensis",
-    "name": "Platymantis sierramadrensis"
+    "slug": "drassodes-lyriger",
+    "name": "Drassodes lyriger"
   },
   {
-    "slug": "scaphiophryne-menabensis",
-    "name": "Scaphiophryne menabensis"
+    "slug": "persian-mountain-salamander",
+    "name": "Persian Mountain Salamander"
   },
   {
-    "slug": "scaphiophryne-madagascariensis",
-    "name": "Scaphiophryne madagascariensis"
+    "slug": "malagasy-rainbow-frog",
+    "name": "Malagasy rainbow frog"
   },
   {
-    "slug": "phrynomantis-annectens",
-    "name": "Phrynomantis annectens"
+    "slug": "drassodes-tortuosus",
+    "name": "Drassodes tortuosus"
   },
   {
-    "slug": "otophryne-pyburni",
-    "name": "Otophryne pyburni"
+    "slug": "banded-rubber-frog",
+    "name": "Banded Rubber Frog"
   },
   {
-    "slug": "paradactylodon-persicus",
-    "name": "Paradactylodon persicus"
+    "slug": "pyburns-tree-toad",
+    "name": "Pyburn's Tree Toad"
   },
   {
-    "slug": "batrachuperus-karlschmidti",
-    "name": "Batrachuperus karlschmidti"
+    "slug": "anji-salamander",
+    "name": "Anji salamander"
   },
   {
     "slug": "otophryne-robusta",
     "name": "Otophryne robusta"
   },
   {
-    "slug": "hynobius-stejnegeri",
-    "name": "Hynobius stejnegeri"
+    "slug": "enteucha-cyanochlora",
+    "name": "Enteucha cyanochlora"
   },
   {
-    "slug": "hynobius-quelpaertensis",
-    "name": "Hynobius quelpaertensis"
+    "slug": "stejnegers-stream-salamander",
+    "name": "Stejneger's Stream Salamander"
   },
   {
-    "slug": "hynobius-amjiensis",
-    "name": "Hynobius amjiensis"
+    "slug": "jeju-salamander",
+    "name": "Jeju salamander"
   },
   {
-    "slug": "hynobius-chinensis",
-    "name": "Hynobius chinensis"
+    "slug": "kuankuoshui-salamander",
+    "name": "Kuankuoshui Salamander"
   },
   {
-    "slug": "pseudohynobius-kuankuoshuiensis",
-    "name": "Pseudohynobius kuankuoshuiensis"
+    "slug": "maoer-mountain-salamander",
+    "name": "Mao'er Mountain Salamander"
   },
   {
-    "slug": "hynobius-tokyoensis",
-    "name": "Hynobius tokyoensis"
+    "slug": "drassodes-bechuanicus",
+    "name": "Drassodes bechuanicus"
   },
   {
-    "slug": "hynobius-maoershanensis",
-    "name": "Hynobius maoershanensis"
+    "slug": "pamphilus-persicum",
+    "name": "Pamphilus persicum"
   },
   {
-    "slug": "hynobius-yangi",
-    "name": "Hynobius yangi"
-  },
-  {
-    "slug": "hynobius-naevius",
-    "name": "Hynobius naevius"
+    "slug": "yangs-salamander",
+    "name": "Yang's Salamander"
   },
   {
     "slug": "hynobius-guabangshanensis",
     "name": "Hynobius guabangshanensis"
   },
   {
-    "slug": "carcharhinus-albimarginatus",
-    "name": "Carcharhinus albimarginatus"
+    "slug": "amarinus-lacustris",
+    "name": "Amarinus lacustris"
   },
   {
-    "slug": "carcharhinus-sorrah",
-    "name": "Carcharhinus sorrah"
+    "slug": "silvertip-shark",
+    "name": "Silvertip Shark"
   },
   {
-    "slug": "mustelus-punctulatus",
-    "name": "Mustelus punctulatus"
+    "slug": "spottail-shark",
+    "name": "Spottail Shark"
   },
   {
-    "slug": "negaprion-brevirostris",
-    "name": "Negaprion brevirostris"
+    "slug": "blackspotted-smoothhound",
+    "name": "Blackspotted Smoothhound"
   },
   {
     "slug": "eugaleus-latus",
@@ -3272,10 +3300,6 @@
     "name": "Opostega basilissa"
   },
   {
-    "slug": "opostega-horaria",
-    "name": "Opostega horaria"
-  },
-  {
     "slug": "opostega-diplardis",
     "name": "Opostega diplardis"
   },
@@ -3292,8 +3316,8 @@
     "name": "Opostega diorthota"
   },
   {
-    "slug": "opostega-orestias",
-    "name": "Opostega orestias"
+    "slug": "pristaulacus-angularis",
+    "name": "Pristaulacus angularis"
   },
   {
     "slug": "opostegoides-padiensis",
@@ -3312,12 +3336,20 @@
     "name": "Opostega scoliozona"
   },
   {
-    "slug": "ectoedemia-commiphorella",
-    "name": "Ectoedemia commiphorella"
+    "slug": "pristaulacus-sexdentatus",
+    "name": "Pristaulacus sexdentatus"
+  },
+  {
+    "slug": "ectoedemia-argyropeza",
+    "name": "Ectoedemia argyropeza"
   },
   {
     "slug": "ectoedemia-algeriensis",
     "name": "Ectoedemia algeriensis"
+  },
+  {
+    "slug": "whistling-kite",
+    "name": "Whistling Kite"
   },
   {
     "slug": "ectoedemia-arcuatella",
@@ -3326,14 +3358,6 @@
   {
     "slug": "ectoedemia-albifasciella",
     "name": "Ectoedemia albifasciella"
-  },
-  {
-    "slug": "ectoedemia-argyropeza",
-    "name": "Ectoedemia argyropeza"
-  },
-  {
-    "slug": "ectoedemia-rubivora",
-    "name": "Ectoedemia rubivora"
   },
   {
     "slug": "rebinea-erebina",
@@ -3352,24 +3376,16 @@
     "name": "Chersomorpha taospila"
   },
   {
+    "slug": "black-capped-screech-owl",
+    "name": "Black-capped Screech-Owl"
+  },
+  {
     "slug": "neurotoma-inconspicua",
     "name": "Neurotoma inconspicua"
   },
   {
-    "slug": "pristaulacus-colombianus",
-    "name": "Pristaulacus colombianus"
-  },
-  {
     "slug": "archimaga-pyractis",
     "name": "Archimaga pyractis"
-  },
-  {
-    "slug": "pristaulacus-minor",
-    "name": "Pristaulacus minor"
-  },
-  {
-    "slug": "pristaulacus-tuberculiceps",
-    "name": "Pristaulacus tuberculiceps"
   },
   {
     "slug": "pristaulacus-sibiricola",
@@ -3400,10 +3416,6 @@
     "name": "Pristaulacus cordiformis"
   },
   {
-    "slug": "pristaulacus-duporti",
-    "name": "Pristaulacus duporti"
-  },
-  {
     "slug": "pristaulacus-intermedius",
     "name": "Pristaulacus intermedius"
   },
@@ -3412,8 +3424,8 @@
     "name": "Pristaulacus cordatus"
   },
   {
-    "slug": "pristaulacus-albosignatus",
-    "name": "Pristaulacus albosignatus"
+    "slug": "cuban-crocodile",
+    "name": "Cuban Crocodile"
   },
   {
     "slug": "anorus-parvicollis",
@@ -3432,32 +3444,36 @@
     "name": "Tityus mraceki"
   },
   {
-    "slug": "pseudopalicus-oahuensis",
-    "name": "Pseudopalicus oahuensis"
-  },
-  {
-    "slug": "olivierus-karshius",
-    "name": "Olivierus karshius"
-  },
-  {
-    "slug": "uca-maracoani",
-    "name": "Uca maracoani"
-  },
-  {
-    "slug": "ocypode-cursor",
-    "name": "Ocypode cursor"
+    "slug": "pristaulacus-albosignatus",
+    "name": "Pristaulacus albosignatus"
   },
   {
     "slug": "crossotonotus-spinipes",
     "name": "Crossotonotus spinipes"
   },
   {
-    "slug": "neohymenicus-pubescens",
-    "name": "Neohymenicus pubescens"
+    "slug": "olivierus-karshius",
+    "name": "Olivierus karshius"
+  },
+  {
+    "slug": "pseudopalicus-oahuensis",
+    "name": "Pseudopalicus oahuensis"
+  },
+  {
+    "slug": "maracaani-fiddler-crab",
+    "name": "Maracaani fiddler crab"
+  },
+  {
+    "slug": "ghost-crab",
+    "name": "Ghost Crab"
   },
   {
     "slug": "halicarcinus-tongi",
     "name": "Halicarcinus tongi"
+  },
+  {
+    "slug": "neohymenicus-pubescens",
+    "name": "Neohymenicus pubescens"
   },
   {
     "slug": "elamena-longirostris",
@@ -3468,20 +3484,16 @@
     "name": "Halimena aotearoa"
   },
   {
-    "slug": "palinurus-gilchristi",
-    "name": "Palinurus gilchristi"
-  },
-  {
-    "slug": "palinurus-charlestoni",
-    "name": "Palinurus charlestoni"
+    "slug": "gilt-spiny-lobster",
+    "name": "Gilt spiny lobster"
   },
   {
     "slug": "pteroctopus-witjazi",
     "name": "Pteroctopus witjazi"
   },
   {
-    "slug": "robsonella-fontaniana",
-    "name": "Robsonella fontaniana"
+    "slug": "stubby-octopus",
+    "name": "Stubby Octopus"
   },
   {
     "slug": "projasus-bahamondei",
@@ -3496,10 +3508,6 @@
     "name": "Octopus validus"
   },
   {
-    "slug": "octopus-tsugarensis",
-    "name": "Octopus tsugarensis"
-  },
-  {
     "slug": "octopus-nanhaiensis",
     "name": "Octopus nanhaiensis"
   },
@@ -3512,44 +3520,28 @@
     "name": "Octopus yendoi"
   },
   {
-    "slug": "argonauta-argo",
-    "name": "Argonauta argo"
+    "slug": "paper-nautilus",
+    "name": "Paper Nautilus"
   },
   {
     "slug": "argonauta-bottgeri",
     "name": "Argonauta bottgeri"
   },
   {
-    "slug": "pelagia-panopyra",
-    "name": "Pelagia panopyra"
-  },
-  {
     "slug": "deepstaria-reticulum",
     "name": "Deepstaria reticulum"
-  },
-  {
-    "slug": "diplulmaris-malayensis",
-    "name": "Diplulmaris malayensis"
   },
   {
     "slug": "pinnoctopus-kermadecensis",
     "name": "Pinnoctopus kermadecensis"
   },
   {
-    "slug": "discomedusa-philippina",
-    "name": "Discomedusa philippina"
+    "slug": "egg-yolk-jellyfish",
+    "name": "Egg yolk jellyfish"
   },
   {
-    "slug": "phacellophora-camtschatica",
-    "name": "Phacellophora camtschatica"
-  },
-  {
-    "slug": "aurosa-furcata",
-    "name": "Aurosa furcata"
-  },
-  {
-    "slug": "pisaster-brevispinus",
-    "name": "Pisaster brevispinus"
+    "slug": "pink-sea-star",
+    "name": "Pink Sea Star"
   },
   {
     "slug": "saliasterias-brachiata",
@@ -3568,232 +3560,160 @@
     "name": "Lethasterias nanimensis"
   },
   {
-    "slug": "cosmasterias-felipes",
-    "name": "Cosmasterias felipes"
-  },
-  {
     "slug": "cosmasterias-dyscrita",
     "name": "Cosmasterias dyscrita"
   },
   {
-    "slug": "melursus-ursinus",
-    "name": "Melursus ursinus"
+    "slug": "sloth-bear",
+    "name": "Sloth Bear"
   },
   {
     "slug": "psalidaster-fisheri",
     "name": "Psalidaster fisheri"
   },
   {
-    "slug": "eupleres-goudotii",
-    "name": "Eupleres goudotii"
+    "slug": "falanou-let-me-reconsider-fanaloka-reconsidering-again-eupleres-goudotii-is-the-falanuc-small-toothed-mongoose-like-carnivore-from-madagascar-falanuc",
+    "name": "Falanouс\n\nLet me reconsider.\n\nFanaloka\n\nReconsidering again - Eupleres goudotii is the Falanuc (small-toothed mongoose-like carnivore from Madagascar).\n\nFalanuc"
   },
   {
-    "slug": "melogale-everetti",
-    "name": "Melogale everetti"
+    "slug": "bornean-ferret-badger",
+    "name": "Bornean Ferret-Badger"
   },
   {
-    "slug": "lontra-longicaudis",
-    "name": "Lontra longicaudis"
+    "slug": "white-footed-sportive-lemur",
+    "name": "White-footed Sportive Lemur"
   },
   {
-    "slug": "cacajao-melanocephalus",
-    "name": "Cacajao melanocephalus"
+    "slug": "shepherds-beaked-whale",
+    "name": "Shepherd's Beaked Whale"
   },
   {
-    "slug": "lepilemur-leucopus",
-    "name": "Lepilemur leucopus"
+    "slug": "ginkgo-toothed-beaked-whale",
+    "name": "Ginkgo-toothed Beaked Whale"
   },
   {
-    "slug": "tasmacetus-shepherdi",
-    "name": "Tasmacetus shepherdi"
+    "slug": "moorish-gecko",
+    "name": "Moorish gecko"
   },
   {
-    "slug": "mesoplodon-ginkgodens",
-    "name": "Mesoplodon ginkgodens"
+    "slug": "hoary-bat-wait-let-me-reconsider-chalinolobus-nigrogriseus-is-a-bat-species-from-australia-its-common-name-is-hoary-wattled-bat",
+    "name": "Hoary Bat\n\nWait, let me reconsider.\n\nChalinolobus nigrogriseus is a bat species from Australia. Its common name is:\n\nHoary Wattled Bat"
   },
   {
-    "slug": "tarentola-mauritanica",
-    "name": "Tarentola mauritanica"
+    "slug": "scullys-tube-nosed-bat",
+    "name": "Scully's Tube-nosed Bat"
   },
   {
-    "slug": "tursiops-aduncus",
-    "name": "Tursiops aduncus"
+    "slug": "elegant-gecko",
+    "name": "Elegant Gecko"
   },
   {
-    "slug": "chalinolobus-nigrogriseus",
-    "name": "Chalinolobus nigrogriseus"
+    "slug": "asian-red-cheeked-squirrel",
+    "name": "Asian Red-cheeked Squirrel"
   },
   {
-    "slug": "pharotis-imogene",
-    "name": "Pharotis imogene"
+    "slug": "pre-davids-deer",
+    "name": "Père David's Deer"
   },
   {
-    "slug": "murina-tubinaris",
-    "name": "Murina tubinaris"
+    "slug": "white-tailed-deer",
+    "name": "White-tailed Deer"
   },
   {
-    "slug": "sciurotamias-forresti",
-    "name": "Sciurotamias forresti"
+    "slug": "giant-leaf-tailed-gecko",
+    "name": "Giant Leaf-tailed Gecko"
   },
   {
-    "slug": "sphaerodactylus-elegans",
-    "name": "Sphaerodactylus elegans"
+    "slug": "woolly-hare",
+    "name": "Woolly Hare"
   },
   {
-    "slug": "funambulus-palmarum",
-    "name": "Funambulus palmarum"
+    "slug": "elegant-fat-tailed-mouse-opossum",
+    "name": "Elegant Fat-tailed Mouse Opossum"
   },
   {
-    "slug": "dremomys-rufigenis",
-    "name": "Dremomys rufigenis"
+    "slug": "white-eared-opossum",
+    "name": "White-eared Opossum"
   },
   {
-    "slug": "elaphurus-davidianus",
-    "name": "Elaphurus davidianus"
+    "slug": "white-winged-magpie",
+    "name": "White-winged Magpie"
   },
   {
-    "slug": "odocoileus-virginianus",
-    "name": "Odocoileus virginianus"
+    "slug": "black-throated-magpie-jay",
+    "name": "Black-throated Magpie-Jay"
   },
   {
-    "slug": "equus-hemionus",
-    "name": "Equus hemionus"
+    "slug": "jungle-crow",
+    "name": "Jungle Crow"
   },
   {
-    "slug": "uroplatus-fimbriatus",
-    "name": "Uroplatus fimbriatus"
+    "slug": "griffon-vulture",
+    "name": "Griffon Vulture"
   },
   {
-    "slug": "ceratotherium-cottoni",
-    "name": "Ceratotherium cottoni"
+    "slug": "new-guinea-eagle",
+    "name": "New Guinea Eagle"
   },
   {
-    "slug": "lepus-oiostolus",
-    "name": "Lepus oiostolus"
+    "slug": "white-tailed-eagle",
+    "name": "White-tailed Eagle"
   },
   {
-    "slug": "thylamys-elegans",
-    "name": "Thylamys elegans"
+    "slug": "long-tufted-screech-owl",
+    "name": "Long-tufted Screech-Owl"
   },
   {
-    "slug": "didelphis-albiventris",
-    "name": "Didelphis albiventris"
+    "slug": "scarlet-fronted-parakeet",
+    "name": "Scarlet-fronted Parakeet"
   },
   {
-    "slug": "urocissa-whiteheadi",
-    "name": "Urocissa whiteheadi"
+    "slug": "rose-ringed-parakeet",
+    "name": "Rose-ringed Parakeet"
   },
   {
-    "slug": "calocitta-colliei",
-    "name": "Calocitta colliei"
+    "slug": "chatham-petrel",
+    "name": "Chatham Petrel"
   },
   {
-    "slug": "corvus-ossifragus",
-    "name": "Corvus ossifragus"
+    "slug": "asp-viper",
+    "name": "Asp Viper"
   },
   {
-    "slug": "corvus-levaillantii",
-    "name": "Corvus levaillantii"
+    "slug": "african-fat-tailed-gecko",
+    "name": "African Fat-tailed Gecko"
   },
   {
-    "slug": "platysmurus-leucopterus",
-    "name": "Platysmurus leucopterus"
+    "slug": "brooks-gliding-gecko",
+    "name": "Brooks' Gliding Gecko"
   },
   {
-    "slug": "gyps-fulvus",
-    "name": "Gyps fulvus"
+    "slug": "bibrons-thick-toed-gecko",
+    "name": "Bibron's Thick-toed Gecko"
   },
   {
-    "slug": "harpyopsis-novaeguineae",
-    "name": "Harpyopsis novaeguineae"
+    "slug": "brazilian-gecko",
+    "name": "Brazilian Gecko"
   },
   {
-    "slug": "haliaeetus-albicilla",
-    "name": "Haliaeetus albicilla"
+    "slug": "microlepis-wonder-gecko",
+    "name": "Microlepis Wonder Gecko"
   },
   {
-    "slug": "megascops-seductus",
-    "name": "Megascops seductus"
+    "slug": "western-banded-gecko",
+    "name": "Western Banded Gecko"
   },
   {
-    "slug": "megascops-sanctaecatarinae",
-    "name": "Megascops sanctaecatarinae"
+    "slug": "gold-dust-day-gecko",
+    "name": "Gold Dust Day Gecko"
   },
   {
-    "slug": "forpus-conspicillatus",
-    "name": "Forpus conspicillatus"
+    "slug": "yellow-headed-gecko",
+    "name": "Yellow-headed Gecko"
   },
   {
-    "slug": "aratinga-wagleri",
-    "name": "Aratinga wagleri"
-  },
-  {
-    "slug": "psittacula-krameri",
-    "name": "Psittacula krameri"
-  },
-  {
-    "slug": "spheniscus-magellanicus",
-    "name": "Spheniscus magellanicus"
-  },
-  {
-    "slug": "pterodroma-axillaris",
-    "name": "Pterodroma axillaris"
-  },
-  {
-    "slug": "gymnophaps-solomonensis",
-    "name": "Gymnophaps solomonensis"
-  },
-  {
-    "slug": "vipera-aspis",
-    "name": "Vipera aspis"
-  },
-  {
-    "slug": "crotalus-horridus",
-    "name": "Crotalus horridus"
-  },
-  {
-    "slug": "hemitheconyx-caudicinctus",
-    "name": "Hemitheconyx caudicinctus"
-  },
-  {
-    "slug": "cnemaspis-africana",
-    "name": "Cnemaspis africana"
-  },
-  {
-    "slug": "luperosaurus-brooksii",
-    "name": "Luperosaurus brooksii"
-  },
-  {
-    "slug": "chondrodactylus-bibronii",
-    "name": "Chondrodactylus bibronii"
-  },
-  {
-    "slug": "gymnodactylus-geckoides",
-    "name": "Gymnodactylus geckoides"
-  },
-  {
-    "slug": "teratoscincus-microlepis",
-    "name": "Teratoscincus microlepis"
-  },
-  {
-    "slug": "coleonyx-variegatus",
-    "name": "Coleonyx variegatus"
-  },
-  {
-    "slug": "gekko-gecko",
-    "name": "Gekko gecko"
-  },
-  {
-    "slug": "phelsuma-laticauda",
-    "name": "Phelsuma laticauda"
-  },
-  {
-    "slug": "gonatodes-albogularis",
-    "name": "Gonatodes albogularis"
-  },
-  {
-    "slug": "cyrtopodion-scabrum",
-    "name": "Cyrtopodion scabrum"
+    "slug": "rough-tailed-gecko",
+    "name": "Rough-tailed Gecko"
   },
   {
     "slug": "xenosaurus-platyceps",
@@ -3804,20 +3724,16 @@
     "name": "Xenosaurus rectocollaris"
   },
   {
-    "slug": "shinisaurus-crocodilurus",
-    "name": "Shinisaurus crocodilurus"
+    "slug": "sri-lanka-pipe-snake",
+    "name": "Sri Lanka Pipe Snake"
   },
   {
-    "slug": "cylindrophis-maculatus",
-    "name": "Cylindrophis maculatus"
+    "slug": "longnose-casquehead-iguana",
+    "name": "Longnose Casquehead Iguana"
   },
   {
-    "slug": "laemanctus-longipes",
-    "name": "Laemanctus longipes"
-  },
-  {
-    "slug": "corytophanes-percarinatus",
-    "name": "Corytophanes percarinatus"
+    "slug": "perls-helmeted-basilisk",
+    "name": "Perl's helmeted basilisk"
   },
   {
     "slug": "rhinophis-blythii",
@@ -3828,88 +3744,68 @@
     "name": "Rhinophis philippinus"
   },
   {
-    "slug": "melanophidium-wynaudense",
-    "name": "Melanophidium wynaudense"
+    "slug": "woodmasons-earth-snake",
+    "name": "Woodmason's Earth Snake"
   },
   {
-    "slug": "uropeltis-woodmasoni",
-    "name": "Uropeltis woodmasoni"
+    "slug": "travancore-tortoise",
+    "name": "Travancore Tortoise"
   },
   {
-    "slug": "indotestudo-travancorica",
-    "name": "Indotestudo travancorica"
+    "slug": "hermanns-tortoise",
+    "name": "Hermann's Tortoise"
   },
   {
-    "slug": "testudo-hermanni",
-    "name": "Testudo hermanni"
+    "slug": "marginated-tortoise",
+    "name": "Marginated Tortoise"
   },
   {
-    "slug": "testudo-marginata",
-    "name": "Testudo marginata"
+    "slug": "russian-tortoise",
+    "name": "Russian Tortoise"
   },
   {
-    "slug": "testudo-horsfieldii",
-    "name": "Testudo horsfieldii"
+    "slug": "natal-hinged-tortoise",
+    "name": "Natal Hinged Tortoise"
   },
   {
-    "slug": "centrochelys-sulcata",
-    "name": "Centrochelys sulcata"
+    "slug": "bells-hinged-tortoise",
+    "name": "Bell's Hinged Tortoise"
   },
   {
-    "slug": "astrochelys-radiata",
-    "name": "Astrochelys radiata"
+    "slug": "homes-hinge-back-tortoise",
+    "name": "Home's Hinge-back Tortoise"
   },
   {
-    "slug": "kinixys-natalensis",
-    "name": "Kinixys natalensis"
+    "slug": "serrated-hinge-back-tortoise",
+    "name": "Serrated Hinge-back Tortoise"
   },
   {
-    "slug": "kinixys-belliana",
-    "name": "Kinixys belliana"
+    "slug": "texas-tortoise",
+    "name": "Texas Tortoise"
   },
   {
-    "slug": "kinixys-homeana",
-    "name": "Kinixys homeana"
+    "slug": "broad-snouted-caiman",
+    "name": "Broad-snouted Caiman"
   },
   {
-    "slug": "kinixys-erosa",
-    "name": "Kinixys erosa"
+    "slug": "boulengers-thin-toed-frog",
+    "name": "Boulenger's Thin-toed Frog"
   },
   {
-    "slug": "stigmochelys-pardalis",
-    "name": "Stigmochelys pardalis"
+    "slug": "mojave-desert-tortoise",
+    "name": "Mojave Desert Tortoise"
   },
   {
-    "slug": "gopherus-berlandieri",
-    "name": "Gopherus berlandieri"
+    "slug": "impressed-tortoise",
+    "name": "Impressed Tortoise"
   },
   {
-    "slug": "caiman-latirostris",
-    "name": "Caiman latirostris"
+    "slug": "narrow-headed-snapping-turtle",
+    "name": "Narrow-headed Snapping Turtle"
   },
   {
-    "slug": "cornufer-boulengeri",
-    "name": "Cornufer boulengeri"
-  },
-  {
-    "slug": "gopherus-agassizii",
-    "name": "Gopherus agassizii"
-  },
-  {
-    "slug": "manouria-impressa",
-    "name": "Manouria impressa"
-  },
-  {
-    "slug": "malacochersus-tornieri",
-    "name": "Malacochersus tornieri"
-  },
-  {
-    "slug": "chelydra-rossignonii",
-    "name": "Chelydra rossignonii"
-  },
-  {
-    "slug": "platymantis-isarog",
-    "name": "Platymantis isarog"
+    "slug": "isarog-flat-headed-frog",
+    "name": "Isarog Flat-headed Frog"
   },
   {
     "slug": "scaphiophryne-brevis",
@@ -3920,83 +3816,187 @@
     "name": "Pseudohynobius shuichengensis"
   },
   {
-    "slug": "rhizoprionodon-longurio",
-    "name": "Rhizoprionodon longurio"
+    "slug": "pacific-sharpnose-shark",
+    "name": "Pacific Sharpnose Shark"
   },
   {
-    "slug": "coregonus-clupeaformis",
-    "name": "Coregonus clupeaformis"
+    "slug": "brown-trout",
+    "name": "Brown Trout"
   },
   {
-    "slug": "salmo-trutta",
-    "name": "Salmo trutta"
+    "slug": "jack-dempsey",
+    "name": "Jack Dempsey"
   },
   {
-    "slug": "smilodonichthys-rastrosus",
-    "name": "Smilodonichthys rastrosus"
+    "slug": "red-devil-cichlid",
+    "name": "Red Devil Cichlid"
   },
   {
-    "slug": "rocio-octofasciata",
-    "name": "Rocio octofasciata"
+    "slug": "african-jewelfish",
+    "name": "African Jewelfish"
   },
   {
-    "slug": "amphilophus-labiatus",
-    "name": "Amphilophus labiatus"
+    "slug": "eastern-happy",
+    "name": "Eastern Happy"
   },
   {
-    "slug": "coptodon-zillii",
-    "name": "Coptodon zillii"
+    "slug": "black-acara",
+    "name": "Black Acara"
   },
   {
-    "slug": "hypsophrys-nicaraguensis",
-    "name": "Hypsophrys nicaraguensis"
+    "slug": "blackbelt-cichlid",
+    "name": "Blackbelt Cichlid"
   },
   {
-    "slug": "hemichromis-letourneuxi",
-    "name": "Hemichromis letourneuxi"
+    "slug": "blue-tilapia",
+    "name": "Blue tilapia"
   },
   {
-    "slug": "astatotilapia-calliptera",
-    "name": "Astatotilapia calliptera"
+    "slug": "slender-tuna",
+    "name": "Slender tuna"
   },
   {
-    "slug": "cichlasoma-bimaculatum",
-    "name": "Cichlasoma bimaculatum"
+    "slug": "longtail-tuna",
+    "name": "Longtail Tuna"
   },
   {
-    "slug": "vieja-melanura",
-    "name": "Vieja melanura"
+    "slug": "blackfin-tuna",
+    "name": "Blackfin Tuna"
   },
   {
-    "slug": "oreochromis-aureus",
-    "name": "Oreochromis aureus"
+    "slug": "bigeye-tuna",
+    "name": "Bigeye Tuna"
   },
   {
-    "slug": "pelvicachromis-pulcher",
-    "name": "Pelvicachromis pulcher"
+    "slug": "pacific-bluefin-tuna",
+    "name": "Pacific Bluefin Tuna"
   },
   {
-    "slug": "allothunnus-fallai",
-    "name": "Allothunnus fallai"
+    "slug": "opostega-chalcophylla",
+    "name": "Opostega chalcophylla"
   },
   {
-    "slug": "thunnus-tonggol",
-    "name": "Thunnus tonggol"
+    "slug": "philippine-serpent-eagle",
+    "name": "Philippine Serpent Eagle"
   },
   {
-    "slug": "thunnus-atlanticus",
-    "name": "Thunnus atlanticus"
+    "slug": "saltwater-crocodile",
+    "name": "Saltwater Crocodile"
   },
   {
-    "slug": "thunnus-obesus",
-    "name": "Thunnus obesus"
+    "slug": "chinese-alligator",
+    "name": "Chinese Alligator"
   },
   {
-    "slug": "thunnus-orientalis",
-    "name": "Thunnus orientalis"
+    "slug": "cuviers-dwarf-caiman",
+    "name": "Cuvier's Dwarf Caiman"
   },
   {
-    "slug": "scomber-scombrus",
-    "name": "Scomber scombrus"
+    "slug": "blue-mackerel",
+    "name": "Blue Mackerel"
+  },
+  {
+    "slug": "skipjack-tuna",
+    "name": "Skipjack Tuna"
+  },
+  {
+    "slug": "streaked-spanish-mackerel",
+    "name": "Streaked Spanish Mackerel"
+  },
+  {
+    "slug": "queensland-school-mackerel",
+    "name": "Queensland School Mackerel"
+  },
+  {
+    "slug": "rhodotoxotis-phylochrysa",
+    "name": "Rhodotoxotis phylochrysa"
+  },
+  {
+    "slug": "pristaulacus-melleus",
+    "name": "Pristaulacus melleus"
+  },
+  {
+    "slug": "limnichus-australis",
+    "name": "Limnichus australis"
+  },
+  {
+    "slug": "drassodes-involutus",
+    "name": "Drassodes involutus"
+  },
+  {
+    "slug": "euscorpius-carpathicus",
+    "name": "Euscorpius carpathicus"
+  },
+  {
+    "slug": "centruroides-beynai",
+    "name": "Centruroides beynai"
+  },
+  {
+    "slug": "european-spiny-lobster",
+    "name": "European spiny lobster"
+  },
+  {
+    "slug": "maori-octopus",
+    "name": "Maori octopus"
+  },
+  {
+    "slug": "baiji",
+    "name": "Baiji"
+  },
+  {
+    "slug": "pampas-deer",
+    "name": "Pampas Deer"
+  },
+  {
+    "slug": "paraguayan-woolly-mouse-opossum",
+    "name": "Paraguayan Woolly Mouse Opossum"
+  },
+  {
+    "slug": "crane-hawk",
+    "name": "Crane Hawk"
+  },
+  {
+    "slug": "himalayan-goral",
+    "name": "Himalayan Goral"
+  },
+  {
+    "slug": "panay-flat-headed-frog",
+    "name": "Panay Flat-headed Frog"
+  },
+  {
+    "slug": "ectoedemia-subbimaculella",
+    "name": "Ectoedemia subbimaculella"
+  },
+  {
+    "slug": "limnichus-fragilicornis",
+    "name": "Limnichus fragilicornis"
+  },
+  {
+    "slug": "tremoctopus-gracilis",
+    "name": "Tremoctopus gracilis"
+  },
+  {
+    "slug": "cnemaspis-dilepis",
+    "name": "Cnemaspis dilepis"
+  },
+  {
+    "slug": "rainbow-trout",
+    "name": "Rainbow Trout"
+  },
+  {
+    "slug": "bowers-shrike-thrush",
+    "name": "Bower's Shrike-thrush"
+  },
+  {
+    "slug": "chinese-goral",
+    "name": "Chinese Goral"
+  },
+  {
+    "slug": "kinkajou",
+    "name": "Kinkajou"
+  },
+  {
+    "slug": "tayra",
+    "name": "Tayra"
   }
 ]
