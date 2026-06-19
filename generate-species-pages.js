@@ -1,5 +1,6 @@
 // generate-species-pages.js
 // Reads species with completed result_portrait from Supabase, builds static HTML pages
+// Clears the species folder first to prevent stale files from old slugs
 // No images, no emoji — clean text-only pages until photo/emoji system is rebuilt properly
 // Run with: node generate-species-pages.js
 
@@ -41,17 +42,27 @@ async function buildPages() {
 
   const template = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
 
-  if (!fs.existsSync(OUTPUT_DIR)) {
-    fs.mkdirSync(OUTPUT_DIR);
+  // Wipe the species folder clean first to remove any stale files from old slugs
+  if (fs.existsSync(OUTPUT_DIR)) {
+    fs.rmSync(OUTPUT_DIR, { recursive: true, force: true });
+    console.log('Cleared existing species folder.');
   }
+  fs.mkdirSync(OUTPUT_DIR);
 
   let successCount = 0;
   let failCount = 0;
   const slugMap = [];
+  const usedSlugs = new Set();
 
   for (const animal of speciesList) {
     const displayName = animal.common_name || animal.scientific_name;
-    const slug = slugify(animal.common_name || animal.scientific_name);
+    let slug = slugify(animal.common_name || animal.scientific_name);
+
+    // Guard against duplicate slugs (e.g. two species sharing a common name)
+    if (usedSlugs.has(slug)) {
+      slug = slugify(animal.scientific_name);
+    }
+    usedSlugs.add(slug);
 
     try {
       let portraitData;
@@ -68,7 +79,6 @@ async function buildPages() {
         .map((p) => `<p class="portrait-text">${p}</p>`)
         .join('\n  ');
 
-      // No image, no emoji — empty photo block until a proper system is built
       const photoBlock = '';
 
       let page = template
